@@ -1,0 +1,51 @@
+{
+  "hero": {
+    "badge": "Jembatan industri dan akademik",
+    "title": "Pasar Inovasi",
+    "subtitle": "Pertemukan riset Anda dengan pelaku industri, lembaga pemerintah, dan yayasan pendana. Ubah gagasan menjadi dampak nyata."
+  },
+  "stats": {
+    "opportunities": "Peluang",
+    "funding": "Total Pendanaan",
+    "partnerships": "Kemitraan",
+    "success_rate": "Tingkat Keberhasilan"
+  },
+  "filter": {
+    "search_placeholder": "Cari peluang berdasarkan kata kunci, organisasi, atau teknologi…",
+    "advanced": "Filter Lanjutan",
+    "org_type": "Jenis Organisasi:"
+  },
+  "list": {
+    "empty": "Tidak ada peluang yang cocok",
+    "apply": "Ajukan Sekarang",
+    "requirements": "Syarat Utama"
+  },
+  "how": {
+    "title": "Cara Pasar Inovasi Bekerja",
+    "steps": [
+      {
+        "title": "Temukan Peluang",
+        "desc": "Telusuri tawaran kemitraan riset dari organisasi terkemuka."
+      },
+      {
+        "title": "Ajukan Proposal",
+        "desc": "Kirim proposal riset beserta rekam jejak tim Anda."
+      },
+      {
+        "title": "Dipertemukan",
+        "desc": "Dapatkan mitra dan mulai proyek riset yang didanai."
+      },
+      {
+        "title": "Terapkan dan Kembangkan",
+        "desc": "Ubah hasil riset menjadi solusi terpakai dengan dukungan komersialisasi."
+      }
+    ],
+    "subtitle": "Dari penemuan peluang sampai penerapan — jalannya dari riset ke dampak nyata dipersingkat."
+  },
+  "cta": {
+    "title": "Siap mengubah riset Anda jadi dampak?",
+    "subtitle": "Bergabung dengan ratusan peneliti yang telah memperoleh pendanaan dan mitra lewat Pasar Inovasi Sciecola.",
+    "primary": "Telusuri Semua Peluang",
+    "secondary": "Pasang Peluang"
+  }
+}

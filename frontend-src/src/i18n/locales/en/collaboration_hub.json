@@ -1,0 +1,46 @@
+{
+  "hero": {
+    "badge": "Global research network",
+    "title": "Collaboration Hub",
+    "subtitle": "Connect with researchers across the world, find opportunities to work together, and speed up your research impact on the SDGs.",
+    "cta_find": "Find Collaborators",
+    "cta_start": "Start a Project"
+  },
+  "stats": {
+    "researchers": "Researchers",
+    "collaborations": "Collaborations",
+    "countries": "Countries",
+    "institutions": "Institutions",
+    "projects": "Projects",
+    "avg_score": "Average Score"
+  },
+  "filter": {
+    "search_placeholder": "Search researchers by name, institution or expertise…",
+    "all": "All",
+    "open": "Open to collaborate",
+    "more": "More Filters",
+    "export": "Export"
+  },
+  "list": {
+    "empty": "No matching researchers",
+    "role_fallback": "Researcher",
+    "collabs": "Collaborations",
+    "publications": "Publications"
+  },
+  "features_section": {
+    "title": "Why Use the Collaboration Hub?",
+    "subtitle": "Strengthen your research impact through partnerships that fit."
+  },
+  "features": [
+    { "title": "AI-Powered Matching", "description": "Collaborators are found from research interests, SDG focus and complementary expertise." },
+    { "title": "SDG Alignment", "description": "Connect with researchers working on the same Sustainable Development Goals." },
+    { "title": "Project Discovery", "description": "Browse ongoing projects and find where your expertise is needed." },
+    { "title": "Trust Network", "description": "Build a reputation through verified collaborations and peer recommendations." }
+  ],
+  "cta": {
+    "title": "Ready to widen your research network?",
+    "subtitle": "Join thousands of researchers already collaborating through Sciecola.",
+    "primary": "Create Your Profile",
+    "secondary": "Learn More"
+  }
+}

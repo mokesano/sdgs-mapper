@@ -1,0 +1,83 @@
+{
+  "title": "Panel Admin",
+  "subtitle": "Kelola data peneliti, proyek, peluang, dan keahlian.",
+  "section": {
+    "researchers": "Kelola Peneliti",
+    "projects": "Kelola Proyek",
+    "opportunities": "Kelola Peluang Inovasi",
+    "expertise": "Tambah Keahlian Peneliti"
+  },
+  "entity": {
+    "researchers": "peneliti",
+    "projects": "proyek",
+    "opportunities": "peluang",
+    "expertise": "keahlian"
+  },
+  "field": {
+    "orcid": "ORCID",
+    "name": "Nama",
+    "scopus_id": "Scopus Author ID",
+    "sinta_id": "SINTA ID",
+    "researcher_id": "ResearcherID / Publons",
+    "institution_id": "ID Institusi",
+    "collaboration_status": "Status Kolaborasi",
+    "bio": "Biografi",
+    "research_keywords": "Kata Kunci Riset (JSON)",
+    "profile_photo_url": "URL Foto Profil",
+    "project_title": "Judul Proyek",
+    "description": "Deskripsi",
+    "lead_orcid": "ORCID Ketua Peneliti",
+    "status": "Status",
+    "start_date": "Tanggal Mulai",
+    "end_date": "Tanggal Selesai",
+    "budget": "Anggaran ($)",
+    "progress": "Kemajuan (%)",
+    "sdg_focus_list": "Fokus SDG (pisahkan dengan koma)",
+    "opportunity_title": "Judul Peluang",
+    "organization_id": "ID Organisasi",
+    "category_id": "ID Kategori",
+    "budget_range": "Rentang Anggaran",
+    "deadline": "Batas Pengajuan",
+    "sdg_alignment": "Kesesuaian SDG (JSON)",
+    "required_skills": "Keahlian yang Dibutuhkan (JSON)",
+    "researcher_orcid": "ORCID Peneliti",
+    "field_name": "Bidang Keahlian",
+    "experience_years": "Lama Pengalaman (tahun)",
+    "sdg_number": "Fokus SDG (1–17)",
+    "expertise_level": "Tingkat Keahlian"
+  },
+  "placeholder": {
+    "field_name": "misalnya AI, Ilmu Iklim"
+  },
+  "option": {
+    "open": "terbuka",
+    "busy": "sibuk",
+    "limited": "terbatas",
+    "planning": "perencanaan",
+    "active": "berjalan",
+    "completed": "selesai",
+    "paused": "tertunda",
+    "in-progress": "sedang berjalan",
+    "closed": "ditutup",
+    "beginner": "pemula",
+    "intermediate": "menengah",
+    "expert": "ahli"
+  },
+  "action": {
+    "add_new": "Tambah {{entity}}",
+    "edit": "Ubah {{entity}}",
+    "save": "Simpan",
+    "saving": "Menyimpan…",
+    "cancel": "Batal"
+  },
+  "status": {
+    "created": "{{entity}} berhasil dibuat",
+    "updated": "{{entity}} berhasil diperbarui",
+    "failed": "Gagal menyimpan",
+    "network": "Galat jaringan: {{message}}"
+  },
+  "notice": {
+    "title": "Endpoint Admin Belum Tersedia",
+    "body": "Endpoint admin masih harus dibuat di sisi backend. Berkas API yang diperlukan:"
+  }
+}

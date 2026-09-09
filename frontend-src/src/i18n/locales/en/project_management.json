@@ -1,0 +1,57 @@
+{
+  "hero": {
+    "badge": "Research collaboration workspace",
+    "title": "Project Management",
+    "subtitle": "Run your research collaborations, follow their progress, and reach impact sooner.",
+    "new_project": "New Project"
+  },
+  "stats": {
+    "total": "Total Projects",
+    "active": "Active",
+    "planning": "Planning",
+    "completed": "Completed",
+    "budget": "Total Budget",
+    "publications": "Publications"
+  },
+  "tabs": {
+    "all": "All Projects",
+    "active": "Active",
+    "planning": "Planning",
+    "completed": "Completed"
+  },
+  "filter": {
+    "search_placeholder": "Search projects…"
+  },
+  "card": {
+    "progress": "Progress",
+    "team_member": "Team member",
+    "budget_used": "Budget Used",
+    "institution": "Institution",
+    "updated": "Updated {{when}}",
+    "recently": "recently"
+  },
+  "quick": {
+    "title": "Quick Actions",
+    "items": [
+      {
+        "title": "Create a Project",
+        "desc": "Start a new research collaboration."
+      },
+      {
+        "title": "Invite Collaborators",
+        "desc": "Add team members to your projects."
+      },
+      {
+        "title": "Generate a Report",
+        "desc": "Export project analytics and metrics."
+      },
+      {
+        "title": "Set Milestones",
+        "desc": "Define the key deliverables and their deadlines."
+      }
+    ]
+  },
+  "list": {
+    "empty": "No matching projects"
+  }
+}

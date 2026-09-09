@@ -1,0 +1,46 @@
+{
+  "hero": {
+    "badge": "Jaringan riset global",
+    "title": "Pusat Kolaborasi",
+    "subtitle": "Terhubung dengan peneliti dari berbagai negara, temukan peluang kerja sama, dan percepat dampak riset terhadap SDG.",
+    "cta_find": "Cari Kolaborator",
+    "cta_start": "Mulai Proyek"
+  },
+  "stats": {
+    "researchers": "Peneliti",
+    "collaborations": "Kolaborasi",
+    "countries": "Negara",
+    "institutions": "Institusi",
+    "projects": "Proyek",
+    "avg_score": "Skor Rata-rata"
+  },
+  "filter": {
+    "search_placeholder": "Cari peneliti berdasarkan nama, institusi, atau bidang keahlian…",
+    "all": "Semua",
+    "open": "Terbuka untuk kolaborasi",
+    "more": "Filter Lain",
+    "export": "Ekspor"
+  },
+  "list": {
+    "empty": "Tidak ada peneliti yang cocok",
+    "role_fallback": "Peneliti",
+    "collabs": "Kolaborasi",
+    "publications": "Publikasi"
+  },
+  "features_section": {
+    "title": "Mengapa Memakai Pusat Kolaborasi?",
+    "subtitle": "Perkuat dampak riset Anda lewat kemitraan yang tepat sasaran."
+  },
+  "features": [
+    { "title": "Pencocokan Berbasis AI", "description": "Kolaborator dicarikan berdasarkan minat riset, fokus SDG, dan keahlian yang saling melengkapi." },
+    { "title": "Kesesuaian SDG", "description": "Terhubung dengan peneliti yang menggarap Tujuan Pembangunan Berkelanjutan yang sama." },
+    { "title": "Penemuan Proyek", "description": "Telusuri proyek yang sedang berjalan dan temukan celah tempat keahlian Anda dibutuhkan." },
+    { "title": "Jaringan Tepercaya", "description": "Bangun reputasi lewat kolaborasi terverifikasi dan rekomendasi sesama peneliti." }
+  ],
+  "cta": {
+    "title": "Siap memperluas jaringan riset Anda?",
+    "subtitle": "Bergabung dengan ribuan peneliti yang sudah berkolaborasi lewat Sciecola.",
+    "primary": "Buat Profil Anda",
+    "secondary": "Pelajari Lebih Lanjut"
+  }
+}

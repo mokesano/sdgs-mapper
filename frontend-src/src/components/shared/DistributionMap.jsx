@@ -1,4 +1,5 @@
 import React, { useMemo } from 'react';
+import { useTranslation } from 'react-i18next';
 import worldMap from './worldmap.svg';
 
 const clamp = (n, min, max) => Math.max(min, Math.min(max, n));
@@ -16,6 +17,7 @@ const DistributionMap = ({
   height = 360,
   showLegend = true,
 }) => {
+  const { t } = useTranslation('common_ui');
   const values = points.map((p) => Number(p[valueKey]) || 0);
   const minValue = values.length ? Math.min(...values) : 0;
   const maxValue = values.length ? Math.max(...values) : 0;
@@ -45,7 +47,7 @@ const DistributionMap = ({
           className="relative w-full rounded-lg overflow-hidden border border-gray-100 bg-slate-50"
           style={{ height }}
         >
-          <img src={worldMap} alt="World map" className="absolute inset-0 w-full h-full object-cover" />
+          <img src={worldMap} alt={t('map.alt')} className="absolute inset-0 w-full h-full object-cover" />
 
           <svg className="absolute inset-0 w-full h-full" viewBox="0 0 1000 500" preserveAspectRatio="none">
             {normalizedPoints.map((point) => {
@@ -66,8 +68,8 @@ const DistributionMap = ({
         {showLegend && (
           <div className="mt-4">
             <div className="flex items-center justify-between text-sm text-gray-500 mb-1">
-              <span>Less</span>
-              <span>More</span>
+              <span>{t('map.less')}</span>
+              <span>{t('map.more')}</span>
             </div>
             <div className="h-2 rounded-full bg-gradient-to-r from-blue-200 via-blue-400 to-blue-700" />
             <div className="flex items-center justify-between mt-1 text-xs text-gray-500">

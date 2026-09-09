@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import { useNavigate } from 'react-router';
 
 /* ─── Detectors ─────────────────────────────────────────────────────────────
@@ -25,6 +26,7 @@ const ROUTES = {
 };
 
 const HeroSearch = () => {
+  const { t } = useTranslation('common_ui');
   const [inputValue, setInputValue] = useState('');
   const [isLoading, setIsLoading] = useState(false);
   const [statusMsg, setStatusMsg] = useState('');
@@ -38,23 +40,23 @@ const HeroSearch = () => {
 
     setIsLoading(true);
     setAmbiguousId(null);
-    setStatusMsg('Mendeteksi format…');
+    setStatusMsg(t('hero_search.detecting'));
 
     setTimeout(() => {
       setIsLoading(false);
 
       if (PATTERNS.orcid.test(query)) {
-        setStatusMsg('Mengalihkan ke profil ORCID…');
+        setStatusMsg(t('hero_search.to_orcid'));
         navigate(ROUTES.orcid(query));
         return;
       }
       if (PATTERNS.researcherid.test(query)) {
-        setStatusMsg('Mengalihkan ke profil ResearcherID/Publons…');
+        setStatusMsg(t('hero_search.to_researcherid'));
         navigate(ROUTES.researcherid(query));
         return;
       }
       if (PATTERNS.doi.test(query)) {
-        setStatusMsg('Mengalihkan ke profil artikel…');
+        setStatusMsg(t('hero_search.to_article'));
         navigate(ROUTES.doi(query));
         return;
       }
@@ -64,7 +66,7 @@ const HeroSearch = () => {
         setStatusMsg('');
         return;
       }
-      setStatusMsg('Format tidak dikenali. Masukkan ORCID, Scopus, SINTA, ResearcherID, atau DOI.');
+      setStatusMsg(t('hero_search.unknown'));
       setTimeout(() => setStatusMsg(''), 4500);
     }, 250);
   };
@@ -98,7 +100,7 @@ const HeroSearch = () => {
               <input
                 type="text"
                 className="w-full pl-12 pr-4 py-4 rounded-xl border-2 border-gray-200 focus:border-indigo-500 focus:ring-4 focus:ring-indigo-100 outline-none transition-all text-gray-700 text-lg disabled:bg-gray-50"
-                placeholder="ORCID · Scopus ID · SINTA ID · ResearcherID · DOI"
+                placeholder={t('hero_search.placeholder')}
                 value={inputValue}
                 onChange={(e) => setInputValue(e.target.value)}
                 disabled={isLoading}

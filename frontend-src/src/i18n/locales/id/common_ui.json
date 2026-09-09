@@ -1,0 +1,33 @@
+{
+  "error": {
+    "oops": "Aduh!",
+    "title": "Terjadi Kesalahan Tak Terduga",
+    "component": "Komponen ini mengalami galat dan tidak dapat ditampilkan.",
+    "detail": "Detail Galat",
+    "stack": "Lihat Component Stack",
+    "retry": "Coba Lagi",
+    "home": "Kembali ke Beranda",
+    "support": "Hubungi Dukungan"
+  },
+  "breadcrumb": { "label": "remah roti", "home": "Beranda" },
+  "sponsorship": {
+    "title": "Pilihan Tier Sponsorship",
+    "popular": "Paling Diminati",
+    "selected": "Terpilih",
+    "choose": "Pilih Tier Ini",
+    "custom_prefix": "Butuh paket khusus?",
+    "custom_link": "Hubungi tim kami",
+    "custom_suffix": "untuk membicarakannya lebih lanjut."
+  },
+  "hero_search": {
+    "placeholder": "ORCID · Scopus ID · SINTA ID · ResearcherID · DOI",
+    "detecting": "Mendeteksi format…",
+    "to_orcid": "Mengalihkan ke profil ORCID…",
+    "to_researcherid": "Mengalihkan ke profil ResearcherID/Publons…",
+    "to_article": "Mengalihkan ke profil artikel…",
+    "unknown": "Format tidak dikenali. Masukkan ORCID, Scopus, SINTA, ResearcherID, atau DOI.",
+    "scopus": "Scopus Author ID",
+    "cancel": "Batal"
+  },
+  "map": { "less": "Sedikit", "more": "Banyak", "alt": "Peta dunia" }
+}

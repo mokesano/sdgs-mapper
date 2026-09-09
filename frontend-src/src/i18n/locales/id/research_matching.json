@@ -1,0 +1,84 @@
+{
+  "hero": {
+    "badge": "Kolaborasi berbasis AI",
+    "title": "Pencocokan Riset",
+    "subtitle": "Temukan mitra riset yang tepat lewat algoritma yang menimbang keahlian, minat penelitian, dan kecocokan kerja sama."
+  },
+  "form": {
+    "title": "Temukan Mitra yang Tepat",
+    "subtitle": "Ceritakan minat riset Anda, dan kami carikan peneliti dengan keahlian yang saling melengkapi.",
+    "keywords_label": "Kata Kunci Riset",
+    "keywords_placeholder": "misalnya perubahan iklim, etika AI…",
+    "sdg_label": "Fokus SDG",
+    "sdg_any": "Pilih tujuan SDG…",
+    "institution_label": "Jenis Institusi",
+    "location_label": "Preferensi Wilayah",
+    "location_placeholder": "misalnya Eropa, Asia Tenggara…",
+    "expertise_label": "Tingkat Keahlian",
+    "collab_label": "Bentuk Kolaborasi",
+    "submit": "Cari Kecocokan",
+    "searching": "Menganalisis profil…"
+  },
+  "institution": {
+    "any": "Semua institusi",
+    "university": "Universitas",
+    "institute": "Lembaga Riset",
+    "government": "Pemerintah",
+    "industry": "Industri"
+  },
+  "expertise": {
+    "any": "Semua tingkat",
+    "leading": "Pakar Utama (H-index > 40)",
+    "established": "Peneliti Mapan (H-index 20–40)",
+    "emerging": "Peneliti Berkembang (H-index < 20)"
+  },
+  "collab": {
+    "any": "Semua bentuk",
+    "joint": "Proyek Riset Bersama",
+    "coauthor": "Ko-penulis",
+    "grant": "Pengajuan Hibah",
+    "exchange": "Pertukaran Pengetahuan"
+  },
+  "features": [
+    {
+      "title": "Analisis Pembelajaran Mendalam",
+      "description": "Lebih dari 50 faktor ditimbang sekaligus: riwayat publikasi, topik riset, dan pola kolaborasi."
+    },
+    {
+      "title": "Skor Kecocokan",
+      "description": "Skor dihitung dari kesesuaian bidang riset, keahlian yang saling melengkapi, dan penanda kolaborasi yang berhasil."
+    },
+    {
+      "title": "Pembaruan Berkelanjutan",
+      "description": "Publikasi dan kolaborasi baru terus dipelajari supaya mutu rekomendasinya membaik dari waktu ke waktu."
+    }
+  ],
+  "results": {
+    "title": "Kecocokan Teratas",
+    "subtitle": "Berdasarkan profil riset dan preferensi Anda.",
+    "refine": "Saring Ulang",
+    "share": "Bagikan Hasil"
+  },
+  "card": {
+    "role_fallback": "Peneliti",
+    "match": "Cocok",
+    "why": "Mengapa cocok?",
+    "h_index": "H-Index",
+    "publications": "Publikasi",
+    "collaborations": "Kolaborasi",
+    "contact": "Hubungi Peneliti",
+    "view_profile": "Lihat Profil Lengkap",
+    "save": "Simpan",
+    "message": "Kirim pesan"
+  },
+  "how": {
+    "title": "Cara Pencocokan Bekerja",
+    "subtitle": "Beberapa dimensi ditimbang sekaligus untuk menemukan mitra riset yang paling sesuai.",
+    "steps": [
+      { "title": "Analisis Profil", "desc": "Riwayat riset, publikasi, dan bidang keahlian Anda dibaca lebih dulu." },
+      { "title": "Pengenalan Pola", "desc": "Keahlian yang saling melengkapi dan irisan bidang riset diidentifikasi." },
+      { "title": "Skor Kecocokan", "desc": "Skor dihitung dari lebih dari 50 faktor keberhasilan kolaborasi." },
+      { "title": "Pembelajaran Lanjut", "desc": "Rekomendasi diperbaiki mengikuti hasil kolaborasi yang benar-benar terjadi." }
+    ]
+  }
+}

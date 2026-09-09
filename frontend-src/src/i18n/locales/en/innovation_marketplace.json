@@ -1,0 +1,51 @@
+{
+  "hero": {
+    "badge": "Industry–academia bridge",
+    "title": "Innovation Marketplace",
+    "subtitle": "Bring your research together with industry, government agencies and funding foundations. Turn ideas into real-world impact."
+  },
+  "stats": {
+    "opportunities": "Opportunities",
+    "funding": "Total Funding",
+    "partnerships": "Partnerships",
+    "success_rate": "Success Rate"
+  },
+  "filter": {
+    "search_placeholder": "Search opportunities by keyword, organisation or technology…",
+    "advanced": "Advanced Filters",
+    "org_type": "Organisation type:"
+  },
+  "list": {
+    "empty": "No matching opportunities",
+    "apply": "Apply Now",
+    "requirements": "Key Requirements"
+  },
+  "how": {
+    "title": "How the Innovation Marketplace Works",
+    "steps": [
+      {
+        "title": "Discover Opportunities",
+        "desc": "Browse research partnerships offered by leading organisations."
+      },
+      {
+        "title": "Submit a Proposal",
+        "desc": "Apply with your research proposal and your team's track record."
+      },
+      {
+        "title": "Get Matched",
+        "desc": "Find your partner and start the funded research project."
+      },
+      {
+        "title": "Deploy and Scale",
+        "desc": "Turn research results into working solutions with commercialisation support."
+      }
+    ],
+    "subtitle": "From discovery to deployment — the path from research to real-world impact, made shorter."
+  },
+  "cta": {
+    "title": "Ready to turn your research into impact?",
+    "subtitle": "Join hundreds of researchers who have secured funding and partners through the Sciecola Innovation Marketplace.",
+    "primary": "Browse All Opportunities",
+    "secondary": "Post an Opportunity"
+  }
+}

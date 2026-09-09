@@ -1,0 +1,68 @@
+{
+  "greeting": "Hello! I am the Sciecola assistant. Ask me about researchers, articles, journals, the SDGs, or any platform feature.",
+  "trigger": {
+    "thanks": ["thank you", "thanks", "thx", "cheers"],
+    "hello": ["hello", "hi", "hey", "good morning", "good afternoon", "good evening"]
+  },
+  "reply": {
+    "thanks": "You are welcome. Anything else you would like to know about Sciecola?",
+    "hello": "Hello! How can I help? Ask me about researchers, articles, journals, the SDGs, or any other feature.",
+    "fallback": "Sorry, I do not have an answer for that yet. Try asking about researchers, articles, journals or the SDGs — or open the Help tab."
+  },
+  "ui": {
+    "open": "Open the chatbot",
+    "close_bot": "Close the chatbot",
+    "close": "Close",
+    "brand": "Sciecola",
+    "home_title": "Need a hand?",
+    "home_sub": "How can we help you?",
+    "status": "Status: all systems normal",
+    "send_title": "Send a message",
+    "send_sub": "We usually reply within a few minutes",
+    "search_help": "Search help…",
+    "assistant": "Sciecola Assistant",
+    "assistant_sub": "Backed by smart search",
+    "type_message": "Type a message…",
+    "send": "Send message",
+    "help_center": "Help Centre",
+    "help_sub": "Search the knowledge base for answers",
+    "tab_home": "Home",
+    "tab_messages": "Messages",
+    "tab_help": "Help"
+  },
+  "quick": [
+    "How to analyse a researcher profile with an ORCID",
+    "How to analyse an article with a DOI",
+    "What is the Wizdam Impact Score (WIS)?",
+    "Seeing the SDG distribution of my research",
+    "How to register and create an account"
+  ],
+  "kb": [
+    { "q": "how to use orcid analyse profile", "a": "Enter an ORCID (format: 0000-0000-0000-0000) in the analysis form on the home page to see the full profile along with the SDG distribution of the publications." },
+    { "q": "what is orcid researcher id number", "a": "ORCID is an international unique researcher identifier in the form 0000-0000-0000-0000. The platform uses it to pull publication data automatically." },
+    { "q": "find researcher profile search", "a": "Open the Researchers page to search by name or institution, or type an ORCID straight into the analysis form on the home page." },
+    { "q": "how to use doi analyse article", "a": "Enter an article DOI (for example 10.1234/example) in the analysis form to see its SDG classification, impact metrics and citations." },
+    { "q": "what is doi digital object identifier", "a": "A DOI (Digital Object Identifier) is a unique identifier for a scholarly article. The usual form is 10.xxxx/… Use a DOI to open an article profile on this platform." },
+    { "q": "find article research publication", "a": "Open the Articles page to search by title, author or year. You can also use the DOI form on the home page for a direct analysis." },
+    { "q": "what are sdgs sustainable development goals", "a": "The SDGs (Sustainable Development Goals) are the 17 goals set by the UN to be reached by 2030. This platform maps research onto those 17 goals." },
+    { "q": "see sdg distribution analytics", "a": "Open the Analytics or SDGs Cluster page to explore how research is distributed across the 17 SDGs." },
+    { "q": "which sdg is researched most", "a": "In the platform's data, SDG 13 (Climate Action), SDG 4 (Quality Education) and SDG 3 (Good Health) are the most researched. See the Analytics page for the full picture." },
+    { "q": "sdg 13 climate change action", "a": "SDG 13 (Climate Action) is one of the fastest-growing research topics on this platform. Related articles are on the SDGs Cluster page." },
+    { "q": "list of scientific journals", "a": "Open the Journals page for the list of indexed journals, with quartile, impact factor and SDG distribution." },
+    { "q": "journal q1 quartile best", "a": "Filter journals by quartile (Q1–Q4) on the Journals page. Q1 journals carry the highest impact factor in their category." },
+    { "q": "institution university research", "a": "Open the Institutions page for partner universities and research bodies, together with their researcher and publication statistics." },
+    { "q": "research trends over time analysis", "a": "The Trends Analysis page shows how SDG research has developed over time, based on publication data from 2019 onwards." },
+    { "q": "analytics statistics platform data", "a": "The Analytics page holds the full picture: SDG distribution, yearly trends and impact metrics across all research on the platform." },
+    { "q": "leaderboard ranking best researchers", "a": "The Leaderboard page ranks researchers by Wizdam Impact Score (WIS), citations and publication output." },
+    { "q": "wis wizdam impact score", "a": "The Wizdam Impact Score (WIS) is a composite metric combining a researcher's academic, social and economic impact together with their SDG contribution." },
+    { "q": "insights ai artificial intelligence", "a": "The AI Insights feature on the home page reads the research data automatically and surfaces relevant findings and trends from the platform's article collection." },
+    { "q": "register sign up new account", "a": "Open the Register page to create a Sciecola account. A researcher account gives you a personal dashboard and your own SDG contribution statistics." },
+    { "q": "login sign in account", "a": "Open the Login page to sign in to your Sciecola account." },
+    { "q": "forgot password reset", "a": "Use \"Forgot password\" on the Login page to reset it through your registered email address." },
+    { "q": "personal user dashboard", "a": "Once signed in, your personal dashboard shows a summary of your activity, saved articles and SDG contribution statistics." },
+    { "q": "api documentation developer", "a": "The full API documentation is on the Docs page. The Sciecola API lets you pull SDG data into your own research system or institutional platform." },
+    { "q": "contact help support", "a": "Open the Help or Contact page for technical support. The Sciecola team answers through the contact form." },
+    { "q": "faq frequently asked questions", "a": "The FAQ page under Docs answers common questions about using the platform, reading the data, and access policy." },
+    { "q": "about sciecola what platform", "a": "Sciecola is an AI-based research analytics platform that maps scholarly publications onto the 17 UN SDGs, built to serve the Indonesian and global research communities." }
+  ]
+}

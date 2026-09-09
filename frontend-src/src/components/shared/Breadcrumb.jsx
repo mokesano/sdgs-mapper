@@ -1,11 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router';
+import { useTranslation } from 'react-i18next';
 import { IconChevronRight } from './icons';
 
 export default function Breadcrumb({ items = [] }) {
+  const { t } = useTranslation('common_ui');
   return (
-    <nav className="flex items-center gap-1.5 text-[15px] text-gray-500 mb-6" aria-label="breadcrumb">
-      <Link to="/" className="hover:text-indigo-600 transition-colors">Beranda</Link>
+    <nav className="flex items-center gap-1.5 text-[15px] text-gray-500 mb-6" aria-label={t('breadcrumb.label')}>
+      <Link to="/" className="hover:text-indigo-600 transition-colors">{t('breadcrumb.home')}</Link>
       {items.map((item, idx) => (
         <React.Fragment key={idx}>
           <IconChevronRight className="w-3.5 h-3.5 text-gray-400 shrink-0" />

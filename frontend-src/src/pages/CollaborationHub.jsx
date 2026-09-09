@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router';
+import { useTranslation } from 'react-i18next';
 import { Users, Network, TrendingUp, Globe, Search, Filter, 
   Download, Share2, MessageSquare, Mail, ExternalLink, Award,
   BookOpen, Building2, MapPin, Calendar, ArrowRight, Zap,
@@ -7,6 +8,22 @@ import { Users, Network, TrendingUp, Globe, Search, Filter,
 } from 'lucide-react';
 
 const CollaborationHub = () => {
+  const { t } = useTranslation('collaboration_hub');
+
+  /* Ikon dan warna tetap di kode karena bukan teks; judul dan keterangannya
+     diambil dari locale supaya ikut berganti bahasa. */
+  const featureText = t('features', { returnObjects: true });
+  const featureCards = [
+    { icon: Zap,       color: 'from-yellow-400 to-orange-500' },
+    { icon: Target,    color: 'from-green-400 to-emerald-500' },
+    { icon: Lightbulb, color: 'from-blue-400 to-indigo-500' },
+    { icon: Handshake, color: 'from-purple-400 to-pink-500' },
+  ].map((card, i) => ({
+    ...card,
+    title:       Array.isArray(featureText) ? featureText[i]?.title ?? '' : '',
+    description: Array.isArray(featureText) ? featureText[i]?.description ?? '' : '',
+  }));
+
   const navigate = useNavigate();
   const [searchTerm, setSearchTerm] = useState('');
   const [activeFilter, setActiveFilter] = useState('all');
@@ -204,25 +221,25 @@ const CollaborationHub = () => {
           <div className="text-center px-8 max-w-7xl mx-auto">
             <div className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full mb-6">
               <Network className="w-5 h-5" />
-              <span className="text-[15px] font-medium">Global Research Network</span>
+              <span className="text-[15px] font-medium">{t('hero.badge')}</span>
             </div>
             
             <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
-              Collaboration Hub
+              {t('hero.title')}
             </h1>
             
             <p className="text-xl md:text-2xl mb-8 text-white/90 max-w-3xl mx-auto">
-              Connect with researchers worldwide, discover collaboration opportunities, and accelerate impact on SDGs
+              {t('hero.subtitle')}
             </p>
             
             <div className="flex flex-wrap justify-center gap-4">
               <button className="bg-white text-indigo-600 px-8 py-4 rounded-xl font-semibold hover:bg-white/90 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 flex items-center gap-2">
                 <Search className="w-5 h-5" />
-                Find Collaborators
+                {t('hero.cta_find')}
               </button>
               <button className="bg-white/20 backdrop-blur-sm text-white px-8 py-4 rounded-xl font-semibold hover:bg-white/30 transition-all duration-300 border border-white/30 flex items-center gap-2">
                 <Handshake className="w-5 h-5" />
-                Start Project
+                {t('hero.cta_start')}
               </button>
             </div>
           </div>
@@ -234,12 +251,12 @@ const CollaborationHub = () => {
         <div className="container max-w-7xl mx-auto w-full px-8">
           <div className="bg-white rounded-3xl shadow-2xl p-8 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
             {[
-              { label: 'Researchers', value: statsDisplay.totalResearchers.toLocaleString(), icon: Users },
-              { label: 'Collaborations', value: statsDisplay.activeCollaborations.toLocaleString(), icon: Handshake },
-              { label: 'Countries', value: statsDisplay.countries, icon: Globe },
-              { label: 'Institutions', value: statsDisplay.institutions.toLocaleString(), icon: Building2 },
-              { label: 'Projects', value: statsDisplay.projectsCompleted.toLocaleString(), icon: Target },
-              { label: 'Avg Score', value: statsDisplay.avgCollaborationScore, icon: Award }
+              { label: t('stats.researchers'), value: statsDisplay.totalResearchers.toLocaleString(), icon: Users },
+              { label: t('stats.collaborations'), value: statsDisplay.activeCollaborations.toLocaleString(), icon: Handshake },
+              { label: t('stats.countries'), value: statsDisplay.countries, icon: Globe },
+              { label: t('stats.institutions'), value: statsDisplay.institutions.toLocaleString(), icon: Building2 },
+              { label: t('stats.projects'), value: statsDisplay.projectsCompleted.toLocaleString(), icon: Target },
+              { label: t('stats.avg_score'), value: statsDisplay.avgCollaborationScore, icon: Award }
             ].map((stat, index) => (
               <div key={index} className="text-center group">
                 <div className="inline-flex items-center justify-center w-12 h-12 bg-gradient-to-br from-indigo-100 to-purple-100 rounded-xl mb-3 group-hover:scale-110 transition-transform duration-300">
@@ -262,7 +279,7 @@ const CollaborationHub = () => {
                 <Search className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400 w-5 h-5" />
                 <input
                   type="text"
-                  placeholder="Search researchers by name, institution, or expertise..."
+                  placeholder={t('filter.search_placeholder')}
                   className="w-full pl-12 pr-4 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-indigo-500 focus:border-transparent outline-none transition-all"
                   value={searchTerm}
                   onChange={(e) => setSearchTerm(e.target.value)}
@@ -278,7 +295,7 @@ const CollaborationHub = () => {
                       : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
                   }`}
                 >
-                  All
+                  {t('filter.all')}
                 </button>
                 <button
                   onClick={() => setActiveFilter('open')}
@@ -288,15 +305,15 @@ const CollaborationHub = () => {
                       : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
                   }`}
                 >
-                  Open to Collaborate
+                  {t('filter.open')}
                 </button>
                 <button className="flex items-center gap-2 px-4 py-2 bg-gray-100 text-gray-700 rounded-lg hover:bg-gray-200 transition-all">
                   <Filter className="w-4 h-4" />
-                  More Filters
+                  {t('filter.more')}
                 </button>
                 <button className="flex items-center gap-2 px-4 py-2 bg-gray-100 text-gray-700 rounded-lg hover:bg-gray-200 transition-all">
                   <Download className="w-4 h-4" />
-                  Export
+                  {t('filter.export')}
                 </button>
               </div>
             </div>
@@ -335,7 +352,7 @@ const CollaborationHub = () => {
                   <div className="w-12 h-12 border-4 border-gray-200 border-t-indigo-600 rounded-full animate-spin"></div>
                 </div>
               ) : filteredResearchers.length === 0 ? (
-                <div className="col-span-full text-center py-12 text-gray-500">No researchers found</div>
+                <div className="col-span-full text-center py-12 text-gray-500">{t('list.empty')}</div>
               ) : filteredResearchers.map((researcher) => (
                 <div
                   key={researcher.orcid || researcher.id}
@@ -362,7 +379,7 @@ const CollaborationHub = () => {
                     <h3 className="text-xl font-bold text-gray-900 mb-1 group-hover:text-indigo-600 transition-colors">
                       {researcher.name}
                     </h3>
-                    <p className="text-gray-600 text-[15px] mb-2">{researcher.title || researcher.bio || 'Researcher'}</p>
+                    <p className="text-gray-600 text-[15px] mb-2">{researcher.title || researcher.bio || t('list.role_fallback')}</p>
                     
                     <div className="flex items-center gap-2 text-gray-500 text-[15px] mb-4">
                       <Building2 className="w-4 h-4" />
@@ -389,7 +406,7 @@ const CollaborationHub = () => {
                     <div className="grid grid-cols-3 gap-4 py-4 border-t border-gray-100">
                       <div className="text-center">
                         <div className="text-lg font-bold text-indigo-600">{researcher.collaborations}</div>
-                        <div className="text-sm text-gray-500">Collabs</div>
+                        <div className="text-sm text-gray-500">{t('list.collabs')}</div>
                       </div>
                       <div className="text-center">
                         <div className="text-lg font-bold text-indigo-600">{researcher.hIndex}</div>
@@ -397,7 +414,7 @@ const CollaborationHub = () => {
                       </div>
                       <div className="text-center">
                         <div className="text-lg font-bold text-indigo-600">{researcher.publications ?? researcher.citations ?? 0}</div>
-                        <div className="text-sm text-gray-500">Publications</div>
+                        <div className="text-sm text-gray-500">{t('list.publications')}</div>
                       </div>
                     </div>
                     
@@ -422,7 +439,7 @@ const CollaborationHub = () => {
                   <div className="w-12 h-12 border-4 border-gray-200 border-t-indigo-600 rounded-full animate-spin"></div>
                 </div>
               ) : filteredResearchers.length === 0 ? (
-                <div className="text-center py-12 text-gray-500">No researchers found</div>
+                <div className="text-center py-12 text-gray-500">{t('list.empty')}</div>
               ) : filteredResearchers.map((researcher) => (
                 <div
                   key={researcher.orcid || researcher.id}
@@ -467,7 +484,7 @@ const CollaborationHub = () => {
                     
                     <div className="text-right">
                       <div className="text-lg font-bold text-indigo-600">{researcher.collaborations}</div>
-                      <div className="text-sm text-gray-500">Collaborations</div>
+                      <div className="text-sm text-gray-500">{t('list.collabs')}</div>
                     </div>
                     
                     <button className="bg-indigo-600 text-white px-6 py-2 rounded-lg hover:bg-indigo-700 transition-colors font-medium">
@@ -485,39 +502,14 @@ const CollaborationHub = () => {
       <section className="py-28 bg-white">
         <div className="container max-w-7xl mx-auto w-full px-8">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">Why Use Collaboration Hub?</h2>
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">{t('features_section.title')}</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Accelerate your research impact through strategic partnerships
+              {t('features_section.subtitle')}
             </p>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {[
-              {
-                icon: Zap,
-                title: 'AI-Powered Matching',
-                description: 'Find perfect collaborators based on research interests, SDG focus, and complementary expertise',
-                color: 'from-yellow-400 to-orange-500'
-              },
-              {
-                icon: Target,
-                title: 'SDG Alignment',
-                description: 'Connect with researchers working on the same Sustainable Development Goals',
-                color: 'from-green-400 to-emerald-500'
-              },
-              {
-                icon: Lightbulb,
-                title: 'Project Discovery',
-                description: 'Discover ongoing projects and find opportunities to contribute your expertise',
-                color: 'from-blue-400 to-indigo-500'
-              },
-              {
-                icon: Handshake,
-                title: 'Trust Network',
-                description: 'Build reputation through verified collaborations and peer recommendations',
-                color: 'from-purple-400 to-pink-500'
-              }
-            ].map((feature, index) => (
+            {featureCards.map((feature, index) => (
               <div key={index} className="bg-gradient-to-br from-gray-50 to-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 group">
                 <div className={`inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br ${feature.color} rounded-2xl mb-6 group-hover:scale-110 transition-transform duration-300`}>
                   <feature.icon className="w-8 h-8 text-white" />
@@ -533,17 +525,17 @@ const CollaborationHub = () => {
       {/* CTA Section */}
       <section className="py-28 bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 text-white">
         <div className="container mx-auto px-8 text-center">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">Ready to Expand Your Research Network?</h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-6">{t('cta.title')}</h2>
           <p className="text-xl mb-8 text-white/90 max-w-3xl mx-auto">
-            Join thousands of researchers already collaborating through Sciecola
+            {t('cta.subtitle')}
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <button className="bg-white text-indigo-600 px-8 py-4 rounded-xl font-semibold hover:bg-white/90 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 flex items-center gap-2">
-              Create Your Profile
+              {t('cta.primary')}
               <ArrowRight className="w-5 h-5" />
             </button>
             <button className="bg-white/20 backdrop-blur-sm text-white px-8 py-4 rounded-xl font-semibold hover:bg-white/30 transition-all duration-300 border border-white/30 flex items-center gap-2">
-              Learn More
+              {t('cta.secondary')}
             </button>
           </div>
         </div>
