@@ -1,0 +1,68 @@
+{
+  "greeting": "Halo! Saya asisten Sciecola. Tanyakan tentang peneliti, artikel, jurnal, SDGs, atau fitur platform.",
+  "trigger": {
+    "thanks": ["terima kasih", "makasih", "trims"],
+    "hello": ["halo", "hai", "hello", "hi", "pagi", "siang", "malam"]
+  },
+  "reply": {
+    "thanks": "Sama-sama! Ada pertanyaan lain tentang platform Sciecola?",
+    "hello": "Halo! Ada yang bisa saya bantu? Tanyakan tentang peneliti, artikel, jurnal, SDGs, atau fitur lain.",
+    "fallback": "Maaf, saya belum punya jawaban untuk itu. Coba tanyakan tentang peneliti, artikel, jurnal, atau SDGs. Anda juga bisa membuka tab Bantuan."
+  },
+  "ui": {
+    "open": "Buka chatbot",
+    "close_bot": "Tutup chatbot",
+    "close": "Tutup",
+    "brand": "Sciecola",
+    "home_title": "Butuh bantuan?",
+    "home_sub": "Bagaimana kami dapat membantu Anda?",
+    "status": "Status: Semua Sistem Berjalan Normal",
+    "send_title": "Kirim pesan",
+    "send_sub": "Kami biasanya membalas dalam beberapa menit",
+    "search_help": "Cari bantuan…",
+    "assistant": "Asisten Sciecola",
+    "assistant_sub": "Didukung pencarian cerdas",
+    "type_message": "Ketik pesan…",
+    "send": "Kirim pesan",
+    "help_center": "Pusat Bantuan",
+    "help_sub": "Cari jawaban dari basis pengetahuan",
+    "tab_home": "Beranda",
+    "tab_messages": "Pesan",
+    "tab_help": "Bantuan"
+  },
+  "quick": [
+    "Cara menganalisis profil peneliti dengan ORCID",
+    "Cara menganalisis artikel dengan DOI",
+    "Apa itu Wizdam Impact Score (WIS)?",
+    "Melihat distribusi SDGs riset saya",
+    "Cara mendaftar dan membuat akun"
+  ],
+  "kb": [
+    { "q": "cara menggunakan orcid analisis profil", "a": "Masukkan ORCID (format: 0000-0000-0000-0000) di form analisis pada halaman utama untuk melihat profil lengkap beserta distribusi SDGs dari publikasi Anda." },
+    { "q": "apa itu orcid nomor id peneliti", "a": "ORCID adalah identifikasi unik peneliti internasional berformat 0000-0000-0000-0000. Platform ini menggunakannya untuk mengambil data publikasi secara otomatis." },
+    { "q": "cari profil peneliti", "a": "Kunjungi halaman Peneliti untuk mencari berdasarkan nama atau institusi, atau langsung ketik ORCID di form analisis di halaman utama." },
+    { "q": "cara menggunakan doi analisis artikel", "a": "Masukkan DOI artikel (contoh: 10.1234/example) di form analisis untuk melihat klasifikasi SDGs, metrik dampak, dan sitasi artikel tersebut." },
+    { "q": "apa itu doi digital object identifier", "a": "DOI (Digital Object Identifier) adalah identifikasi unik untuk artikel ilmiah. Format umum: 10.xxxx/… Gunakan DOI untuk mengakses profil artikel di platform ini." },
+    { "q": "cari artikel riset publikasi", "a": "Kunjungi halaman Artikel untuk mencari berdasarkan judul, penulis, atau tahun. Atau gunakan form DOI di halaman utama untuk analisis langsung." },
+    { "q": "apa itu sdgs tujuan pembangunan berkelanjutan", "a": "SDGs (Sustainable Development Goals) adalah 17 tujuan pembangunan berkelanjutan yang ditetapkan PBB untuk dicapai pada 2030. Platform ini memetakan riset ke 17 SDGs tersebut." },
+    { "q": "lihat distribusi sdg analitik", "a": "Kunjungi halaman Analytics atau SDGs Cluster untuk melihat distribusi penelitian berdasarkan 17 tujuan SDGs secara interaktif." },
+    { "q": "sdg mana yang paling banyak diteliti", "a": "Berdasarkan data platform, SDG 13 (Climate Action), SDG 4 (Quality Education), dan SDG 3 (Good Health) adalah topik paling banyak diteliti. Lihat selengkapnya di halaman Analytics." },
+    { "q": "sdg 13 climate change perubahan iklim", "a": "SDG 13 (Climate Action) adalah salah satu topik dengan pertumbuhan riset paling cepat di platform ini. Lihat artikel terkait di halaman SDGs Cluster." },
+    { "q": "daftar jurnal ilmiah", "a": "Kunjungi halaman Jurnal untuk melihat daftar jurnal ilmiah terindeks lengkap dengan kuartil, impact factor, dan distribusi SDGs." },
+    { "q": "jurnal q1 quartile terbaik", "a": "Filter jurnal berdasarkan kuartil (Q1–Q4) di halaman Jurnal. Jurnal Q1 memiliki impact factor tertinggi dalam kategorinya." },
+    { "q": "institusi universitas riset", "a": "Kunjungi halaman Institusi untuk melihat data universitas dan lembaga riset mitra, lengkap dengan statistik peneliti dan publikasi." },
+    { "q": "tren riset trends analisis waktu", "a": "Halaman Trends Analysis menampilkan perkembangan riset SDGs dari waktu ke waktu berdasarkan data publikasi dari 2019 hingga sekarang." },
+    { "q": "analytics statistik data platform", "a": "Halaman Analytics menyediakan visualisasi lengkap distribusi SDGs, tren tahunan, dan metrik dampak seluruh riset di platform." },
+    { "q": "leaderboard peringkat peneliti terbaik", "a": "Halaman Leaderboard menampilkan peringkat peneliti berdasarkan Wizdam Impact Score (WIS), sitasi, dan produktivitas publikasi." },
+    { "q": "wis wizdam impact score", "a": "Wizdam Impact Score (WIS) adalah metrik komposit yang menggabungkan dampak akademik, sosial, ekonomi, dan kontribusi SDGs seorang peneliti." },
+    { "q": "insights ai kecerdasan buatan", "a": "Fitur Insights AI di halaman utama menganalisis data riset secara otomatis untuk menghasilkan temuan dan tren relevan dari koleksi artikel platform." },
+    { "q": "daftar register akun baru", "a": "Kunjungi halaman Daftar untuk membuat akun Sciecola. Akun peneliti memberi akses ke dashboard personal dan statistik kontribusi SDGs Anda." },
+    { "q": "login masuk akun", "a": "Kunjungi halaman Login untuk masuk ke akun Sciecola Anda." },
+    { "q": "lupa password reset sandi", "a": "Gunakan fitur \"Lupa Password\" di halaman Login untuk mereset sandi melalui email yang terdaftar." },
+    { "q": "dashboard personal pengguna", "a": "Setelah login, akses dashboard personal untuk melihat ringkasan aktivitas, artikel tersimpan, dan statistik kontribusi SDGs Anda." },
+    { "q": "dokumentasi api developer", "a": "Dokumentasi API lengkap tersedia di halaman Docs. API Sciecola memungkinkan integrasi data SDGs ke sistem riset atau platform institusi Anda." },
+    { "q": "kontak bantuan help support", "a": "Kunjungi halaman Bantuan atau Kontak untuk dukungan teknis. Tim Sciecola siap membantu melalui formulir kontak." },
+    { "q": "faq pertanyaan umum sering ditanya", "a": "Halaman FAQ di Docs menjawab pertanyaan umum tentang penggunaan platform, interpretasi data, dan kebijakan akses." },
+    { "q": "tentang sciecola platform siapa", "a": "Sciecola adalah platform analitik riset berbasis AI yang memetakan publikasi ilmiah ke 17 SDGs PBB, dikembangkan untuk mendukung komunitas riset Indonesia dan global." }
+  ]
+}

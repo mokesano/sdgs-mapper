@@ -1,0 +1,83 @@
+{
+  "title": "Admin Panel",
+  "subtitle": "Manage researchers, projects, opportunities and expertise data.",
+  "section": {
+    "researchers": "Manage Researchers",
+    "projects": "Manage Projects",
+    "opportunities": "Manage Innovation Opportunities",
+    "expertise": "Add Researcher Expertise"
+  },
+  "entity": {
+    "researchers": "researcher",
+    "projects": "project",
+    "opportunities": "opportunity",
+    "expertise": "expertise entry"
+  },
+  "field": {
+    "orcid": "ORCID",
+    "name": "Name",
+    "scopus_id": "Scopus Author ID",
+    "sinta_id": "SINTA ID",
+    "researcher_id": "ResearcherID / Publons",
+    "institution_id": "Institution ID",
+    "collaboration_status": "Collaboration Status",
+    "bio": "Bio",
+    "research_keywords": "Research Keywords (JSON)",
+    "profile_photo_url": "Profile Photo URL",
+    "project_title": "Project Title",
+    "description": "Description",
+    "lead_orcid": "Lead Researcher ORCID",
+    "status": "Status",
+    "start_date": "Start Date",
+    "end_date": "End Date",
+    "budget": "Budget ($)",
+    "progress": "Progress (%)",
+    "sdg_focus_list": "SDG Focus (comma-separated)",
+    "opportunity_title": "Opportunity Title",
+    "organization_id": "Organisation ID",
+    "category_id": "Category ID",
+    "budget_range": "Budget Range",
+    "deadline": "Application Deadline",
+    "sdg_alignment": "SDG Alignment (JSON)",
+    "required_skills": "Required Skills (JSON)",
+    "researcher_orcid": "Researcher ORCID",
+    "field_name": "Expertise Field",
+    "experience_years": "Years of Experience",
+    "sdg_number": "SDG Focus (1–17)",
+    "expertise_level": "Expertise Level"
+  },
+  "placeholder": {
+    "field_name": "e.g. AI, Climate Science"
+  },
+  "option": {
+    "open": "open",
+    "busy": "busy",
+    "limited": "limited",
+    "planning": "planning",
+    "active": "active",
+    "completed": "completed",
+    "paused": "paused",
+    "in-progress": "in progress",
+    "closed": "closed",
+    "beginner": "beginner",
+    "intermediate": "intermediate",
+    "expert": "expert"
+  },
+  "action": {
+    "add_new": "Add {{entity}}",
+    "edit": "Edit {{entity}}",
+    "save": "Save",
+    "saving": "Saving…",
+    "cancel": "Cancel"
+  },
+  "status": {
+    "created": "{{entity}} created successfully",
+    "updated": "{{entity}} updated successfully",
+    "failed": "Could not save",
+    "network": "Network error: {{message}}"
+  },
+  "notice": {
+    "title": "Admin Endpoints Not Yet Available",
+    "body": "The admin endpoints still need to be built on the backend. The API files required are:"
+  }
+}

@@ -1,45 +1,14 @@
 import React, { useState, useRef, useEffect, useMemo } from 'react';
 import Fuse from 'fuse.js';
+import { useTranslation } from 'react-i18next';
 
-const BOT_GREETING =
-  'Halo! Saya asisten Sciecola. Tanyakan tentang peneliti, artikel, jurnal, SDGs, atau fitur platform.';
-
-const KNOWLEDGE_BASE = [
-  { q: 'cara menggunakan orcid analisis profil',        a: 'Masukkan ORCID (format: 0000-0000-0000-0000) di form analisis pada halaman utama untuk melihat profil lengkap beserta distribusi SDGs dari publikasi Anda.' },
-  { q: 'apa itu orcid nomor id peneliti',               a: 'ORCID adalah identifikasi unik peneliti internasional berformat 0000-0000-0000-0000. Platform ini menggunakannya untuk mengambil data publikasi secara otomatis.' },
-  { q: 'cari profil peneliti',                          a: 'Kunjungi halaman Peneliti untuk mencari berdasarkan nama atau institusi, atau langsung ketik ORCID di form analisis di halaman utama.' },
-  { q: 'cara menggunakan doi analisis artikel',         a: 'Masukkan DOI artikel (contoh: 10.1234/example) di form analisis untuk melihat klasifikasi SDGs, metrik dampak, dan sitasi artikel tersebut.' },
-  { q: 'apa itu doi digital object identifier',         a: 'DOI (Digital Object Identifier) adalah identifikasi unik untuk artikel ilmiah. Format umum: 10.xxxx/... Gunakan DOI untuk mengakses profil artikel di platform ini.' },
-  { q: 'cari artikel riset publikasi',                  a: 'Kunjungi halaman Artikel untuk mencari berdasarkan judul, penulis, atau tahun. Atau gunakan form DOI di halaman utama untuk analisis langsung.' },
-  { q: 'apa itu sdgs tujuan pembangunan berkelanjutan',  a: 'SDGs (Sustainable Development Goals) adalah 17 tujuan pembangunan berkelanjutan yang ditetapkan PBB untuk dicapai pada 2030. Platform ini memetakan riset ke 17 SDGs tersebut.' },
-  { q: 'lihat distribusi sdg analitik',                 a: 'Kunjungi halaman Analytics atau SDGs Cluster untuk melihat distribusi penelitian berdasarkan 17 tujuan SDGs secara interaktif.' },
-  { q: 'sdg mana yang paling banyak diteliti',          a: 'Berdasarkan data platform, SDG 13 (Climate Action), SDG 4 (Quality Education), dan SDG 3 (Good Health) adalah topik paling banyak diteliti. Lihat selengkapnya di halaman Analytics.' },
-  { q: 'sdg 13 climate change perubahan iklim',         a: 'SDG 13 (Climate Action) adalah salah satu topik dengan pertumbuhan riset paling cepat di platform ini. Lihat artikel terkait di halaman SDGs Cluster.' },
-  { q: 'daftar jurnal ilmiah',                          a: 'Kunjungi halaman Jurnal untuk melihat daftar jurnal ilmiah terindeks lengkap dengan kuartil, impact factor, dan distribusi SDGs.' },
-  { q: 'jurnal q1 quartile terbaik',                    a: 'Filter jurnal berdasarkan kuartil (Q1–Q4) di halaman Jurnal. Jurnal Q1 memiliki impact factor tertinggi dalam kategorinya.' },
-  { q: 'institusi universitas riset',                   a: 'Kunjungi halaman Institusi untuk melihat data universitas dan lembaga riset mitra, lengkap dengan statistik peneliti dan publikasi.' },
-  { q: 'tren riset trends analisis waktu',              a: 'Halaman Trends Analysis menampilkan perkembangan riset SDGs dari waktu ke waktu berdasarkan data publikasi dari 2019 hingga sekarang.' },
-  { q: 'analytics statistik data platform',             a: 'Halaman Analytics menyediakan visualisasi lengkap distribusi SDGs, tren tahunan, dan metrik dampak seluruh riset di platform.' },
-  { q: 'leaderboard peringkat peneliti terbaik',        a: 'Halaman Leaderboard menampilkan peringkat peneliti berdasarkan Wizdam Impact Score (WIS), sitasi, dan produktivitas publikasi.' },
-  { q: 'wis wizdam impact score',                       a: 'Wizdam Impact Score (WIS) adalah metrik komposit yang menggabungkan dampak akademik, sosial, ekonomi, dan kontribusi SDGs seorang peneliti.' },
-  { q: 'insights ai kecerdasan buatan',                 a: 'Fitur Insights AI di halaman utama menganalisis data riset secara otomatis untuk menghasilkan temuan dan tren relevan dari koleksi artikel platform.' },
-  { q: 'daftar register akun baru',                     a: 'Kunjungi halaman Daftar untuk membuat akun Sciecola. Akun peneliti memberi akses ke dashboard personal dan statistik kontribusi SDGs Anda.' },
-  { q: 'login masuk akun',                              a: 'Kunjungi halaman Login untuk masuk ke akun Sciecola Anda.' },
-  { q: 'lupa password reset sandi',                     a: 'Gunakan fitur "Lupa Password" di halaman Login untuk mereset sandi melalui email yang terdaftar.' },
-  { q: 'dashboard personal pengguna',                   a: 'Setelah login, akses dashboard personal untuk melihat ringkasan aktivitas, artikel tersimpan, dan statistik kontribusi SDGs Anda.' },
-  { q: 'dokumentasi api developer',                     a: 'Dokumentasi API lengkap tersedia di halaman Docs. API Sciecola memungkinkan integrasi data SDGs ke sistem riset atau platform institusi Anda.' },
-  { q: 'kontak bantuan help support',                   a: 'Kunjungi halaman Bantuan atau Kontak untuk dukungan teknis. Tim Sciecola siap membantu melalui formulir kontak.' },
-  { q: 'faq pertanyaan umum sering ditanya',            a: 'Halaman FAQ di Docs menjawab pertanyaan umum tentang penggunaan platform, interpretasi data, dan kebijakan akses.' },
-  { q: 'tentang sciecola platform siapa',               a: 'Sciecola adalah platform analitik riset berbasis AI yang memetakan publikasi ilmiah ke 17 SDGs PBB, dikembangkan untuk mendukung komunitas riset Indonesia dan global.' },
-];
-
-const FAQ_LINKS = [
-  { label: 'Cara menganalisis profil peneliti dengan ORCID' },
-  { label: 'Cara menganalisis artikel dengan DOI' },
-  { label: 'Apa itu Wizdam Impact Score (WIS)?' },
-  { label: 'Melihat distribusi SDGs riset saya' },
-  { label: 'Cara mendaftar dan membuat akun' },
-];
+/*
+ * Basis pengetahuan, sapaan, dan seluruh teks antarmuka chatbot hidup di
+ * berkas locale — bukan di sini. Yang dipindah bukan cuma labelnya: kata
+ * kunci pencarian ikut pindah, sebab kata kunci berbahasa Indonesia tidak
+ * akan pernah cocok dengan pertanyaan berbahasa Inggris. Fuse diindeks ulang
+ * setiap basis pengetahuannya berganti bahasa.
+ */
 
 const TypingIndicator = () => (
   <div className="flex items-end gap-2">
@@ -57,42 +26,63 @@ const TypingIndicator = () => (
 );
 
 const Chatbot = () => {
+  const { t } = useTranslation('chatbot');
+
+  const asList = (key) => {
+    const v = t(key, { returnObjects: true });
+    return Array.isArray(v) ? v : [];
+  };
+
+  const knowledgeBase = useMemo(() => asList('kb'), [t]);
+  const faqLinks      = useMemo(() => asList('quick'), [t]);
+
   const [isOpen, setIsOpen]       = useState(false);
   const [activeTab, setActiveTab] = useState('home');
-  const [messages, setMessages]   = useState([{ id: 1, from: 'bot', text: BOT_GREETING }]);
+  const [messages, setMessages]   = useState([]);
   const [input, setInput]         = useState('');
   const [isTyping, setIsTyping]   = useState(false);
   const [helpSearch, setHelpSearch] = useState('');
   const messagesEndRef = useRef(null);
   const inputRef = useRef(null);
 
-  const fuse = useMemo(() => new Fuse(KNOWLEDGE_BASE, {
+  const fuse = useMemo(() => new Fuse(knowledgeBase, {
     keys: ['q'],
     threshold: 0.45,
     includeScore: true,
     ignoreLocation: true,
     minMatchCharLength: 2,
-  }), []);
+  }), [knowledgeBase]);
 
   const helpResults = useMemo(() => {
-    if (!helpSearch.trim()) return KNOWLEDGE_BASE.slice(0, 8);
+    if (!helpSearch.trim()) return knowledgeBase.slice(0, 8);
     return fuse.search(helpSearch).slice(0, 8).map(r => r.item);
-  }, [helpSearch, fuse]);
+  }, [helpSearch, fuse, knowledgeBase]);
 
   const getResponse = (text) => {
     const results = fuse.search(text.toLowerCase().trim());
     if (results.length > 0 && results[0].score < 0.5) return results[0].item.a;
+
+    /* Ucapan terima kasih dan sapaan dikenali dari daftar kata di locale,
+       bukan dari kata Indonesia yang ditulis tetap di sini — kalau tidak,
+       "thanks" tidak akan pernah terdeteksi saat antarmuka berbahasa
+       Inggris. */
     const lower = text.toLowerCase();
-    if (lower.includes('terima kasih') || lower.includes('makasih'))
-      return 'Sama-sama! Ada pertanyaan lain tentang platform Sciecola?';
-    if (/\b(halo|hai|hello|hi)\b/.test(lower))
-      return 'Halo! Ada yang bisa saya bantu? Tanyakan tentang peneliti, artikel, jurnal, SDGs, atau fitur lain.';
-    return 'Maaf, saya belum punya jawaban untuk itu. Coba tanyakan tentang peneliti, artikel, jurnal, atau SDGs. Anda juga bisa cek tab Bantuan.';
+    const hits = (key) => asList(`trigger.${key}`).some(w => lower.includes(String(w).toLowerCase()));
+    if (hits('thanks')) return t('reply.thanks');
+    if (hits('hello'))  return t('reply.hello');
+    return t('reply.fallback');
   };
 
   useEffect(() => {
     messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
   }, [messages, isTyping]);
+
+  /* Sapaan pembuka menyesuaikan bahasa yang aktif. Selama percakapannya
+     masih kosong, mengganti bahasa mengganti sapaannya juga; begitu pengguna
+     mulai menulis, riwayatnya dibiarkan apa adanya. */
+  useEffect(() => {
+    setMessages(prev => (prev.length > 1 ? prev : [{ id: 1, from: 'bot', text: t('greeting') }]));
+  }, [t]);
 
   useEffect(() => {
     if (isOpen && activeTab === 'messages') inputRef.current?.focus();
@@ -140,7 +130,7 @@ const Chatbot = () => {
       {/* FAB */}
       <button
         onClick={() => setIsOpen(v => !v)}
-        aria-label={isOpen ? 'Tutup chatbot' : 'Buka chatbot'}
+        aria-label={isOpen ? t('ui.close_bot') : t('ui.open')}
         className="fixed bottom-6 right-6 z-50 w-12 h-12 rounded-full bg-indigo-600 hover:bg-indigo-700 text-white shadow-xl flex items-center justify-center transition-all duration-200 hover:scale-105 active:scale-95"
       >
         {isOpen ? (
@@ -171,11 +161,11 @@ const Chatbot = () => {
                         <path d="M9 4.804A7.968 7.968 0 005.5 4c-1.255 0-2.443.29-3.5.804v10A7.969 7.969 0 015.5 14c1.669 0 3.218.51 4.5 1.385A7.962 7.962 0 0114.5 14c1.255 0 2.443.29 3.5.804v-10A7.968 7.968 0 0014.5 4c-1.255 0-2.443.29-3.5.804V12a1 1 0 11-2 0V4.804z" />
                       </svg>
                     </div>
-                    <span className="text-white font-bold text-base">Sciecola</span>
+                    <span className="text-white font-bold text-base">{t('ui.brand')}</span>
                   </div>
                   <button
                     onClick={() => setIsOpen(false)}
-                    aria-label="Tutup"
+                    aria-label={t('ui.close')}
                     className="text-indigo-300 hover:text-white transition-colors text-xl leading-none"
                   >
                     <svg fill="currentColor" viewBox="0 0 16 16" className="h-3 w-3">
@@ -183,8 +173,8 @@ const Chatbot = () => {
                     </svg>
                   </button>
                 </div>
-                <h2 className="text-white text-2xl font-bold leading-snug">Butuh bantuan?</h2>
-                <h3 className="text-white text-lg font-bold leading-snug">Bagaimana kami dapat membantu Anda?</h3>
+                <h2 className="text-white text-2xl font-bold leading-snug">{t('ui.home_title')}</h2>
+                <h3 className="text-white text-lg font-bold leading-snug">{t('ui.home_sub')}</h3>
               </div>
 
               {/* Cards area — overlaps header slightly */}
@@ -197,7 +187,7 @@ const Chatbot = () => {
                     </svg>
                   </div>
                   <div>
-                    <p className="text-[15px] font-semibold text-gray-900">Status: Semua Sistem Berjalan Normal</p>
+                    <p className="text-[15px] font-semibold text-gray-900">{t('ui.status')}</p>
                     <p className="text-sm text-gray-500 mt-0.5">
                       Diperbarui: {new Date().toLocaleDateString('id-ID', { day: 'numeric', month: 'short', year: 'numeric' })}
                     </p>
@@ -210,8 +200,8 @@ const Chatbot = () => {
                   className="bg-white rounded-xl px-4 py-3.5 flex items-center justify-between w-full shadow-sm border border-gray-100 hover:border-indigo-300 hover:shadow-md transition-all group text-left"
                 >
                   <div>
-                    <p className="text-[15px] font-semibold text-gray-900">Kirim pesan</p>
-                    <p className="text-sm text-gray-500 mt-0.5">Kami biasanya membalas dalam beberapa menit</p>
+                    <p className="text-[15px] font-semibold text-gray-900">{t('ui.send_title')}</p>
+                    <p className="text-sm text-gray-500 mt-0.5">{t('ui.send_sub')}</p>
                   </div>
                   <svg className="w-5 h-5 text-indigo-500 group-hover:translate-x-0.5 transition-transform shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
@@ -222,7 +212,7 @@ const Chatbot = () => {
                 <div className="relative">
                   <input
                     type="text"
-                    placeholder="Cari bantuan..."
+                    placeholder={t('ui.search_help')}
                     value={helpSearch}
                     onChange={e => setHelpSearch(e.target.value)}
                     onFocus={() => setActiveTab('help')}
@@ -235,13 +225,13 @@ const Chatbot = () => {
 
                 {/* Quick FAQ links */}
                 <div className="bg-white rounded-xl overflow-hidden border border-gray-100 shadow-sm divide-y divide-gray-100">
-                  {FAQ_LINKS.map((item, idx) => (
+                  {faqLinks.map((item, idx) => (
                     <button
                       key={idx}
                       onClick={() => setActiveTab('help')}
                       className="w-full flex items-center justify-between px-4 py-3.5 hover:bg-gray-50 transition-colors text-left group"
                     >
-                      <span className="text-[15px] text-gray-700 group-hover:text-gray-900">{item.label}</span>
+                      <span className="text-[15px] text-gray-700 group-hover:text-gray-900">{item}</span>
                       <svg className="w-4 h-4 text-indigo-400 shrink-0 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
                       </svg>
@@ -269,10 +259,10 @@ const Chatbot = () => {
                   </svg>
                 </div>
                 <div className="flex-1 min-w-0">
-                  <p className="text-white font-semibold text-[15px] leading-none">Asisten Sciecola</p>
-                  <p className="text-indigo-300 text-sm mt-0.5">Didukung pencarian cerdas</p>
+                  <p className="text-white font-semibold text-[15px] leading-none">{t('ui.assistant')}</p>
+                  <p className="text-indigo-300 text-sm mt-0.5">{t('ui.assistant_sub')}</p>
                 </div>
-                <button onClick={() => setIsOpen(false)} aria-label="Tutup" className="text-indigo-300 hover:text-white transition-colors">
+                <button onClick={() => setIsOpen(false)} aria-label={t('ui.close')} className="text-indigo-300 hover:text-white transition-colors">
                   <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
                   </svg>
@@ -311,13 +301,13 @@ const Chatbot = () => {
                   value={input}
                   onChange={e => setInput(e.target.value)}
                   onKeyDown={handleKeyDown}
-                  placeholder="Ketik pesan..."
+                  placeholder={t('ui.type_message')}
                   className="flex-1 text-[15px] bg-gray-50 border border-gray-200 rounded-xl px-4 py-2.5 outline-none focus:border-indigo-400 focus:ring-2 focus:ring-indigo-100 transition-all placeholder-gray-400 text-gray-800"
                 />
                 <button
                   onClick={sendMessage}
                   disabled={!input.trim()}
-                  aria-label="Kirim pesan"
+                  aria-label={t('ui.send')}
                   className="w-10 h-10 rounded-xl bg-indigo-600 hover:bg-indigo-700 disabled:bg-gray-200 disabled:cursor-not-allowed text-white flex items-center justify-center transition-colors shrink-0"
                 >
                   <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -333,10 +323,10 @@ const Chatbot = () => {
             <>
               <div className="bg-[#1e1b4b] px-4 py-3.5 flex items-center gap-3 shrink-0">
                 <div className="flex-1">
-                  <p className="text-white font-semibold text-[15px]">Pusat Bantuan</p>
-                  <p className="text-indigo-300 text-sm mt-0.5">Cari jawaban dari knowledge base</p>
+                  <p className="text-white font-semibold text-[15px]">{t('ui.help_center')}</p>
+                  <p className="text-indigo-300 text-sm mt-0.5">{t('ui.help_sub')}</p>
                 </div>
-                <button onClick={() => setIsOpen(false)} aria-label="Tutup" className="text-indigo-300 hover:text-white transition-colors">
+                <button onClick={() => setIsOpen(false)} aria-label={t('ui.close')} className="text-indigo-300 hover:text-white transition-colors">
                   <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
                   </svg>
@@ -347,7 +337,7 @@ const Chatbot = () => {
                 <div className="relative">
                   <input
                     type="text"
-                    placeholder="Cari bantuan..."
+                    placeholder={t('ui.search_help')}
                     value={helpSearch}
                     onChange={e => setHelpSearch(e.target.value)}
                     className="w-full bg-gray-50 border border-gray-200 rounded-xl pl-4 pr-10 py-2.5 text-[15px] focus:outline-none focus:border-indigo-400 focus:ring-2 focus:ring-indigo-100"
@@ -384,9 +374,9 @@ const Chatbot = () => {
           {/* ── BOTTOM TAB BAR ───────────────────────────────────── */}
           <div className="bg-white border-t border-gray-200 flex shrink-0">
             {[
-              { key: 'home',     label: 'Beranda'  },
-              { key: 'messages', label: 'Pesan'    },
-              { key: 'help',     label: 'Bantuan'  },
+              { key: 'home',     label: t('ui.tab_home')     },
+              { key: 'messages', label: t('ui.tab_messages') },
+              { key: 'help',     label: t('ui.tab_help')     },
             ].map(tab => (
               <button
                 key={tab.key}
