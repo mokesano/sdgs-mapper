@@ -17,16 +17,30 @@
   },
   "list": {
     "empty": "No matching opportunities",
-    "apply": "Apply Now"
+    "apply": "Apply Now",
+    "requirements": "Key Requirements"
   },
   "how": {
     "title": "How the Innovation Marketplace Works",
     "steps": [
-      { "title": "Discover Opportunities", "desc": "Browse research partnerships offered by leading organisations." },
-      { "title": "Submit a Proposal", "desc": "Apply with your research proposal and your team's track record." },
-      { "title": "Get Matched", "desc": "Find your partner and start the funded research project." },
-      { "title": "Deploy and Scale", "desc": "Turn research results into working solutions with commercialisation support." }
-    ]
+      {
+        "title": "Discover Opportunities",
+        "desc": "Browse research partnerships offered by leading organisations."
+      },
+      {
+        "title": "Submit a Proposal",
+        "desc": "Apply with your research proposal and your team's track record."
+      },
+      {
+        "title": "Get Matched",
+        "desc": "Find your partner and start the funded research project."
+      },
+      {
+        "title": "Deploy and Scale",
+        "desc": "Turn research results into working solutions with commercialisation support."
+      }
+    ],
+    "subtitle": "From discovery to deployment — the path from research to real-world impact, made shorter."
   },
   "cta": {
     "title": "Ready to turn your research into impact?",

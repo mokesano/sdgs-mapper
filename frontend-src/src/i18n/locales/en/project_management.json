@@ -19,7 +19,9 @@
     "planning": "Planning",
     "completed": "Completed"
   },
-  "filter": { "search_placeholder": "Search projects…" },
+  "filter": {
+    "search_placeholder": "Search projects…"
+  },
   "card": {
     "progress": "Progress",
     "team_member": "Team member",
@@ -31,10 +33,25 @@
   "quick": {
     "title": "Quick Actions",
     "items": [
-      { "title": "Create a Project", "desc": "Start a new research collaboration." },
-      { "title": "Invite Collaborators", "desc": "Add team members to your projects." },
-      { "title": "Generate a Report", "desc": "Export project analytics and metrics." },
-      { "title": "Set Milestones", "desc": "Define the key deliverables and their deadlines." }
+      {
+        "title": "Create a Project",
+        "desc": "Start a new research collaboration."
+      },
+      {
+        "title": "Invite Collaborators",
+        "desc": "Add team members to your projects."
+      },
+      {
+        "title": "Generate a Report",
+        "desc": "Export project analytics and metrics."
+      },
+      {
+        "title": "Set Milestones",
+        "desc": "Define the key deliverables and their deadlines."
+      }
     ]
+  },
+  "list": {
+    "empty": "No matching projects"
   }
 }

@@ -356,7 +356,7 @@ const InnovationMarketplace = () => {
 
                   {/* Requirements Preview */}
                   <div className="mb-4">
-                    <div className="text-sm font-semibold text-gray-500 mb-2">KEY REQUIREMENTS</div>
+                    <div className="text-sm font-semibold text-gray-500 mb-2">{t('list.requirements')}</div>
                     <div className="flex flex-wrap gap-2">
                       {(opp.required_skills || []).slice(0, 2).map((req, idx) => (
                         <span key={idx} className="px-2 py-1 bg-orange-50 text-orange-700 rounded text-sm">
@@ -404,7 +404,7 @@ const InnovationMarketplace = () => {
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">{t('how.title')}</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              From discovery to deployment - we streamline the path from research to real-world impact
+              {t('how.subtitle')}
             </p>
           </div>
           

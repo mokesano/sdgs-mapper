@@ -314,7 +314,7 @@ const ProjectManagement = () => {
               </div>
             ) : filteredProjects.length === 0 ? (
               <div className="text-center py-12">
-                <p className="text-gray-600">No projects found</p>
+                <p className="text-gray-600">{t('list.empty')}</p>
               </div>
             ) : (filteredProjects.map((project) => {
               const StatusIcon = getStatusIcon(project.status);

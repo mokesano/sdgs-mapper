@@ -19,7 +19,9 @@
     "planning": "Perencanaan",
     "completed": "Selesai"
   },
-  "filter": { "search_placeholder": "Cari proyek…" },
+  "filter": {
+    "search_placeholder": "Cari proyek…"
+  },
   "card": {
     "progress": "Kemajuan",
     "team_member": "Anggota tim",
@@ -31,10 +33,25 @@
   "quick": {
     "title": "Aksi Cepat",
     "items": [
-      { "title": "Buat Proyek", "desc": "Mulai kolaborasi riset baru." },
-      { "title": "Undang Kolaborator", "desc": "Tambahkan anggota tim ke proyek Anda." },
-      { "title": "Susun Laporan", "desc": "Ekspor analitik dan metrik proyek." },
-      { "title": "Tetapkan Tonggak", "desc": "Tentukan keluaran utama dan tenggatnya." }
+      {
+        "title": "Buat Proyek",
+        "desc": "Mulai kolaborasi riset baru."
+      },
+      {
+        "title": "Undang Kolaborator",
+        "desc": "Tambahkan anggota tim ke proyek Anda."
+      },
+      {
+        "title": "Susun Laporan",
+        "desc": "Ekspor analitik dan metrik proyek."
+      },
+      {
+        "title": "Tetapkan Tonggak",
+        "desc": "Tentukan keluaran utama dan tenggatnya."
+      }
     ]
+  },
+  "list": {
+    "empty": "Tidak ada proyek yang cocok"
   }
 }

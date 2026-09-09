@@ -17,16 +17,30 @@
   },
   "list": {
     "empty": "Tidak ada peluang yang cocok",
-    "apply": "Ajukan Sekarang"
+    "apply": "Ajukan Sekarang",
+    "requirements": "Syarat Utama"
   },
   "how": {
     "title": "Cara Pasar Inovasi Bekerja",
     "steps": [
-      { "title": "Temukan Peluang", "desc": "Telusuri tawaran kemitraan riset dari organisasi terkemuka." },
-      { "title": "Ajukan Proposal", "desc": "Kirim proposal riset beserta rekam jejak tim Anda." },
-      { "title": "Dipertemukan", "desc": "Dapatkan mitra dan mulai proyek riset yang didanai." },
-      { "title": "Terapkan dan Kembangkan", "desc": "Ubah hasil riset menjadi solusi terpakai dengan dukungan komersialisasi." }
-    ]
+      {
+        "title": "Temukan Peluang",
+        "desc": "Telusuri tawaran kemitraan riset dari organisasi terkemuka."
+      },
+      {
+        "title": "Ajukan Proposal",
+        "desc": "Kirim proposal riset beserta rekam jejak tim Anda."
+      },
+      {
+        "title": "Dipertemukan",
+        "desc": "Dapatkan mitra dan mulai proyek riset yang didanai."
+      },
+      {
+        "title": "Terapkan dan Kembangkan",
+        "desc": "Ubah hasil riset menjadi solusi terpakai dengan dukungan komersialisasi."
+      }
+    ],
+    "subtitle": "Dari penemuan peluang sampai penerapan — jalannya dari riset ke dampak nyata dipersingkat."
   },
   "cta": {
     "title": "Siap mengubah riset Anda jadi dampak?",
