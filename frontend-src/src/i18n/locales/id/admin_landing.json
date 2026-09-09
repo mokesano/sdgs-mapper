@@ -1,0 +1,22 @@
+{
+  "title": "Editor Konten Halaman Publik",
+  "subtitle": "Kelola teks naratif yang tampil pada halaman beranda untuk pengunjung yang belum login.",
+  "loading": "Memuat…",
+  "reset": "Kembalikan ke locale",
+  "field": {
+    "badge": "Teks lencana",
+    "title_1": "Judul baris 1",
+    "title_2": "Judul baris 2 (gradien)",
+    "subtitle": "Subjudul / deskripsi",
+    "cta_primary": "Label tombol utama",
+    "cta_secondary": "Label tombol sekunder",
+    "orcid_prefix": "Petunjuk ORCID — awalan",
+    "orcid_link": "Petunjuk ORCID — teks tautan",
+    "section_title": "Judul seksi",
+    "section_subtitle": "Subjudul seksi",
+    "section_cta": "Label tombol seksi",
+    "trust_1": "Penanda kepercayaan 1",
+    "trust_2": "Penanda kepercayaan 2",
+    "trust_3": "Penanda kepercayaan 3"
+  }
+}

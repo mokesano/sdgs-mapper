@@ -1,21 +1,21 @@
 {
   "breadcrumb": {
-    "home":     "Home",
+    "home": "Home",
     "sponsors": "Sponsors",
-    "current":  "Become a Sponsor"
+    "current": "Become a Sponsor"
   },
   "header": {
-    "title":    "Become a Strategic Partner",
+    "title": "Become a Strategic Partner",
     "subtitle": "Support faster impact of research on global SDGs. Join an innovation ecosystem connecting researchers, institutions, and policy makers."
   },
   "stats": {
-    "active_sponsors":  "Active Sponsors",
+    "active_sponsors": "Active Sponsors",
     "researcher_reach": "Researchers Reached",
-    "countries":        "Countries",
-    "publications":     "Publications Indexed"
+    "countries": "Countries",
+    "publications": "Publications Indexed"
   },
   "benefits": {
-    "title":       "Why Become a Sponsor?",
+    "title": "Why Become a Sponsor?",
     "global": {
       "title": "Global Visibility",
       "description": "Logo and sponsor profile displayed on a platform accessed by researchers from 150+ countries."
@@ -30,14 +30,14 @@
     }
   },
   "tiers": {
-    "title":        "Sponsorship Tier Options",
-    "subtitle":     "Choose the partnership level that suits your organisation. All tiers include platform access and quarterly impact reports.",
+    "title": "Sponsorship Tier Options",
+    "subtitle": "Choose the partnership level that suits your organisation. All tiers include platform access and quarterly impact reports.",
     "price_custom": "Custom",
-    "select":       "Select {{tier}}",
-    "selected":     "Selected",
+    "select": "Select {{tier}}",
+    "selected": "Selected",
     "active_count": "{{count}} active sponsors",
-    "loading":      "Loading tiers…",
-    "empty":        "No tier definitions available."
+    "loading": "Loading tiers…",
+    "empty": "No tier definitions available."
   },
   "tier_features": {
     "platinum": [
@@ -70,65 +70,65 @@
     ]
   },
   "form": {
-    "step_org":     "Organisation Info",
-    "step_review":  "Review & Send",
+    "step_org": "Organisation Info",
+    "step_review": "Review & Send",
     "selected_tier": "{{tier}} Sponsor",
-    "change_tier":  "Change tier",
-    "section_org":  "Organisation Information",
+    "change_tier": "Change tier",
+    "section_org": "Organisation Information",
     "section_review": "Review & Confirm",
-    "summary_title":   "Proposal Summary",
-    "summary_org":     "Organisation",
-    "summary_type":    "Type",
+    "summary_title": "Proposal Summary",
+    "summary_org": "Organisation",
+    "summary_type": "Type",
     "summary_contact": "Contact",
-    "summary_tier":    "Selected Tier",
+    "summary_tier": "Selected Tier",
     "field": {
-      "organization_name":  "Organisation Name *",
-      "organization_type":  "Organisation Type *",
-      "contact_name":       "Contact Name *",
-      "email":              "Work Email *",
-      "phone":              "Phone Number",
-      "website":            "Organisation Website",
-      "country":            "Country",
-      "message":            "Tell us about your partnership interest *",
-      "newsletter":         "I want to receive the monthly newsletter on platform updates and SDG research insights",
-      "privacy":            "I agree to the <1>Privacy Policy</1> and <3>Terms of Service</3> for sponsorship *"
+      "organization_name": "Organisation Name *",
+      "organization_type": "Organisation Type *",
+      "contact_name": "Contact Name *",
+      "email": "Work Email *",
+      "phone": "Phone Number",
+      "website": "Organisation Website",
+      "country": "Country",
+      "message": "Tell us about your partnership interest *",
+      "newsletter": "I want to receive the monthly newsletter on platform updates and SDG research insights",
+      "privacy": "I agree to the <1>Privacy Policy</1> and <3>Terms of Service</3> for sponsorship *"
     },
     "placeholder": {
-      "organization_name":  "e.g. PT Telkom Indonesia",
-      "contact_name":       "Full name of the person in charge",
-      "email":              "name@organisation.id",
-      "phone":              "+62 812 3456 7890",
-      "website":            "https://organisation.id",
-      "message":            "Explain partnership goals, target SDGs, and collaboration expectations…"
+      "organization_name": "e.g. PT Telkom Indonesia",
+      "contact_name": "Full name of the person in charge",
+      "email": "name@organisation.id",
+      "phone": "+62 812 3456 7890",
+      "website": "https://organisation.id",
+      "message": "Explain partnership goals, target SDGs, and collaboration expectations…"
     },
     "org_type": {
-      "placeholder":    "Select organisation type",
-      "government":     "Government / Public Body",
-      "academic":       "University / Research Institute",
-      "corporate":      "Company / Corporation",
-      "ngo":            "NGO / Non-profit",
-      "international":  "International Organisation",
-      "other":          "Other"
+      "placeholder": "Select organisation type",
+      "government": "Government / Public Body",
+      "academic": "University / Research Institute",
+      "corporate": "Company / Corporation",
+      "ngo": "NGO / Non-profit",
+      "international": "International Organisation",
+      "other": "Other"
     },
     "country": {
-      "placeholder":  "Select country"
+      "placeholder": "Select country"
     },
-    "char_count":   "{{count}} / 500 characters",
-    "back":         "← Back",
-    "next":         "Continue →",
-    "submit":       "Submit Proposal",
-    "submitting":   "Submitting…",
+    "char_count": "{{count}} / 500 characters",
+    "back": "← Back",
+    "next": "Continue →",
+    "submit": "Submit Proposal",
+    "submitting": "Submitting…",
     "errors": {
-      "required":   "This field is required",
-      "email":      "Invalid email format",
-      "message":    "Message must be at least 20 characters",
-      "tier":       "Please pick a sponsorship tier",
-      "privacy":    "You must agree to the Privacy Policy",
-      "server":     "Failed to submit. Please try again."
+      "required": "This field is required",
+      "email": "Invalid email format",
+      "message": "Message must be at least 20 characters",
+      "tier": "Please pick a sponsorship tier",
+      "privacy": "You must agree to the Privacy Policy",
+      "server": "Failed to submit. Please try again."
     }
   },
   "success": {
-    "title":    "Proposal Submitted!",
+    "title": "Proposal Submitted!",
     "subtitle": "Thanks for applying. Our team will review your application and contact you within 5–7 business days.",
     "view_sponsors": "See Sponsor List",
     "submit_another": "Submit Another"
@@ -163,8 +163,12 @@
     ]
   },
   "testimonials": {
-    "title":   "What Partners Say",
+    "title": "What Partners Say",
     "loading": "Loading testimonials…",
-    "empty":   "No sponsor testimonials available yet."
+    "empty": "No sponsor testimonials available yet."
+  },
+  "legal": {
+    "privacy": "Privacy Policy",
+    "terms": "Terms & Conditions"
   }
 }

@@ -1,90 +1,93 @@
 {
   "breadcrumb": {
-    "home":    "Home",
+    "home": "Home",
     "current": "SDGs"
   },
   "header": {
-    "title":    "SDGs",
+    "title": "SDGs",
     "subtitle": "Explore research and publication contributions to the 17 Sustainable Development Goals."
   },
   "stats": {
     "publications": "Classified Articles",
-    "researchers":  "Researchers",
-    "journals":     "Journals",
-    "sdgs":         "SDGs Covered",
-    "citations":    "Total Citations"
+    "researchers": "Researchers",
+    "journals": "Journals",
+    "sdgs": "SDGs Covered",
+    "citations": "Total Citations"
   },
   "tabs": {
-    "semua":        "All SDGs",
+    "semua": "All SDGs",
     "perbandingan": "Comparison",
-    "peta":         "Distribution Map",
-    "tren":         "Trends"
+    "peta": "Distribution Map",
+    "tren": "Trends"
   },
   "year_label": "Year {{year}}",
   "charts": {
-    "bar_title":          "Publication Contributions per SDG",
-    "pie_title":          "Publication Distribution by SDG Category",
+    "bar_title": "Publication Contributions per SDG",
+    "pie_title": "Publication Distribution by SDG Category",
     "publications_label": "Publications",
-    "no_data":            "No publication data yet. Data will appear once the administrator runs SDG classification."
+    "no_data": "No publication data yet. Data will appear once the administrator runs SDG classification."
   },
   "categories": {
-    "People":      "People",
-    "Planet":      "Planet",
-    "Prosperity":  "Prosperity",
-    "Peace":       "Peace",
+    "People": "People",
+    "Planet": "Planet",
+    "Prosperity": "Prosperity",
+    "Peace": "Peace",
     "Partnership": "Partnership"
   },
   "sdg_cards": {
-    "title":        "All SDGs",
+    "title": "All SDGs",
     "publications": "Publications",
-    "click_hint":   "Click to view articles",
+    "click_hint": "Click to view articles",
     "empty": {
-      "title":    "No data yet",
+      "title": "No data yet",
       "subtitle": "No publications classified under this SDG yet."
     }
   },
   "ranking": {
-    "title":        "SDG Ranking by Publications",
+    "title": "SDG Ranking by Publications",
     "impact_label": "Impact Score"
   },
   "articles": {
-    "title":    "Articles for {{sdg}}",
+    "title": "Articles for {{sdg}}",
     "view_all": "View All Articles",
     "citations": "citations",
     "no_articles": {
-      "title":    "No articles yet",
+      "title": "No articles yet",
       "subtitle": "No articles classified under this SDG in the database yet."
     }
   },
   "map": {
-    "title":        "SDG Contribution Distribution Map",
-    "legend_high":  "High Contribution",
-    "legend_low":   "Low Contribution",
+    "title": "SDG Contribution Distribution Map",
+    "legend_high": "High Contribution",
+    "legend_low": "Low Contribution",
     "publications": "publications"
   },
   "comparison": {
-    "title":            "SDG Comparison",
+    "title": "SDG Comparison",
     "publications_col": "Publications",
-    "percentage_col":   "Percentage",
+    "percentage_col": "Percentage",
     "no_data": {
-      "title":    "No comparison data",
+      "title": "No comparison data",
       "subtitle": "Comparison data will be available once articles have been classified."
     }
   },
   "trends": {
-    "title":    "SDG Publication Trends",
+    "title": "SDG Publication Trends",
     "subtitle": "Publication count development per year for the top 5 SDGs",
     "no_data": {
-      "title":    "No trend data yet",
+      "title": "No trend data yet",
       "subtitle": "Trend data will be available once articles have been classified over multiple years."
     }
   },
   "cta": {
-    "title":    "Together, build a sustainable future",
+    "title": "Together, build a sustainable future",
     "subtitle": "Discover, collaborate, and enhance your research impact for SDGs.",
-    "button":   "Explore Articles"
+    "button": "Explore Articles"
   },
   "loading": "Loading data...",
-  "retry":   "Try again",
-  "error":   "Failed to load data. Please try again."
+  "retry": "Try again",
+  "error": "Failed to load data. Please try again.",
+  "aria": {
+    "close": "Close"
+  }
 }

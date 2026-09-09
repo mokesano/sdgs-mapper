@@ -459,7 +459,7 @@ const BecomeSponsor = () => {
                             className={`w-4 h-4 mt-0.5 text-indigo-600 border-gray-300 rounded focus:ring-indigo-500 ${errors.privacy ? 'border-red-500' : ''}`} />
                           <span className="text-[15px] text-gray-700">
                             <Trans t={t} i18nKey="form.field.privacy">
-                              I agree to <Link to="/privacy" className="text-indigo-600 hover:underline">Privacy Policy</Link> and <Link to="/terms" className="text-indigo-600 hover:underline">Terms</Link>
+                              I agree to <Link to="/privacy" className="text-indigo-600 hover:underline">{t('legal.privacy')}</Link> and <Link to="/terms" className="text-indigo-600 hover:underline">{t('legal.terms')}</Link>
                             </Trans>
                           </span>
                         </label>

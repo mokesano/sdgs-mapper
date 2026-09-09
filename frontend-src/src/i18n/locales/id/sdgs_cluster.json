@@ -1,90 +1,93 @@
 {
   "breadcrumb": {
-    "home":    "Beranda",
+    "home": "Beranda",
     "current": "SDGs"
   },
   "header": {
-    "title":    "SDGs",
+    "title": "SDGs",
     "subtitle": "Jelajahi kontribusi riset dan publikasi terhadap 17 Tujuan Pembangunan Berkelanjutan (Sustainable Development Goals)."
   },
   "stats": {
     "publications": "Artikel Terklasifikasi",
-    "researchers":  "Peneliti",
-    "journals":     "Jurnal",
-    "sdgs":         "SDGs Terwakili",
-    "citations":    "Total Sitasi"
+    "researchers": "Peneliti",
+    "journals": "Jurnal",
+    "sdgs": "SDGs Terwakili",
+    "citations": "Total Sitasi"
   },
   "tabs": {
-    "semua":       "Semua SDGs",
+    "semua": "Semua SDGs",
     "perbandingan": "Perbandingan",
-    "peta":        "Peta Sebaran",
-    "tren":        "Tren"
+    "peta": "Peta Sebaran",
+    "tren": "Tren"
   },
   "year_label": "Tahun {{year}}",
   "charts": {
-    "bar_title":         "Kontribusi Publikasi per SDGs",
-    "pie_title":         "Distribusi Publikasi per Kategori SDGs",
+    "bar_title": "Kontribusi Publikasi per SDGs",
+    "pie_title": "Distribusi Publikasi per Kategori SDGs",
     "publications_label": "Publikasi",
-    "no_data":           "Belum ada data publikasi. Data akan muncul setelah administrator menjalankan klasifikasi SDGs."
+    "no_data": "Belum ada data publikasi. Data akan muncul setelah administrator menjalankan klasifikasi SDGs."
   },
   "categories": {
-    "People":      "People",
-    "Planet":      "Planet",
-    "Prosperity":  "Prosperity",
-    "Peace":       "Peace",
+    "People": "People",
+    "Planet": "Planet",
+    "Prosperity": "Prosperity",
+    "Peace": "Peace",
     "Partnership": "Partnership"
   },
   "sdg_cards": {
-    "title":        "Semua SDGs",
+    "title": "Semua SDGs",
     "publications": "Publikasi",
-    "click_hint":   "Klik untuk melihat artikel",
+    "click_hint": "Klik untuk melihat artikel",
     "empty": {
-      "title":    "Belum ada data",
+      "title": "Belum ada data",
       "subtitle": "Belum ada publikasi yang terklasifikasi pada SDG ini."
     }
   },
   "ranking": {
-    "title":        "Peringkat SDGs Berdasarkan Publikasi",
+    "title": "Peringkat SDGs Berdasarkan Publikasi",
     "impact_label": "Skor Impact"
   },
   "articles": {
-    "title":    "Artikel untuk {{sdg}}",
+    "title": "Artikel untuk {{sdg}}",
     "view_all": "Lihat Semua Artikel",
     "citations": "sitasi",
     "no_articles": {
-      "title":    "Belum ada artikel",
+      "title": "Belum ada artikel",
       "subtitle": "Belum ada artikel yang terklasifikasi pada SDG ini di database."
     }
   },
   "map": {
-    "title":        "Peta Sebaran Kontribusi SDGs",
-    "legend_high":  "Kontribusi Tinggi",
-    "legend_low":   "Kontribusi Rendah",
+    "title": "Peta Sebaran Kontribusi SDGs",
+    "legend_high": "Kontribusi Tinggi",
+    "legend_low": "Kontribusi Rendah",
     "publications": "publikasi"
   },
   "comparison": {
-    "title":            "Perbandingan SDGs",
+    "title": "Perbandingan SDGs",
     "publications_col": "Publikasi",
-    "percentage_col":   "Persentase",
+    "percentage_col": "Persentase",
     "no_data": {
-      "title":    "Belum ada data perbandingan",
+      "title": "Belum ada data perbandingan",
       "subtitle": "Data perbandingan akan tersedia setelah artikel terklasifikasi."
     }
   },
   "trends": {
-    "title":    "Tren Publikasi SDGs",
+    "title": "Tren Publikasi SDGs",
     "subtitle": "Perkembangan jumlah publikasi per tahun untuk 5 SDGs teratas",
     "no_data": {
-      "title":    "Belum ada data tren",
+      "title": "Belum ada data tren",
       "subtitle": "Data tren akan tersedia setelah artikel terklasifikasi dalam beberapa tahun."
     }
   },
   "cta": {
-    "title":    "Bersama wujudkan masa depan yang berkelanjutan",
+    "title": "Bersama wujudkan masa depan yang berkelanjutan",
     "subtitle": "Temukan, kolaborasi, dan tingkatkan dampak riset Anda untuk SDGs.",
-    "button":   "Jelajahi Artikel"
+    "button": "Jelajahi Artikel"
   },
   "loading": "Memuat data...",
-  "retry":   "Coba lagi",
-  "error":   "Gagal memuat data. Silakan coba lagi."
+  "retry": "Coba lagi",
+  "error": "Gagal memuat data. Silakan coba lagi.",
+  "aria": {
+    "close": "Tutup"
+  }
 }

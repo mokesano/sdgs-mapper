@@ -1,70 +1,76 @@
 {
   "breadcrumb": {
-    "home":        "Home",
-    "dashboard":   "Dashboard",
+    "home": "Home",
+    "dashboard": "Dashboard",
     "collections": "My Collections"
   },
-  "loading":     "Loading collection details…",
+  "loading": "Loading collection details…",
   "error_title": "Something Went Wrong",
-  "back_link":   "← Back to My Collections",
+  "back_link": "← Back to My Collections",
   "privacy": {
-    "public":  "Public",
+    "public": "Public",
     "private": "Private"
   },
   "actions": {
-    "edit":   "Edit",
-    "share":  "Share",
+    "edit": "Edit",
+    "share": "Share",
     "delete": "Delete"
   },
   "meta": {
-    "created_by":   "Created by",
-    "created_at":   "Created",
+    "created_by": "Created by",
+    "created_at": "Created",
     "last_updated": "Last updated"
   },
   "stats": {
-    "total_items":    "Total Items",
-    "total_citations":"Total Citations",
-    "avg_citations":  "Avg. Citations",
-    "sdgs_covered":   "SDGs Covered"
+    "total_items": "Total Items",
+    "total_citations": "Total Citations",
+    "avg_citations": "Avg. Citations",
+    "sdgs_covered": "SDGs Covered"
   },
   "search_ph": "Search title, author, or journal…",
   "sort": {
-    "date":      "Publication Date",
+    "date": "Publication Date",
     "citations": "Citation Count",
-    "title":     "Title A-Z"
+    "title": "Title A-Z"
   },
   "item": {
     "remove_title": "Remove from collection",
-    "citations":    "{{count}} citations",
-    "sdg_title":    "SDG {{n}}"
+    "citations": "{{count}} citations",
+    "sdg_title": "SDG {{n}}"
   },
   "empty": {
-    "title":        "No items found",
-    "with_search":  "Try different search terms or reset the filter.",
-    "no_items":     "This collection has no items yet.",
-    "reset":        "Reset Search"
+    "title": "No items found",
+    "with_search": "Try different search terms or reset the filter.",
+    "no_items": "This collection has no items yet.",
+    "reset": "Reset Search"
   },
   "modal": {
-    "title":         "Edit Collection",
-    "name_label":    "Collection Name *",
-    "name_ph":       "Collection name",
-    "desc_label":    "Description",
-    "desc_ph":       "Collection description",
-    "tags_label":    "Tags (comma-separated)",
-    "tags_ph":       "Tag1, Tag2, Tag3",
+    "title": "Edit Collection",
+    "name_label": "Collection Name *",
+    "name_ph": "Collection name",
+    "desc_label": "Description",
+    "desc_ph": "Collection description",
+    "tags_label": "Tags (comma-separated)",
+    "tags_ph": "Tag1, Tag2, Tag3",
     "privacy_label": "Privacy",
-    "cancel":        "Cancel",
-    "save":          "Save Changes"
+    "cancel": "Cancel",
+    "save": "Save Changes"
   },
   "toast": {
-    "updated":       "Collection updated!",
-    "deleted":       "Collection deleted",
-    "item_removed":  "Item removed from collection",
-    "share_soon":    "Sharing is coming soon"
+    "updated": "Collection updated!",
+    "deleted": "Collection deleted",
+    "item_removed": "Item removed from collection",
+    "share_soon": "Sharing is coming soon"
   },
   "date": {
-    "today":     "Today",
+    "today": "Today",
     "yesterday": "Yesterday",
-    "days_ago":  "{{count}} days ago"
+    "days_ago": "{{count}} days ago"
+  },
+  "stat": {
+    "items": "Total Items",
+    "citations": "Total Citations",
+    "avg": "Average Citations",
+    "sdgs": "SDGs Covered"
   }
 }

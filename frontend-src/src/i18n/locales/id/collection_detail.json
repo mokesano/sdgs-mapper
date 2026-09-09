@@ -1,70 +1,76 @@
 {
   "breadcrumb": {
-    "home":        "Beranda",
-    "dashboard":   "Dashboard",
+    "home": "Beranda",
+    "dashboard": "Dashboard",
     "collections": "Koleksi Saya"
   },
-  "loading":     "Memuat detail koleksi…",
+  "loading": "Memuat detail koleksi…",
   "error_title": "Terjadi Kesalahan",
-  "back_link":   "← Kembali ke Koleksi Saya",
+  "back_link": "← Kembali ke Koleksi Saya",
   "privacy": {
-    "public":  "Publik",
+    "public": "Publik",
     "private": "Privat"
   },
   "actions": {
-    "edit":   "Edit",
-    "share":  "Bagikan",
+    "edit": "Edit",
+    "share": "Bagikan",
     "delete": "Hapus"
   },
   "meta": {
-    "created_by":   "Dibuat oleh",
-    "created_at":   "Dibuat",
+    "created_by": "Dibuat oleh",
+    "created_at": "Dibuat",
     "last_updated": "Terakhir diupdate"
   },
   "stats": {
-    "total_items":    "Total Item",
-    "total_citations":"Total Sitasi",
-    "avg_citations":  "Rata-rata Sitasi",
-    "sdgs_covered":   "SDGs Tercakup"
+    "total_items": "Total Item",
+    "total_citations": "Total Sitasi",
+    "avg_citations": "Rata-rata Sitasi",
+    "sdgs_covered": "SDGs Tercakup"
   },
   "search_ph": "Cari judul, penulis, atau jurnal…",
   "sort": {
-    "date":      "Tanggal Terbit",
+    "date": "Tanggal Terbit",
     "citations": "Jumlah Sitasi",
-    "title":     "Judul A-Z"
+    "title": "Judul A-Z"
   },
   "item": {
     "remove_title": "Hapus dari koleksi",
-    "citations":    "{{count}} sitasi",
-    "sdg_title":    "SDG {{n}}"
+    "citations": "{{count}} sitasi",
+    "sdg_title": "SDG {{n}}"
   },
   "empty": {
-    "title":        "Tidak ada item ditemukan",
-    "with_search":  "Coba kata kunci pencarian lain atau reset filter.",
-    "no_items":     "Koleksi ini belum memiliki item.",
-    "reset":        "Reset Pencarian"
+    "title": "Tidak ada item ditemukan",
+    "with_search": "Coba kata kunci pencarian lain atau reset filter.",
+    "no_items": "Koleksi ini belum memiliki item.",
+    "reset": "Reset Pencarian"
   },
   "modal": {
-    "title":         "Edit Koleksi",
-    "name_label":    "Nama Koleksi *",
-    "name_ph":       "Nama koleksi",
-    "desc_label":    "Deskripsi",
-    "desc_ph":       "Deskripsi koleksi",
-    "tags_label":    "Tag (pisahkan dengan koma)",
-    "tags_ph":       "Tag1, Tag2, Tag3",
+    "title": "Edit Koleksi",
+    "name_label": "Nama Koleksi *",
+    "name_ph": "Nama koleksi",
+    "desc_label": "Deskripsi",
+    "desc_ph": "Deskripsi koleksi",
+    "tags_label": "Tag (pisahkan dengan koma)",
+    "tags_ph": "Tag1, Tag2, Tag3",
     "privacy_label": "Privasi",
-    "cancel":        "Batal",
-    "save":          "Simpan Perubahan"
+    "cancel": "Batal",
+    "save": "Simpan Perubahan"
   },
   "toast": {
-    "updated":       "Koleksi berhasil diperbarui!",
-    "deleted":       "Koleksi berhasil dihapus",
-    "item_removed":  "Item berhasil dihapus dari koleksi",
-    "share_soon":    "Fitur berbagi akan segera hadir"
+    "updated": "Koleksi berhasil diperbarui!",
+    "deleted": "Koleksi berhasil dihapus",
+    "item_removed": "Item berhasil dihapus dari koleksi",
+    "share_soon": "Fitur berbagi akan segera hadir"
   },
   "date": {
-    "today":     "Hari ini",
+    "today": "Hari ini",
     "yesterday": "Kemarin",
-    "days_ago":  "{{count}} hari lalu"
+    "days_ago": "{{count}} hari lalu"
+  },
+  "stat": {
+    "items": "Total Item",
+    "citations": "Total Sitasi",
+    "avg": "Rata-rata Sitasi",
+    "sdgs": "SDG Tercakup"
   }
 }

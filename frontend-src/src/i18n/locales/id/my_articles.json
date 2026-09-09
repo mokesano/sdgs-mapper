@@ -1,53 +1,58 @@
 {
   "breadcrumb": {
-    "home":      "Beranda",
+    "home": "Beranda",
     "dashboard": "Dashboard",
-    "current":   "Artikel Saya"
+    "current": "Artikel Saya"
   },
-  "title":          "Artikel Saya",
-  "subtitle":       "Kelola, pantau, dan analisis dampak publikasi riset Anda.",
-  "loading":        "Memuat…",
-  "load_failed":    "Gagal memuat artikel",
-  "error_prefix":   "Gagal memuat:",
-  "count":          "{{count}} artikel dari ORCID {{orcid}}",
-  "add_via_orcid":  "Tambah via ORCID",
-  "new_analysis":   "Analisis Artikel Baru",
+  "title": "Artikel Saya",
+  "subtitle": "Kelola, pantau, dan analisis dampak publikasi riset Anda.",
+  "loading": "Memuat…",
+  "load_failed": "Gagal memuat artikel",
+  "error_prefix": "Gagal memuat:",
+  "count": "{{count}} artikel dari ORCID {{orcid}}",
+  "add_via_orcid": "Tambah via ORCID",
+  "new_analysis": "Analisis Artikel Baru",
   "no_orcid": {
-    "title":    "ORCID Belum Terhubung",
+    "title": "ORCID Belum Terhubung",
     "subtitle": "Hubungkan ORCID Anda untuk melihat daftar artikel.",
-    "cta":      "Hubungkan ORCID"
+    "cta": "Hubungkan ORCID"
   },
   "stats": {
-    "total":     "Total Artikel",
+    "total": "Total Artikel",
     "citations": "Total Sitasi",
     "avg_score": "Rata-rata Skor",
     "published": "Terpublikasi"
   },
   "filter": {
-    "search_ph":    "Cari judul atau jurnal…",
-    "status_all":   "Semua Status",
-    "year_all":     "Semua Tahun",
-    "sdg_all":      "Semua SDG",
-    "reset":        "Reset"
+    "search_ph": "Cari judul atau jurnal…",
+    "status_all": "Semua Status",
+    "year_all": "Semua Tahun",
+    "sdg_all": "Semua SDG",
+    "reset": "Reset"
   },
   "table": {
     "title_journal": "Artikel & Jurnal",
-    "date":          "Tanggal",
-    "sdgs":          "SDGs",
-    "citations":     "Sitasi",
-    "views":         "Views",
-    "score":         "Skor",
-    "status":        "Status",
-    "actions":       "Aksi",
-    "empty_title":   "Tidak ada artikel ditemukan",
-    "empty_desc":    "Coba ubah filter atau kata kunci pencarian Anda.",
-    "action_view":   "Lihat Detail",
-    "action_analyze":"Analisis",
-    "action_more":   "Opsi Lain"
+    "date": "Tanggal",
+    "sdgs": "SDGs",
+    "citations": "Sitasi",
+    "views": "Views",
+    "score": "Skor",
+    "status": "Status",
+    "actions": "Aksi",
+    "empty_title": "Tidak ada artikel ditemukan",
+    "empty_desc": "Coba ubah filter atau kata kunci pencarian Anda.",
+    "action_view": "Lihat Detail",
+    "action_analyze": "Analisis",
+    "action_more": "Opsi Lain"
   },
   "pagination": {
-    "showing":  "Menampilkan {{from}} - {{to}} dari {{total}} artikel",
-    "prev":     "Sebelumnya",
-    "next":     "Selanjutnya"
+    "showing": "Menampilkan {{from}} - {{to}} dari {{total}} artikel",
+    "prev": "Sebelumnya",
+    "next": "Selanjutnya"
+  },
+  "status": {
+    "published": "Terbit",
+    "under_review": "Sedang Ditinjau",
+    "draft": "Draf"
   }
 }

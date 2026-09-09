@@ -1,36 +1,43 @@
 {
-  "breadcrumb": { "home": "Home", "about": "About Us", "current": "History" },
+  "breadcrumb": {
+    "home": "Home",
+    "about": "About Us",
+    "current": "History"
+  },
   "header": {
-    "title":    "Our Platform Journey",
+    "title": "Our Platform Journey",
     "subtitle": "From a simple idea to a leading research analytics platform for SDG achievement."
   },
   "type_label": {
-    "milestone":   "Milestone",
-    "feature":     "Feature",
+    "milestone": "Milestone",
+    "feature": "Feature",
     "partnership": "Partnership",
-    "award":       "Award",
-    "research":    "Research"
+    "award": "Award",
+    "research": "Research"
   },
   "filter": {
-    "all":         "All Events",
-    "featured":    "Featured Only"
+    "all": "All Events",
+    "featured": "Featured Only"
   },
   "summary": {
-    "title":       "Platform Today",
-    "loading":     "Loading current platform stats…",
-    "empty":       "No platform stats available yet."
+    "title": "Platform Today",
+    "loading": "Loading current platform stats…",
+    "empty": "No platform stats available yet."
   },
   "empty": {
-    "title":       "No timeline events yet",
-    "subtitle":    "Major milestones and platform updates will appear here as the journey unfolds."
+    "title": "No timeline events yet",
+    "subtitle": "Major milestones and platform updates will appear here as the journey unfolds."
   },
   "cta": {
-    "title":       "Want to Be Part of Our Journey?",
-    "subtitle":    "Join us as a partner or sponsor to support faster research impact on SDGs.",
-    "sponsor":     "Become a Sponsor",
-    "contact":     "Contact Us"
+    "title": "Want to Be Part of Our Journey?",
+    "subtitle": "Join us as a partner or sponsor to support faster research impact on SDGs.",
+    "sponsor": "Become a Sponsor",
+    "contact": "Contact Us"
   },
   "loading": "Loading timeline…",
-  "retry":   "Try again",
-  "error":   "Failed to load timeline. Please try again."
+  "retry": "Try again",
+  "error": "Failed to load timeline. Please try again.",
+  "action": {
+    "learn_more": "Learn more"
+  }
 }

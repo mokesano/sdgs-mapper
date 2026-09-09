@@ -152,7 +152,7 @@ const InstitutionProfile = () => {
   return (
     <main className="pt-[68px] pb-12 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
       {/* Breadcrumb */}
-      <nav className="flex items-center gap-2 text-[15px] text-gray-600 mb-6" aria-label="Breadcrumb">
+      <nav className="flex items-center gap-2 text-[15px] text-gray-600 mb-6" aria-label={t('aria.breadcrumb')}>
         <Link to="/" className="hover:text-indigo-600 transition-colors">{t('breadcrumb.home')}</Link>
         <svg className="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"/></svg>
         <Link to="/institutions" className="hover:text-indigo-600 transition-colors">{t('breadcrumb.institutions')}</Link>
@@ -317,7 +317,7 @@ const InstitutionProfile = () => {
 
           {/* Tabs nav */}
           <div className="border-b border-gray-200 mb-8 overflow-x-auto">
-            <nav className="flex gap-1 min-w-max" aria-label="Profile tabs">
+            <nav className="flex gap-1 min-w-max" aria-label={t('aria.tabs')}>
               {tabs.map((tab) => (
                 <button
                   key={tab.id}
@@ -742,7 +742,7 @@ const InstitutionProfile = () => {
                         <h4 className="font-semibold text-gray-900 text-[15px] mb-1 line-clamp-2">{item.title}</h4>
                         <p className="text-sm text-gray-500">{item.date || item.published_at}</p>
                         {item.url && (
-                          <a href={item.url} target="_blank" rel="noopener noreferrer" className="text-sm text-indigo-600 hover:underline mt-1 inline-block">Read more →</a>
+                          <a href={item.url} target="_blank" rel="noopener noreferrer" className="text-sm text-indigo-600 hover:underline mt-1 inline-block">{t('action.read_more')}</a>
                         )}
                       </div>
                     </div>

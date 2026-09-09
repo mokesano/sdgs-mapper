@@ -1,37 +1,37 @@
 {
   "breadcrumb": {
-    "home":      "Home",
+    "home": "Home",
     "dashboard": "Dashboard",
-    "current":   "My Collections"
+    "current": "My Collections"
   },
   "header": {
-    "title":    "My Collections",
+    "title": "My Collections",
     "subtitle": "Organise research groups, articles, and references you have saved.",
-    "new":      "New Collection"
+    "new": "New Collection"
   },
   "auth_required": {
-    "title":    "ORCID Not Connected",
+    "title": "ORCID Not Connected",
     "subtitle": "Connect your ORCID to manage collections.",
-    "button":   "Connect ORCID"
+    "button": "Connect ORCID"
   },
   "loading": "Loading collections…",
   "stats": {
-    "total":   "Total Collections",
-    "items":   "Total Items",
-    "public":  "Public",
+    "total": "Total Collections",
+    "items": "Total Items",
+    "public": "Public",
     "private": "Private"
   },
   "filters": {
     "search_placeholder": "Search collection, description, or tag…",
     "privacy": {
-      "all":     "All Access",
-      "public":  "Public",
+      "all": "All Access",
+      "public": "Public",
       "private": "Private"
     },
     "sort": {
       "updated": "Last Updated",
-      "name":    "Name A-Z",
-      "items":   "Item Count"
+      "name": "Name A-Z",
+      "items": "Item Count"
     },
     "view": {
       "card_aria": "Card view",
@@ -40,53 +40,56 @@
   },
   "card": {
     "preview_empty": "Empty collection",
-    "items_unit":    "{{count}} items",
-    "open":          "Open Collection",
+    "items_unit": "{{count}} items",
+    "open": "Open Collection",
     "badge": {
-      "public":  "Public",
+      "public": "Public",
       "private": "Private"
     },
     "actions": {
-      "share":  "Share",
-      "edit":   "Edit",
+      "share": "Share",
+      "edit": "Edit",
       "delete": "Delete"
     },
     "time": {
-      "today":     "Today",
+      "today": "Today",
       "yesterday": "Yesterday",
-      "days_ago":  "{{count}} days ago"
+      "days_ago": "{{count}} days ago"
     }
   },
   "empty": {
     "no_match": {
-      "title":    "No matching collections",
+      "title": "No matching collections",
       "subtitle": "Your filters or search returned no collections. Try loosening the filters or different keywords.",
-      "reset":    "Reset Filters"
+      "reset": "Reset Filters"
     },
     "no_data": {
-      "title":    "You have no collections yet",
+      "title": "You have no collections yet",
       "subtitle": "Start organising your favourite articles, researchers, or journals into curated collections.",
-      "button":   "Create First Collection"
+      "button": "Create First Collection"
     }
   },
   "modal": {
-    "title":            "Create New Collection",
-    "name_label":       "Collection Name",
-    "name_required":    "Required",
+    "title": "Create New Collection",
+    "name_label": "Collection Name",
+    "name_required": "Required",
     "name_placeholder": "Example: SDG 13 & 11 Research",
-    "desc_label":       "Description",
+    "desc_label": "Description",
     "desc_placeholder": "Explain the purpose of this collection…",
-    "tags_label":       "Tags (comma-separated)",
+    "tags_label": "Tags (comma-separated)",
     "tags_placeholder": "Climate, Urban, SDG 11",
-    "privacy_label":    "Privacy",
-    "privacy_private":  "Private",
-    "privacy_public":   "Public",
-    "cancel":           "Cancel",
-    "submit":           "Create Collection"
+    "privacy_label": "Privacy",
+    "privacy_private": "Private",
+    "privacy_public": "Public",
+    "cancel": "Cancel",
+    "submit": "Create Collection"
   },
   "toast": {
     "created": "Collection created successfully!",
     "deleted": "Collection deleted successfully",
-    "error":   "Action failed: {{message}}"
+    "error": "Action failed: {{message}}"
+  },
+  "aria": {
+    "breadcrumb": "breadcrumb"
   }
 }

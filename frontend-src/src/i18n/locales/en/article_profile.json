@@ -1,78 +1,78 @@
 {
   "loading": "Loading article…",
   "not_found": {
-    "title":   "Article Not Found",
+    "title": "Article Not Found",
     "message": "The article with DOI {{doi}} is not available in the database.",
-    "retry":   "Try Again",
-    "home":    "Back to Home"
+    "retry": "Try Again",
+    "home": "Back to Home"
   },
   "header": {
     "badge_classified": "Classified Article",
-    "open_access":      "Open Access",
-    "no_authors":       "No author information available",
-    "more_authors":     "+ View all authors",
+    "open_access": "Open Access",
+    "no_authors": "No author information available",
+    "more_authors": "+ View all authors",
     "actions": {
       "download": "Download PDF",
-      "cite":     "Cite",
-      "share":    "Share"
+      "cite": "Cite",
+      "share": "Share"
     },
     "meta": {
-      "type":       "Article Type",
-      "language":   "Language",
-      "published":  "Published",
-      "publisher":  "Publisher"
+      "type": "Article Type",
+      "language": "Language",
+      "published": "Published",
+      "publisher": "Publisher"
     }
   },
   "stats": {
-    "citations":      "Citations",
-    "h_index":        "h-Index",
-    "views":          "Views",
-    "downloads":      "Downloads",
-    "altmetric":      "Altmetric Score",
-    "impact":         "Impact Score"
+    "citations": "Citations",
+    "h_index": "h-Index",
+    "views": "Views",
+    "downloads": "Downloads",
+    "altmetric": "Altmetric Score",
+    "impact": "Impact Score"
   },
   "primary_actions": {
-    "analyze":   "Analyze Article",
-    "collection":"Add to Collection"
+    "analyze": "Analyze Article",
+    "collection": "Add to Collection"
   },
   "tabs": {
-    "ringkasan":    "Overview",
+    "ringkasan": "Overview",
     "teks-kutipan": "Text & Citations",
-    "sdgs":         "SDGs",
-    "metrik":       "Metrics",
-    "kolaborasi":   "Collaboration",
-    "versi":        "Versions",
-    "informasi":    "Information"
+    "sdgs": "SDGs",
+    "metrik": "Metrics",
+    "kolaborasi": "Collaboration",
+    "versi": "Versions",
+    "informasi": "Information"
   },
   "ringkasan": {
-    "abstract":         "Abstract",
-    "no_abstract":      "No abstract available",
-    "keywords":         "Keywords",
-    "sdg_title":        "SDG Classification",
-    "sdg_details":      "View details",
-    "no_sdg":           "SDG classification not yet available",
-    "journal_title":    "Journal & Publisher",
-    "issn":             "ISSN: {{value}}",
-    "publisher_label":  "Publisher: {{value}}",
-    "quartile":         "Quartile: {{value}}",
-    "view_journal":     "View Journal Profile",
-    "article_info":     "Article Information",
-    "preprint":         "Preprint",
-    "view_all":         "View all",
-    "no_preprint":      "No preprints available",
-    "view_all_preprint":"View All Preprints"
+    "abstract": "Abstract",
+    "no_abstract": "No abstract available",
+    "keywords": "Keywords",
+    "sdg_title": "SDG Classification",
+    "sdg_details": "View details",
+    "no_sdg": "SDG classification not yet available",
+    "journal_title": "Journal & Publisher",
+    "issn": "ISSN: {{value}}",
+    "publisher_label": "Publisher: {{value}}",
+    "quartile": "Quartile: {{value}}",
+    "view_journal": "View Journal Profile",
+    "article_info": "Article Information",
+    "preprint": "Preprint",
+    "view_all": "View all",
+    "no_preprint": "No preprints available",
+    "view_all_preprint": "View All Preprints"
   },
   "fields": {
-    "doi":       "DOI",
-    "eissn":     "EISSN",
-    "pissn":     "PISSN",
-    "volume":    "Volume",
-    "issue":     "Issue",
-    "pages":     "Pages",
+    "doi": "DOI",
+    "eissn": "EISSN",
+    "pissn": "PISSN",
+    "volume": "Volume",
+    "issue": "Issue",
+    "pages": "Pages",
     "published": "Published",
-    "type":      "Article Type",
-    "license":   "License",
-    "language":  "Language",
+    "type": "Article Type",
+    "license": "License",
+    "language": "Language",
     "publisher": "Publisher"
   },
   "teks_kutipan": {
@@ -80,52 +80,61 @@
     "top_citations": "Top Citing Articles",
     "total_citations": "{{count}} total citations",
     "citations_label": "{{count}} Citations",
-    "citation_trend":  "Citation Trend by Year",
-    "no_top_citations":"No citing-article data yet"
+    "citation_trend": "Citation Trend by Year",
+    "no_top_citations": "No citing-article data yet"
   },
   "sdgs_tab": {
-    "title":     "SDG Classification",
-    "details":   "SDG Contribution Details",
-    "about_title":  "About This Classification",
-    "about_text":   "SDG classification is performed by the Wizdam AI model, which analyses article title, abstract and keywords. Scores reflect content relevance to each UN Sustainable Development Goal.",
-    "no_sdg":    "SDG classification is not yet available for this article"
+    "title": "SDG Classification",
+    "details": "SDG Contribution Details",
+    "about_title": "About This Classification",
+    "about_text": "SDG classification is performed by the Wizdam AI model, which analyses article title, abstract and keywords. Scores reflect content relevance to each UN Sustainable Development Goal.",
+    "no_sdg": "SDG classification is not yet available for this article"
   },
   "kolaborasi": {
-    "authors":         "Authors & Affiliations",
-    "related":         "Related Articles",
-    "no_authors":      "No author data yet",
-    "no_related":      "No related articles yet"
+    "authors": "Authors & Affiliations",
+    "related": "Related Articles",
+    "no_authors": "No author data yet",
+    "no_related": "No related articles yet"
   },
   "metrik": {
-    "total_views":      "Total Views",
-    "total_downloads":  "Total Downloads",
-    "total_citations":  "Total Citations",
-    "altmetric":        "Altmetric Score",
+    "total_views": "Total Views",
+    "total_downloads": "Total Downloads",
+    "total_citations": "Total Citations",
+    "altmetric": "Altmetric Score",
     "performance_year": "Yearly Performance Metrics",
-    "all_years":        "All Years",
-    "last_5_years":     "Last 5 Years",
-    "views_trend":      "Views Trend by Year",
-    "no_metrics":       "No yearly metric data yet"
+    "all_years": "All Years",
+    "last_5_years": "Last 5 Years",
+    "views_trend": "Views Trend by Year",
+    "no_metrics": "No yearly metric data yet"
   },
   "versi": {
-    "title":     "Preprint Links",
-    "no_title":  "No preprints",
+    "title": "Preprint Links",
+    "no_title": "No preprints",
     "no_subtitle": "This article has no preprints registered on major preprint servers (ArXiv, BioRxiv, MedRxiv, SSRN, OSF).",
-    "preprint":  "Preprint",
-    "source":    "Source: {{source}} · {{date}}"
+    "preprint": "Preprint",
+    "source": "Source: {{source}} · {{date}}"
   },
   "informasi": {
-    "article_info":  "Article Information",
-    "journal":       "Journal & Publisher",
-    "copyright":     "Copyright & License",
+    "article_info": "Article Information",
+    "journal": "Journal & Publisher",
+    "copyright": "Copyright & License",
     "copyright_label": "Copyright",
-    "license_label":   "License",
+    "license_label": "License",
     "copyright_value": "© {{year}} Authors"
   },
   "cta": {
-    "title":       "Want to analyse this article in more depth?",
-    "subtitle":    "Enter a DOI or ORCID for instant SDG analysis and classification.",
+    "title": "Want to analyse this article in more depth?",
+    "subtitle": "Enter a DOI or ORCID for instant SDG analysis and classification.",
     "placeholder": "Enter DOI or ORCID",
-    "button":      "Analyse Now"
+    "button": "Analyse Now"
+  },
+  "meta": {
+    "volume": "volume",
+    "issue": "issue",
+    "pages": "pages",
+    "published": "published",
+    "type": "type",
+    "language": "language",
+    "publisher": "publisher"
   }
 }

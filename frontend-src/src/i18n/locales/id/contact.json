@@ -1,98 +1,125 @@
 {
   "breadcrumb": {
-    "home":    "Beranda",
+    "home": "Beranda",
     "current": "Hubungi Kami"
   },
-  "title":    "Hubungi Kami",
+  "title": "Hubungi Kami",
   "subtitle": "Hubungi tim kami — kami siap membantu kebutuhan analisis SDG, dukungan teknis, dan kemitraan.",
   "status": {
     "success_title": "Terima kasih!",
-    "success_body":  "Pesan Anda telah terkirim. Kami akan membalas dalam 24 jam.",
-    "error_title":   "Terjadi kesalahan",
-    "error_body":    "Gagal mengirim pesan. Silakan coba lagi atau hubungi kami via email."
+    "success_body": "Pesan Anda telah terkirim. Kami akan membalas dalam 24 jam.",
+    "error_title": "Terjadi kesalahan",
+    "error_body": "Gagal mengirim pesan. Silakan coba lagi atau hubungi kami via email."
   },
   "form": {
-    "title":            "Kirim Pesan",
-    "name":             "Nama Lengkap *",
-    "name_ph":          "Nama Anda",
-    "email":            "Alamat Email *",
-    "email_ph":         "email@contoh.com",
-    "organization":     "Organisasi",
-    "organization_ph":  "Universitas, Perusahaan, Lembaga Riset, dll.",
-    "inquiry_type":     "Jenis Pertanyaan",
-    "subject":          "Subjek *",
-    "subject_ph":       "Deskripsi singkat pertanyaan Anda",
-    "message":          "Pesan *",
-    "message_ph":       "Silakan jelaskan detail pertanyaan Anda…",
-    "char_suffix":      "karakter",
-    "newsletter":       "Berlangganan newsletter kami untuk mendapatkan update dan wawasan terbaru",
-    "privacy_prefix":   "Saya setuju dengan",
-    "privacy_link":     "Kebijakan Privasi",
-    "submitting":       "Mengirim…",
-    "submit":           "Kirim Pesan"
+    "title": "Kirim Pesan",
+    "name": "Nama Lengkap *",
+    "name_ph": "Nama Anda",
+    "email": "Alamat Email *",
+    "email_ph": "email@contoh.com",
+    "organization": "Organisasi",
+    "organization_ph": "Universitas, Perusahaan, Lembaga Riset, dll.",
+    "inquiry_type": "Jenis Pertanyaan",
+    "subject": "Subjek *",
+    "subject_ph": "Deskripsi singkat pertanyaan Anda",
+    "message": "Pesan *",
+    "message_ph": "Silakan jelaskan detail pertanyaan Anda…",
+    "char_suffix": "karakter",
+    "newsletter": "Berlangganan newsletter kami untuk mendapatkan update dan wawasan terbaru",
+    "privacy_prefix": "Saya setuju dengan",
+    "privacy_link": "Kebijakan Privasi",
+    "submitting": "Mengirim…",
+    "submit": "Kirim Pesan"
   },
   "errors": {
-    "name_required":     "Nama lengkap wajib diisi",
-    "email_required":    "Alamat email wajib diisi",
-    "email_invalid":     "Masukkan alamat email yang valid",
-    "subject_required":  "Subjek wajib diisi",
-    "message_required":  "Pesan wajib diisi",
+    "name_required": "Nama lengkap wajib diisi",
+    "email_required": "Alamat email wajib diisi",
+    "email_invalid": "Masukkan alamat email yang valid",
+    "subject_required": "Subjek wajib diisi",
+    "message_required": "Pesan wajib diisi",
     "message_too_short": "Pesan minimal 10 karakter",
-    "privacy_required":  "Anda harus menyetujui Kebijakan Privasi"
+    "privacy_required": "Anda harus menyetujui Kebijakan Privasi"
   },
   "toast": {
     "success": "Pesan Anda berhasil dikirim!",
-    "error":   "Gagal mengirim pesan. Silakan coba lagi."
+    "error": "Gagal mengirim pesan. Silakan coba lagi."
   },
   "inquiry_types": {
-    "":            "Pilih jenis pertanyaan",
-    "general":     "Pertanyaan Umum",
-    "technical":   "Dukungan Teknis",
+    "": "Pilih jenis pertanyaan",
+    "general": "Pertanyaan Umum",
+    "technical": "Dukungan Teknis",
     "partnership": "Kemitraan",
-    "api":         "Akses API",
-    "enterprise":  "Solusi Enterprise",
-    "research":    "Kolaborasi Riset",
-    "media":       "Pertanyaan Media",
-    "other":       "Lainnya"
+    "api": "Akses API",
+    "enterprise": "Solusi Enterprise",
+    "research": "Kolaborasi Riset",
+    "media": "Pertanyaan Media",
+    "other": "Lainnya"
   },
   "sidebar": {
-    "contact_title":  "Hubungi Kami",
-    "quick_links":    "Tautan Cepat",
-    "office_hours":   "Jam Operasional",
-    "follow_us":      "Ikuti Kami",
-    "follow_note":    "Dapatkan update terbaru dari kami"
+    "contact_title": "Hubungi Kami",
+    "quick_links": "Tautan Cepat",
+    "office_hours": "Jam Operasional",
+    "follow_us": "Ikuti Kami",
+    "follow_note": "Dapatkan update terbaru dari kami"
   },
   "contact_methods": {
-    "email":   { "title": "Email",     "note": "Pertanyaan umum dan dukungan" },
-    "phone":   { "title": "Telepon",   "note": "Senin – Jumat, 09.00 – 18.00 PST" },
-    "address": { "title": "Alamat",    "note": null },
-    "chat":    { "title": "Live Chat", "value": "Tersedia 24/7", "button": "Mulai Chat" }
+    "email": {
+      "title": "Email",
+      "note": "Pertanyaan umum dan dukungan"
+    },
+    "phone": {
+      "title": "Telepon",
+      "note": "Senin – Jumat, 09.00 – 18.00 PST"
+    },
+    "address": {
+      "title": "Alamat",
+      "note": null
+    },
+    "chat": {
+      "title": "Live Chat",
+      "value": "Tersedia 24/7",
+      "button": "Mulai Chat"
+    }
   },
   "quick_links": {
-    "help":      "Pusat Bantuan",
-    "docs":      "Dokumentasi",
-    "api":       "Referensi API",
+    "help": "Pusat Bantuan",
+    "docs": "Dokumentasi",
+    "api": "Referensi API",
     "community": "Forum Komunitas"
   },
   "office_hours": {
     "weekdays": "Senin – Jumat",
     "saturday": "Sabtu",
-    "sunday":   "Minggu",
-    "closed":   "Tutup"
+    "sunday": "Minggu",
+    "closed": "Tutup"
   },
   "faq_title": "Pertanyaan yang Sering Diajukan",
   "faqs": [
-    { "q": "Seberapa cepat Anda merespons pertanyaan?",
-      "a": "Kami biasanya merespons semua pertanyaan dalam 24 jam pada hari kerja. Untuk masalah teknis mendesak, tim dukungan kami menargetkan respons dalam 4 jam." },
-    { "q": "Apakah Anda menyediakan dukungan enterprise?",
-      "a": "Ya! Kami menyediakan dukungan enterprise khusus dengan waktu respons prioritas, bantuan integrasi kustom, dan manajemen akun terdedikasi. Hubungi kami untuk mengetahui lebih lanjut tentang paket enterprise." },
-    { "q": "Bisakah saya menjadwalkan demo atau konsultasi?",
-      "a": "Tentu saja! Kami dengan senang hati memberikan demo platform yang dipersonalisasi. Sebutkan “Permintaan Demo” pada jenis pertanyaan dan cantumkan slot waktu yang Anda inginkan dalam pesan." },
-    { "q": "Apakah Anda menyediakan dokumentasi dan dukungan API?",
-      "a": "Ya, kami memiliki dokumentasi API yang komprehensif dan menyediakan dukungan teknis penuh untuk integrasi API. Kunjungi halaman Referensi API atau hubungi tim teknis kami untuk bantuan." }
+    {
+      "q": "Seberapa cepat Anda merespons pertanyaan?",
+      "a": "Kami biasanya merespons semua pertanyaan dalam 24 jam pada hari kerja. Untuk masalah teknis mendesak, tim dukungan kami menargetkan respons dalam 4 jam."
+    },
+    {
+      "q": "Apakah Anda menyediakan dukungan enterprise?",
+      "a": "Ya! Kami menyediakan dukungan enterprise khusus dengan waktu respons prioritas, bantuan integrasi kustom, dan manajemen akun terdedikasi. Hubungi kami untuk mengetahui lebih lanjut tentang paket enterprise."
+    },
+    {
+      "q": "Bisakah saya menjadwalkan demo atau konsultasi?",
+      "a": "Tentu saja! Kami dengan senang hati memberikan demo platform yang dipersonalisasi. Sebutkan “Permintaan Demo” pada jenis pertanyaan dan cantumkan slot waktu yang Anda inginkan dalam pesan."
+    },
+    {
+      "q": "Apakah Anda menyediakan dokumentasi dan dukungan API?",
+      "a": "Ya, kami memiliki dokumentasi API yang komprehensif dan menyediakan dukungan teknis penuh untuk integrasi API. Kunjungi halaman Referensi API atau hubungi tim teknis kami untuk bantuan."
+    }
   ],
   "cta": {
     "title": "Butuh respons lebih cepat?",
-    "body":  "Gunakan live chat kami untuk bantuan instan 24/7."
+    "body": "Gunakan live chat kami untuk bantuan instan 24/7."
+  },
+  "note": {
+    "timezone": "Semua waktu dalam Pacific Standard Time (PST)"
+  },
+  "action": {
+    "start_chat": "Mulai Chat Sekarang"
   }
 }

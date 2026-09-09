@@ -203,9 +203,9 @@ const MyArticles = () => {
             <select value={statusFilter} onChange={(e) => { setStatusFilter(e.target.value); setCurrentPage(1); }}
               className="px-3 py-2.5 bg-gray-50 border border-gray-200 rounded-lg text-[15px] text-gray-700 focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500">
               <option value="All">{t('filter.status_all')}</option>
-              <option value="Published">Published</option>
-              <option value="Under Review">Under Review</option>
-              <option value="Draft">Draft</option>
+              <option value="Published">{t('status.published')}</option>
+              <option value="Under Review">{t('status.under_review')}</option>
+              <option value="Draft">{t('status.draft')}</option>
             </select>
             <select value={yearFilter} onChange={(e) => { setYearFilter(e.target.value); setCurrentPage(1); }}
               className="px-3 py-2.5 bg-gray-50 border border-gray-200 rounded-lg text-[15px] text-gray-700 focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500">

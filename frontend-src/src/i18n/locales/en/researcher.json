@@ -1,98 +1,101 @@
 {
   "loading": {
-    "title":    "Loading researcher profile…",
+    "title": "Loading researcher profile…",
     "subtitle": "Fetching ORCID data and computing impact metrics"
   },
   "error": {
-    "title":   "Profile Not Found",
+    "title": "Profile Not Found",
     "message": "ORCID {{orcid}} was not found or cannot be accessed.",
-    "retry":   "Try Again",
-    "back":    "Back to List"
+    "retry": "Try Again",
+    "back": "Back to List"
   },
   "profile": {
     "view_orcid": "View on ORCID",
-    "share":      "Share Profile"
+    "share": "Share Profile"
   },
   "tabs": {
-    "ringkasan":  "Overview",
-    "publikasi":  "Publications",
+    "ringkasan": "Overview",
+    "publikasi": "Publications",
     "kolaborasi": "Collaborations",
-    "dampak":     "Impact",
-    "tentang":    "About"
+    "dampak": "Impact",
+    "tentang": "About"
   },
   "stats": {
-    "total_articles":  "Total Articles",
+    "total_articles": "Total Articles",
     "total_citations": "Total Citations",
-    "h_index":         "h-index",
-    "i10_index":       "i10-index",
-    "sdgs_involved":   "SDGs Involved",
-    "years_active":    "Years Active",
-    "collaborators":   "Collaborators",
-    "country":         "Country",
-    "total_views":     "Total Views"
+    "h_index": "h-index",
+    "i10_index": "i10-index",
+    "sdgs_involved": "SDGs Involved",
+    "years_active": "Years Active",
+    "collaborators": "Collaborators",
+    "country": "Country",
+    "total_views": "Total Views"
   },
   "ringkasan": {
-    "publication_trend":   "Publication Trend by Year",
-    "sdg_distribution":    "Article Distribution by SDGs",
+    "publication_trend": "Publication Trend by Year",
+    "sdg_distribution": "Article Distribution by SDGs",
     "recent_publications": "Recent Articles",
-    "collaborators":       "Author Collaborations",
-    "view_all":            "View all publications",
-    "no_trend":            "Trend data not available",
-    "sdg_unclassified":    "SDG not yet classified",
-    "sdg_run_analysis":    "Run SDG analysis to view distribution",
-    "no_publications":     "No publications found",
-    "no_collaborators":    "No collaborator data",
-    "sdg_not_analyzed":    "SDG not yet analyzed",
+    "collaborators": "Author Collaborations",
+    "view_all": "View all publications",
+    "no_trend": "Trend data not available",
+    "sdg_unclassified": "SDG not yet classified",
+    "sdg_run_analysis": "Run SDG analysis to view distribution",
+    "no_publications": "No publications found",
+    "no_collaborators": "No collaborator data",
+    "sdg_not_analyzed": "SDG not yet analyzed",
     "collaborations_unit": "collaborations"
   },
   "publikasi": {
-    "title":           "All Publications",
-    "empty":           "No publications found",
-    "sdg_not_analyzed":"SDG not yet analyzed"
+    "title": "All Publications",
+    "empty": "No publications found",
+    "sdg_not_analyzed": "SDG not yet analyzed"
   },
   "kolaborasi": {
-    "title":               "Collaborators",
-    "affiliations":        "Institutional Affiliations",
-    "map_title":           "Collaboration Map",
-    "map_placeholder":     "World Collaboration Map",
-    "active_collaborators":"{{count}} active collaborators",
-    "empty":               "No collaborator data",
+    "title": "Collaborators",
+    "affiliations": "Institutional Affiliations",
+    "map_title": "Collaboration Map",
+    "map_placeholder": "World Collaboration Map",
+    "active_collaborators": "{{count}} active collaborators",
+    "empty": "No collaborator data",
     "collaborations_unit": "collaborations",
-    "active":              "Active"
+    "active": "Active"
   },
   "dampak": {
-    "h_index_label":       "h-Index",
-    "h_index_desc":        "Productivity and citation impact",
-    "i10_label":           "i10-Index",
-    "i10_desc":            "Publications with 10+ citations",
-    "citations_label":     "Total Citations",
-    "citations_desc":      "Cumulative career citations",
-    "citation_trend":      "Citation Trend by Year",
-    "publication_trend":   "Publication Trend by Year",
-    "no_citation_trend":   "Citation trend data not available",
+    "h_index_label": "h-Index",
+    "h_index_desc": "Productivity and citation impact",
+    "i10_label": "i10-Index",
+    "i10_desc": "Publications with 10+ citations",
+    "citations_label": "Total Citations",
+    "citations_desc": "Cumulative career citations",
+    "citation_trend": "Citation Trend by Year",
+    "publication_trend": "Publication Trend by Year",
+    "no_citation_trend": "Citation trend data not available",
     "citation_trend_note": "Requires Wizdam Impact API integration",
-    "no_data":             "Data not available",
-    "impact_summary":      "Research Impact Summary",
-    "total_articles":      "Total Articles",
-    "sdgs_involved":       "SDGs Involved",
+    "no_data": "Data not available",
+    "impact_summary": "Research Impact Summary",
+    "total_articles": "Total Articles",
+    "sdgs_involved": "SDGs Involved",
     "total_collaborators": "Total Collaborators",
-    "years_active":        "Years Active"
+    "years_active": "Years Active"
   },
   "tentang": {
-    "biography":         "Biography",
-    "research_interests":"Research Interests",
-    "keywords":          "Research Keywords",
-    "academic_info":     "Academic Information",
-    "department":        "Department",
-    "institution":       "Institution",
-    "years_active":      "Years Active",
-    "sdg_focus":         "SDG Focus"
+    "biography": "Biography",
+    "research_interests": "Research Interests",
+    "keywords": "Research Keywords",
+    "academic_info": "Academic Information",
+    "department": "Department",
+    "institution": "Institution",
+    "years_active": "Years Active",
+    "sdg_focus": "SDG Focus"
   },
   "cta": {
-    "title":       "Analyze your article on Sciecola",
-    "subtitle":    "Enter a DOI or ORCID to see instant SDG analysis and classification.",
+    "title": "Analyze your article on Sciecola",
+    "subtitle": "Enter a DOI or ORCID to see instant SDG analysis and classification.",
     "placeholder": "Enter a DOI or ORCID",
-    "button":      "Analyze"
+    "button": "Analyze"
   },
-  "bio_fallback": "Biography not available on ORCID for this researcher."
+  "bio_fallback": "Biography not available on ORCID for this researcher.",
+  "action": {
+    "try_orcid": "Try with an ORCID"
+  }
 }

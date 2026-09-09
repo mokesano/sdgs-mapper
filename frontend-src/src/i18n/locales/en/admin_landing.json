@@ -1,0 +1,22 @@
+{
+  "title": "Public Page Content Editor",
+  "subtitle": "Manage the narrative text shown on the home page to visitors who are not signed in.",
+  "loading": "Loading…",
+  "reset": "Restore from locale",
+  "field": {
+    "badge": "Badge text",
+    "title_1": "Headline line 1",
+    "title_2": "Headline line 2 (gradient)",
+    "subtitle": "Subtitle / description",
+    "cta_primary": "Primary button label",
+    "cta_secondary": "Secondary button label",
+    "orcid_prefix": "ORCID hint — prefix",
+    "orcid_link": "ORCID hint — link text",
+    "section_title": "Section title",
+    "section_subtitle": "Section subtitle",
+    "section_cta": "Section button label",
+    "trust_1": "Trust signal 1",
+    "trust_2": "Trust signal 2",
+    "trust_3": "Trust signal 3"
+  }
+}

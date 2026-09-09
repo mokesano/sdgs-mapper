@@ -1,46 +1,52 @@
 {
-  "breadcrumb": { "home": "Home", "current": "Sponsors" },
+  "breadcrumb": {
+    "home": "Home",
+    "current": "Sponsors"
+  },
   "header": {
-    "title":    "Our Platform Sponsors",
+    "title": "Our Platform Sponsors",
     "subtitle": "Organisations that fund our mission to accelerate SDG-aligned research through the platform. Their support makes this work possible."
   },
   "stats": {
-    "total":    "Active Sponsors",
+    "total": "Active Sponsors",
     "platinum": "Platinum",
-    "gold":     "Gold",
-    "silver":   "Silver",
-    "bronze":   "Bronze"
+    "gold": "Gold",
+    "silver": "Silver",
+    "bronze": "Bronze"
   },
   "filter": {
-    "all":      "All",
+    "all": "All",
     "platinum": "Platinum",
-    "gold":     "Gold",
-    "silver":   "Silver",
-    "bronze":   "Bronze",
-    "search":   "Search sponsors…"
+    "gold": "Gold",
+    "silver": "Silver",
+    "bronze": "Bronze",
+    "search": "Search sponsors…"
   },
   "card": {
-    "since":   "Sponsor since {{year}}",
+    "since": "Sponsor since {{year}}",
     "website": "Visit website",
-    "focus":   "Focus areas"
+    "focus": "Focus areas"
   },
   "tier_label": "{{tier}} Sponsor",
   "empty": {
     "no_match": {
-      "title":    "No sponsors found",
+      "title": "No sponsors found",
       "subtitle": "Try adjusting the tier filter or search keyword."
     },
     "no_data": {
-      "title":    "No active sponsors yet",
+      "title": "No active sponsors yet",
       "subtitle": "Approved sponsorship applications will appear here. Be the first to support us."
     }
   },
   "cta": {
-    "title":    "Interested in Becoming a Sponsor?",
+    "title": "Interested in Becoming a Sponsor?",
     "subtitle": "Join organisations that fund impactful SDG research. Choose a tier that fits your goals.",
-    "button":   "Become a Sponsor"
+    "button": "Become a Sponsor"
   },
   "loading": "Loading sponsors…",
-  "retry":   "Try again",
-  "error":   "Failed to load sponsors. Please try again."
+  "retry": "Try again",
+  "error": "Failed to load sponsors. Please try again.",
+  "action": {
+    "reset": "Reset"
+  }
 }

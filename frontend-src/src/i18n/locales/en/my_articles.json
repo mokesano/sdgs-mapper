@@ -1,53 +1,58 @@
 {
   "breadcrumb": {
-    "home":      "Home",
+    "home": "Home",
     "dashboard": "Dashboard",
-    "current":   "My Articles"
+    "current": "My Articles"
   },
-  "title":          "My Articles",
-  "subtitle":       "Manage, monitor, and analyze the impact of your research publications.",
-  "loading":        "Loading…",
-  "load_failed":    "Failed to load articles",
-  "error_prefix":   "Failed to load:",
-  "count":          "{{count}} articles from ORCID {{orcid}}",
-  "add_via_orcid":  "Add via ORCID",
-  "new_analysis":   "Analyze New Article",
+  "title": "My Articles",
+  "subtitle": "Manage, monitor, and analyze the impact of your research publications.",
+  "loading": "Loading…",
+  "load_failed": "Failed to load articles",
+  "error_prefix": "Failed to load:",
+  "count": "{{count}} articles from ORCID {{orcid}}",
+  "add_via_orcid": "Add via ORCID",
+  "new_analysis": "Analyze New Article",
   "no_orcid": {
-    "title":    "ORCID Not Linked",
+    "title": "ORCID Not Linked",
     "subtitle": "Link your ORCID to see your article list.",
-    "cta":      "Link ORCID"
+    "cta": "Link ORCID"
   },
   "stats": {
-    "total":     "Total Articles",
+    "total": "Total Articles",
     "citations": "Total Citations",
     "avg_score": "Avg. Score",
     "published": "Published"
   },
   "filter": {
-    "search_ph":    "Search title or journal…",
-    "status_all":   "All Statuses",
-    "year_all":     "All Years",
-    "sdg_all":      "All SDGs",
-    "reset":        "Reset"
+    "search_ph": "Search title or journal…",
+    "status_all": "All Statuses",
+    "year_all": "All Years",
+    "sdg_all": "All SDGs",
+    "reset": "Reset"
   },
   "table": {
     "title_journal": "Article & Journal",
-    "date":          "Date",
-    "sdgs":          "SDGs",
-    "citations":     "Citations",
-    "views":         "Views",
-    "score":         "Score",
-    "status":        "Status",
-    "actions":       "Actions",
-    "empty_title":   "No articles found",
-    "empty_desc":    "Try adjusting your filters or search terms.",
-    "action_view":   "View Details",
-    "action_analyze":"Analyze",
-    "action_more":   "More Options"
+    "date": "Date",
+    "sdgs": "SDGs",
+    "citations": "Citations",
+    "views": "Views",
+    "score": "Score",
+    "status": "Status",
+    "actions": "Actions",
+    "empty_title": "No articles found",
+    "empty_desc": "Try adjusting your filters or search terms.",
+    "action_view": "View Details",
+    "action_analyze": "Analyze",
+    "action_more": "More Options"
   },
   "pagination": {
-    "showing":  "Showing {{from}} - {{to}} of {{total}} articles",
-    "prev":     "Previous",
-    "next":     "Next"
+    "showing": "Showing {{from}} - {{to}} of {{total}} articles",
+    "prev": "Previous",
+    "next": "Next"
+  },
+  "status": {
+    "published": "Published",
+    "under_review": "Under Review",
+    "draft": "Draft"
   }
 }

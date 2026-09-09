@@ -10,25 +10,28 @@ import { useAuth } from '../context/AuthContext';
 // PublicHomePage.jsx & locale files (id.json / en.json).
 // =====================================================================
 
-const SCHEMA = [
+/* Skema dibungkus fungsi karena label medannya kini datang dari locale:
+   t() hanya tersedia di dalam komponen, sedangkan skema ini dulu berdiri
+   di lingkup modul. */
+const buildSchema = (t) => [
   {
     section: 'Hero',
     fields: [
-      { path: 'hero.badge',                type: 'text',     label: 'Badge teks' },
-      { path: 'hero.title_1',              type: 'text',     label: 'Judul baris 1' },
-      { path: 'hero.title_2',              type: 'text',     label: 'Judul baris 2 (gradien)' },
-      { path: 'hero.subtitle',             type: 'textarea', label: 'Subjudul / deskripsi', rows: 3 },
-      { path: 'hero.cta_primary',          type: 'text',     label: 'Label tombol utama' },
-      { path: 'hero.cta_secondary',        type: 'text',     label: 'Label tombol sekunder' },
-      { path: 'hero.orcid_hint_prefix',    type: 'text',     label: 'ORCID hint — prefiks' },
-      { path: 'hero.orcid_hint_link',      type: 'text',     label: 'ORCID hint — teks link' },
+      { path: 'hero.badge',                type: 'text',     label: t('field.badge') },
+      { path: 'hero.title_1',              type: 'text',     label: t('field.title_1') },
+      { path: 'hero.title_2',              type: 'text',     label: t('field.title_2') },
+      { path: 'hero.subtitle',             type: 'textarea', label: t('field.subtitle'), rows: 3 },
+      { path: 'hero.cta_primary',          type: 'text',     label: t('field.cta_primary') },
+      { path: 'hero.cta_secondary',        type: 'text',     label: t('field.cta_secondary') },
+      { path: 'hero.orcid_hint_prefix',    type: 'text',     label: t('field.orcid_prefix') },
+      { path: 'hero.orcid_hint_link',      type: 'text',     label: t('field.orcid_link') },
     ],
   },
   {
     section: 'Bagian Fitur',
     fields: [
-      { path: 'features_section.title',    type: 'text',     label: 'Judul section' },
-      { path: 'features_section.subtitle', type: 'textarea', label: 'Subjudul section', rows: 2 },
+      { path: 'features_section.title',    type: 'text',     label: t('field.section_title') },
+      { path: 'features_section.subtitle', type: 'textarea', label: t('field.section_subtitle'), rows: 2 },
     ],
   },
   {
@@ -41,16 +44,16 @@ const SCHEMA = [
   {
     section: '17 SDGs Section',
     fields: [
-      { path: 'sdg_section.title',     type: 'text',     label: 'Judul section' },
-      { path: 'sdg_section.subtitle',  type: 'textarea', label: 'Subjudul section', rows: 2 },
-      { path: 'sdg_section.cta_label', type: 'text',     label: 'Label tombol CTA' },
+      { path: 'sdg_section.title',     type: 'text',     label: t('field.section_title') },
+      { path: 'sdg_section.subtitle',  type: 'textarea', label: t('field.section_subtitle'), rows: 2 },
+      { path: 'sdg_section.cta_label', type: 'text',     label: t('field.section_cta') },
     ],
   },
   {
     section: 'Cara Kerja — Section',
     fields: [
-      { path: 'how_it_works_section.title',    type: 'text',     label: 'Judul section' },
-      { path: 'how_it_works_section.subtitle', type: 'textarea', label: 'Subjudul section', rows: 2 },
+      { path: 'how_it_works_section.title',    type: 'text',     label: t('field.section_title') },
+      { path: 'how_it_works_section.subtitle', type: 'textarea', label: t('field.section_subtitle'), rows: 2 },
     ],
   },
   {
@@ -63,30 +66,30 @@ const SCHEMA = [
   {
     section: 'Bagian AI Insights',
     fields: [
-      { path: 'insights_section.title',     type: 'text',     label: 'Judul section' },
-      { path: 'insights_section.subtitle',  type: 'textarea', label: 'Subjudul section', rows: 2 },
-      { path: 'insights_section.cta_label', type: 'text',     label: 'Label tombol CTA' },
+      { path: 'insights_section.title',     type: 'text',     label: t('field.section_title') },
+      { path: 'insights_section.subtitle',  type: 'textarea', label: t('field.section_subtitle'), rows: 2 },
+      { path: 'insights_section.cta_label', type: 'text',     label: t('field.section_cta') },
     ],
   },
   {
     section: 'Bagian Partner & Sponsor',
     fields: [
-      { path: 'partners_section.title',     type: 'text',     label: 'Judul section' },
-      { path: 'partners_section.subtitle',  type: 'textarea', label: 'Subjudul section', rows: 2 },
-      { path: 'partners_section.cta_label', type: 'text',     label: 'Label tombol CTA' },
+      { path: 'partners_section.title',     type: 'text',     label: t('field.section_title') },
+      { path: 'partners_section.subtitle',  type: 'textarea', label: t('field.section_subtitle'), rows: 2 },
+      { path: 'partners_section.cta_label', type: 'text',     label: t('field.section_cta') },
     ],
   },
   {
     section: 'CTA Akhir',
     fields: [
-      { path: 'cta_section.badge',          type: 'text',     label: 'Badge teks' },
-      { path: 'cta_section.title',          type: 'text',     label: 'Judul' },
-      { path: 'cta_section.subtitle',       type: 'textarea', label: 'Subjudul', rows: 2 },
-      { path: 'cta_section.cta_primary',    type: 'text',     label: 'Label tombol utama' },
-      { path: 'cta_section.cta_secondary',  type: 'text',     label: 'Label tombol sekunder' },
-      { path: 'cta_section.trust_signals.0', type: 'text',    label: 'Trust signal 1' },
-      { path: 'cta_section.trust_signals.1', type: 'text',    label: 'Trust signal 2' },
-      { path: 'cta_section.trust_signals.2', type: 'text',    label: 'Trust signal 3' },
+      { path: 'cta_section.badge',          type: 'text',     label: t('field.badge') },
+      { path: 'cta_section.title',          type: 'text',     label: t('field.title_1') },
+      { path: 'cta_section.subtitle',       type: 'textarea', label: t('field.subtitle'), rows: 2 },
+      { path: 'cta_section.cta_primary',    type: 'text',     label: t('field.cta_primary') },
+      { path: 'cta_section.cta_secondary',  type: 'text',     label: t('field.cta_secondary') },
+      { path: 'cta_section.trust_signals.0', type: 'text',    label: t('field.trust_1') },
+      { path: 'cta_section.trust_signals.1', type: 'text',    label: t('field.trust_2') },
+      { path: 'cta_section.trust_signals.2', type: 'text',    label: t('field.trust_3') },
     ],
   },
 ];
@@ -157,7 +160,8 @@ const setByPath = (obj, path, value) => {
 };
 
 const AdminLandingContent = () => {
-  const { t, i18n } = useTranslation('homepage');
+  const { t, i18n } = useTranslation('admin_landing');
+  const schema = buildSchema(t);
   const { user } = useAuth();
 
   const [lang, setLang]       = useState('id');
@@ -258,9 +262,9 @@ const AdminLandingContent = () => {
         {/* Header */}
         <div className="mb-8 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
           <div>
-            <h1 className="text-3xl font-bold text-gray-900">Editor Konten Halaman Publik</h1>
+            <h1 className="text-3xl font-bold text-gray-900">{t('title')}</h1>
             <p className="mt-1 text-[15px] text-gray-500">
-              Kelola teks naratif yang tampil pada halaman beranda untuk pengunjung yang belum login.
+              {t('subtitle')}
               Placeholder pada setiap kolom adalah nilai bawaan dari locale ({lang.toUpperCase()}).
             </p>
           </div>
@@ -299,11 +303,11 @@ const AdminLandingContent = () => {
         {/* Form */}
         {loading ? (
           <div className="rounded-2xl border border-gray-100 bg-white p-12 text-center text-gray-400">
-            Memuat...
+            {t('loading')}
           </div>
         ) : (
           <div className="space-y-6">
-            {SCHEMA.map((section) => (
+            {schema.map((section) => (
               <section key={section.section} className="rounded-2xl border border-gray-100 bg-white p-6 shadow-sm">
                 <h2 className="mb-4 text-lg font-bold text-gray-900">{section.section}</h2>
                 <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
@@ -331,7 +335,7 @@ const AdminLandingContent = () => {
                   className="inline-flex items-center gap-2 rounded-lg border border-gray-200 bg-white px-4 py-2 text-[15px] font-semibold text-gray-700 transition-all hover:bg-gray-50"
                 >
                   <RotateCcw className="h-4 w-4" />
-                  Reset ke locale
+                  {t('reset')}
                 </button>
                 <button
                   onClick={handleSave}

@@ -292,7 +292,7 @@ const AdminTeams = () => {
                   className={`w-full px-4 py-2.5 bg-gray-50 border rounded-xl text-[15px] ${
                     errors.orcid ? 'border-red-300' : 'border-gray-200'
                   }`}>
-                  <option value="">— select researcher —</option>
+                  <option value="">{t('form.pick_researcher')}</option>
                   {researchers.map(r => (
                     <option key={r.orcid} value={r.orcid}>{r.name} ({r.orcid})</option>
                   ))}
@@ -350,7 +350,7 @@ const AdminTeams = () => {
               value={form.expertise} onChange={handleField} />
 
             <Field label={t('form.sdg_focus')} name="sdg_focus"
-              value={form.sdg_focus} onChange={handleField} placeholder="e.g. 4, 9, 13" />
+              value={form.sdg_focus} onChange={handleField} placeholder={t('form.sdg_hint')} />
 
             <Field label={t('form.display_order')} name="display_order" type="number"
               value={form.display_order} onChange={handleField} />
