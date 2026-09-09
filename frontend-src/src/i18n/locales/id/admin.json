@@ -1,111 +1,187 @@
 {
   "tabs": {
-    "dashboard":          "Dashboard",
-    "impact-config":      "Konfigurasi WIS",
-    "api-security":       "API & Keamanan",
-    "user-management":    "Pengguna",
+    "dashboard": "Dashboard",
+    "impact-config": "Konfigurasi WIS",
+    "api-security": "API & Keamanan",
+    "user-management": "Pengguna",
     "content-moderation": "Konten",
-    "ui-customization":   "Tampilan",
-    "system":             "Sistem",
-    "crawl-queue":        "Crawl Queue",
-    "cache-migration":    "Cache & DB",
-    "audit":              "Audit Log"
+    "ui-customization": "Tampilan",
+    "system": "Sistem",
+    "crawl-queue": "Crawl Queue",
+    "cache-migration": "Cache & DB",
+    "audit": "Audit Log"
   },
   "dashboard": {
-    "title":       "Dashboard Admin",
+    "title": "Dashboard Admin",
     "description": "Ringkasan aktivitas dan metrik sistem WIZDAM",
     "stats": {
-      "users":    "Total Pengguna",
+      "users": "Total Pengguna",
       "api_keys": "API Key Aktif",
       "requests": "Permintaan/Hari",
-      "uptime":   "Uptime"
+      "uptime": "Uptime"
     },
     "recent_activity": "Aktivitas Terbaru"
   },
   "wis": {
     "total_prefix": "Total:",
-    "must_be_100":  "Harus 100%"
+    "must_be_100": "Harus 100%",
+    "formula": "Formula:",
+    "title": "Konfigurasi Wizdam Impact Score",
+    "description": "Atur bobot komposit untuk perhitungan skor dampak riset. Total harus 100%."
   },
   "api_security": {
-    "title":        "API & Keamanan",
-    "description":  "Konfigurasi kunci API eksternal dan kebijakan keamanan platform.",
-    "external_keys":"Kunci API Eksternal",
-    "user_keys":    "Manajemen API Key Pengguna",
+    "title": "API & Keamanan",
+    "description": "Konfigurasi kunci API eksternal dan kebijakan keamanan platform.",
+    "external_keys": "Kunci API Eksternal",
+    "user_keys": "Manajemen API Key Pengguna",
     "helpers": {
       "cloudflareTurnstile": "Digunakan untuk proteksi bot pada form registrasi & login",
-      "recaptchaV3":         "Verifikasi manusia invisible untuk aksi sensitif",
-      "sangiaApi":           "Kunci rahasia untuk komunikasi backend Sangia Engine"
+      "recaptchaV3": "Verifikasi manusia invisible untuk aksi sensitif",
+      "sangiaApi": "Kunci rahasia untuk komunikasi backend Sangia Engine"
     },
     "table": {
-      "user":    "Pengguna",
+      "user": "Pengguna",
       "api_key": "API Key",
       "created": "Dibuat",
-      "status":  "Status",
+      "status": "Status",
       "actions": "Aksi"
     },
-    "revoke": "Cabut"
+    "revoke": "Cabut",
+    "labels": {
+      "cloudflareTurnstile": "Cloudflare Turnstile Site Key",
+      "recaptchaV3": "Google reCAPTCHA v3 Site Key",
+      "sangiaApi": "Sangia API Secret Key"
+    }
   },
   "users": {
-    "title":       "Manajemen Pengguna",
+    "title": "Manajemen Pengguna",
     "description": "Kelola akun peneliti, peran, dan status akses.",
     "table": {
       "name_email": "Nama & Email",
-      "role":       "Peran",
-      "status":     "Status",
-      "joined":     "Bergabung",
-      "actions":    "Aksi"
+      "role": "Peran",
+      "status": "Status",
+      "joined": "Bergabung",
+      "actions": "Aksi"
     },
     "actions": {
-      "promote":   "Jadikan Co-Admin",
-      "suspend":   "Tangguhkan",
-      "disable":   "Nonaktifkan",
-      "activate":  "Aktifkan",
-      "delete":    "Hapus"
+      "promote": "Jadikan Co-Admin",
+      "suspend": "Tangguhkan",
+      "disable": "Nonaktifkan",
+      "activate": "Aktifkan",
+      "delete": "Hapus"
     }
   },
   "content": {
-    "title":       "Moderasi Konten",
+    "title": "Moderasi Konten",
     "description": "Kontrol visibilitas halaman utama untuk setiap modul konten.",
-    "saving":      "Menyimpan…",
-    "save":        "Simpan Pengaturan",
+    "saving": "Menyimpan…",
+    "save": "Simpan Pengaturan",
     "toggles": {
-      "showJournalsMain":     { "label": "Tampilkan Halaman Utama Journals",     "desc": "Jika dinonaktifkan, halaman /journals akan redirect ke dashboard" },
-      "showInstitutionsMain": { "label": "Tampilkan Halaman Utama Institutions", "desc": "Mengontrol akses publik ke daftar institusi mitra" },
-      "showResearchersMain":  { "label": "Tampilkan Halaman Utama Researchers",  "desc": "Menyembunyikan direktori peneliti dari publik" }
+      "showJournalsMain": {
+        "label": "Tampilkan Halaman Utama Journals",
+        "desc": "Jika dinonaktifkan, halaman /journals akan redirect ke dashboard"
+      },
+      "showInstitutionsMain": {
+        "label": "Tampilkan Halaman Utama Institutions",
+        "desc": "Mengontrol akses publik ke daftar institusi mitra"
+      },
+      "showResearchersMain": {
+        "label": "Tampilkan Halaman Utama Researchers",
+        "desc": "Menyembunyikan direktori peneliti dari publik"
+      }
     }
   },
   "ui": {
-    "title":        "Kustomisasi Tampilan",
-    "description":  "Sesuaikan tema, tipografi, dan visualisasi aplikasi.",
-    "applying":     "Menerapkan…",
-    "apply":        "Terapkan Perubahan",
-    "color_theme":  "Tema Warna",
-    "primary":      "Warna Primer",
-    "secondary":    "Warna Sekunder",
-    "font":         "Font Utama",
-    "chart_type":   "Jenis Grafik Default"
+    "title": "Kustomisasi Tampilan",
+    "description": "Sesuaikan tema, tipografi, dan visualisasi aplikasi.",
+    "applying": "Menerapkan…",
+    "apply": "Terapkan Perubahan",
+    "color_theme": "Tema Warna",
+    "primary": "Warna Primer",
+    "secondary": "Warna Sekunder",
+    "font": "Font Utama",
+    "chart_type": "Jenis Grafik Default"
   },
   "system": {
-    "title":       "Pengaturan Sistem",
+    "title": "Pengaturan Sistem",
     "description": "Konfigurasi global untuk perilaku dan kebijakan platform.",
-    "saving":      "Menyimpan…",
-    "save":        "Simpan Pengaturan",
-    "maintenance":       "Mode Pemeliharaan",
-    "maintenance_desc":  "Aktifkan untuk menampilkan halaman maintenance ke semua pengguna non-admin",
-    "registration":      "Izinkan Pendaftaran Baru",
+    "saving": "Menyimpan…",
+    "save": "Simpan Pengaturan",
+    "maintenance": "Mode Pemeliharaan",
+    "maintenance_desc": "Aktifkan untuk menampilkan halaman maintenance ke semua pengguna non-admin",
+    "registration": "Izinkan Pendaftaran Baru",
     "registration_desc": "Nonaktifkan untuk mode invite-only",
-    "email_verify":      "Verifikasi Email Wajib",
+    "email_verify": "Verifikasi Email Wajib",
     "email_verify_desc": "Pengguna harus verifikasi email sebelum akses penuh"
   },
   "audit": {
-    "title":       "Audit Log",
+    "title": "Audit Log",
     "description": "Riwayat lengkap aksi administratif dan perubahan sistem.",
     "table": {
-      "time":   "Waktu",
-      "admin":  "Admin",
+      "time": "Waktu",
+      "admin": "Admin",
       "action": "Aksi",
       "target": "Target",
       "status": "Status"
     }
+  },
+  "appearance": {
+    "chart": {
+      "area": "Grafik Area",
+      "line": "Grafik Garis",
+      "bar": "Grafik Batang",
+      "radar": "Grafik Radar"
+    }
+  },
+  "crawl": {
+    "add": "Tambah ke Antrian",
+    "add_short": "Tambah",
+    "process": "Proses Antrian Sekarang",
+    "queue_items": "Item dalam Antrian",
+    "identifier": "Identifier",
+    "status": "Status",
+    "added": "Ditambahkan",
+    "activity_log": "Log Aktivitas",
+    "placeholder": "ORCID (0000-0000-0000-0000) atau DOI (10.xxx/…)",
+    "stat": {
+      "total": "Total",
+      "pending": "Menunggu",
+      "done": "Selesai",
+      "failed": "Gagal"
+    },
+    "type": "Tipe",
+    "title": "Antrian Perayapan",
+    "description": "Kelola antrian pengambilan data ORCID dan DOI dari API eksternal."
+  },
+  "cache": {
+    "section": "Cache & Migrasi Basis Data",
+    "migration_actions": "Aksi Migrasi",
+    "migrate_desc": "Migrasikan semua cache file legacy ke tabel",
+    "run": "Jalankan Migrasi",
+    "clear": "Bersihkan Cache File",
+    "log": "Log Migrasi",
+    "stat": {
+      "legacy": "Cache File Legacy",
+      "migrated": "Sudah Migrasi (DB)",
+      "db_ready": "DB Tersedia",
+      "yes": "Ya",
+      "no": "Tidak"
+    },
+    "confirm_clear_title": "Bersihkan Cache File?",
+    "confirm_clear_msg": "Semua file cache legacy akan dihapus. Pastikan migrasi ke DB sudah selesai.",
+    "confirm_clear_ok": "Ya, Bersihkan",
+    "migrate_desc_full": "Migrasikan semua cache file legacy ke tabel"
+  },
+  "nav": {
+    "home": "Beranda",
+    "panel": "Panel Admin",
+    "super_user": "Super User",
+    "teams": "Manajemen Tim",
+    "landing": "Konten Landing",
+    "back_to_app": "Kembali ke Aplikasi"
+  },
+  "action": {
+    "cancel": "Batal",
+    "save": "Simpan Perubahan"
   }
 }

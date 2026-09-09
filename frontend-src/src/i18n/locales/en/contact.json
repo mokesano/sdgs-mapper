@@ -1,98 +1,125 @@
 {
   "breadcrumb": {
-    "home":    "Home",
+    "home": "Home",
     "current": "Contact Us"
   },
-  "title":    "Contact Us",
+  "title": "Contact Us",
   "subtitle": "Get in touch with our team — we're here to help with SDG analysis, technical support, and partnerships.",
   "status": {
     "success_title": "Thank you!",
-    "success_body":  "Your message has been sent. We'll reply within 24 hours.",
-    "error_title":   "Something went wrong",
-    "error_body":    "Failed to send your message. Please try again or reach us by email."
+    "success_body": "Your message has been sent. We'll reply within 24 hours.",
+    "error_title": "Something went wrong",
+    "error_body": "Failed to send your message. Please try again or reach us by email."
   },
   "form": {
-    "title":            "Send a Message",
-    "name":             "Full Name *",
-    "name_ph":          "Your name",
-    "email":            "Email Address *",
-    "email_ph":         "you@example.com",
-    "organization":     "Organization",
-    "organization_ph":  "University, company, research institute, etc.",
-    "inquiry_type":     "Inquiry Type",
-    "subject":          "Subject *",
-    "subject_ph":       "Brief description of your inquiry",
-    "message":          "Message *",
-    "message_ph":       "Please describe your inquiry in detail…",
-    "char_suffix":      "characters",
-    "newsletter":       "Subscribe to our newsletter for the latest updates and insights",
-    "privacy_prefix":   "I agree to the",
-    "privacy_link":     "Privacy Policy",
-    "submitting":       "Sending…",
-    "submit":           "Send Message"
+    "title": "Send a Message",
+    "name": "Full Name *",
+    "name_ph": "Your name",
+    "email": "Email Address *",
+    "email_ph": "you@example.com",
+    "organization": "Organization",
+    "organization_ph": "University, company, research institute, etc.",
+    "inquiry_type": "Inquiry Type",
+    "subject": "Subject *",
+    "subject_ph": "Brief description of your inquiry",
+    "message": "Message *",
+    "message_ph": "Please describe your inquiry in detail…",
+    "char_suffix": "characters",
+    "newsletter": "Subscribe to our newsletter for the latest updates and insights",
+    "privacy_prefix": "I agree to the",
+    "privacy_link": "Privacy Policy",
+    "submitting": "Sending…",
+    "submit": "Send Message"
   },
   "errors": {
-    "name_required":     "Full name is required",
-    "email_required":    "Email address is required",
-    "email_invalid":     "Please enter a valid email address",
-    "subject_required":  "Subject is required",
-    "message_required":  "Message is required",
+    "name_required": "Full name is required",
+    "email_required": "Email address is required",
+    "email_invalid": "Please enter a valid email address",
+    "subject_required": "Subject is required",
+    "message_required": "Message is required",
     "message_too_short": "Message must be at least 10 characters long",
-    "privacy_required":  "You must agree to the Privacy Policy"
+    "privacy_required": "You must agree to the Privacy Policy"
   },
   "toast": {
     "success": "Your message was sent successfully!",
-    "error":   "Failed to send the message. Please try again."
+    "error": "Failed to send the message. Please try again."
   },
   "inquiry_types": {
-    "":            "Select inquiry type",
-    "general":     "General Question",
-    "technical":   "Technical Support",
+    "": "Select inquiry type",
+    "general": "General Question",
+    "technical": "Technical Support",
     "partnership": "Partnership",
-    "api":         "API Access",
-    "enterprise":  "Enterprise Solutions",
-    "research":    "Research Collaboration",
-    "media":       "Media Inquiry",
-    "other":       "Other"
+    "api": "API Access",
+    "enterprise": "Enterprise Solutions",
+    "research": "Research Collaboration",
+    "media": "Media Inquiry",
+    "other": "Other"
   },
   "sidebar": {
-    "contact_title":  "Contact Us",
-    "quick_links":    "Quick Links",
-    "office_hours":   "Office Hours",
-    "follow_us":      "Follow Us",
-    "follow_note":    "Get the latest updates from us"
+    "contact_title": "Contact Us",
+    "quick_links": "Quick Links",
+    "office_hours": "Office Hours",
+    "follow_us": "Follow Us",
+    "follow_note": "Get the latest updates from us"
   },
   "contact_methods": {
-    "email":   { "title": "Email",     "note": "General inquiries and support" },
-    "phone":   { "title": "Phone",     "note": "Monday – Friday, 9:00 AM – 6:00 PM PST" },
-    "address": { "title": "Address",   "note": null },
-    "chat":    { "title": "Live Chat", "value": "Available 24/7", "button": "Start Chat" }
+    "email": {
+      "title": "Email",
+      "note": "General inquiries and support"
+    },
+    "phone": {
+      "title": "Phone",
+      "note": "Monday – Friday, 9:00 AM – 6:00 PM PST"
+    },
+    "address": {
+      "title": "Address",
+      "note": null
+    },
+    "chat": {
+      "title": "Live Chat",
+      "value": "Available 24/7",
+      "button": "Start Chat"
+    }
   },
   "quick_links": {
-    "help":      "Help Center",
-    "docs":      "Documentation",
-    "api":       "API Reference",
+    "help": "Help Center",
+    "docs": "Documentation",
+    "api": "API Reference",
     "community": "Community Forum"
   },
   "office_hours": {
     "weekdays": "Monday – Friday",
     "saturday": "Saturday",
-    "sunday":   "Sunday",
-    "closed":   "Closed"
+    "sunday": "Sunday",
+    "closed": "Closed"
   },
   "faq_title": "Frequently Asked Questions",
   "faqs": [
-    { "q": "How quickly do you respond to inquiries?",
-      "a": "We typically respond to all inquiries within 24 hours during business days. For urgent technical issues, our support team aims to respond within 4 hours." },
-    { "q": "Do you offer enterprise support?",
-      "a": "Yes! We offer dedicated enterprise support with priority response times, custom integration assistance, and dedicated account management. Contact us to learn more about our enterprise plans." },
-    { "q": "Can I schedule a demo or consultation?",
-      "a": "Absolutely! We'd be happy to provide a personalized demo of our platform. Please mention “Demo Request” in your inquiry type and preferred time slots in your message." },
-    { "q": "Do you provide API documentation and support?",
-      "a": "Yes, we have comprehensive API documentation and provide full technical support for API integration. Visit our API Reference page or contact our technical team for assistance." }
+    {
+      "q": "How quickly do you respond to inquiries?",
+      "a": "We typically respond to all inquiries within 24 hours during business days. For urgent technical issues, our support team aims to respond within 4 hours."
+    },
+    {
+      "q": "Do you offer enterprise support?",
+      "a": "Yes! We offer dedicated enterprise support with priority response times, custom integration assistance, and dedicated account management. Contact us to learn more about our enterprise plans."
+    },
+    {
+      "q": "Can I schedule a demo or consultation?",
+      "a": "Absolutely! We'd be happy to provide a personalized demo of our platform. Please mention “Demo Request” in your inquiry type and preferred time slots in your message."
+    },
+    {
+      "q": "Do you provide API documentation and support?",
+      "a": "Yes, we have comprehensive API documentation and provide full technical support for API integration. Visit our API Reference page or contact our technical team for assistance."
+    }
   ],
   "cta": {
     "title": "Need a faster response?",
-    "body":  "Use our live chat for instant help, 24/7."
+    "body": "Use our live chat for instant help, 24/7."
+  },
+  "note": {
+    "timezone": "All times are Pacific Standard Time (PST)"
+  },
+  "action": {
+    "start_chat": "Start a Chat"
   }
 }

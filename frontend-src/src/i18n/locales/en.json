@@ -114,5 +114,12 @@
     "privacy": "Privacy",
     "contact": "Contact",
     "copyright": "Copyright"
+  },
+  "error": {
+    "pageNotFound": "Page Not Found",
+    "backToHome": "Back to Home",
+    "getHelp": "Help",
+    "searchSuggestion": "Search for what you need:",
+    "pageNotFoundDescription": "Sorry, the page you are looking for could not be found. It may have been moved or removed."
   }
 }

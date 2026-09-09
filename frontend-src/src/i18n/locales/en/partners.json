@@ -1,54 +1,60 @@
 {
-  "breadcrumb": { "home": "Home", "current": "Partners" },
+  "breadcrumb": {
+    "home": "Home",
+    "current": "Partners"
+  },
   "header": {
-    "title":    "Research Partners & Collaborators",
+    "title": "Research Partners & Collaborators",
     "subtitle": "Institutions, data providers, and organisations collaborating with us on research, data infrastructure, and policy impact for SDG achievement."
   },
   "stats": {
-    "total":      "Total Partners",
-    "academic":   "Academic",
-    "nonprofit":  "Non-profit",
-    "industry":   "Industry",
+    "total": "Total Partners",
+    "academic": "Academic",
+    "nonprofit": "Non-profit",
+    "industry": "Industry",
     "government": "Government"
   },
   "filter": {
-    "all":        "All Partners",
-    "academic":   "Academic",
-    "nonprofit":  "Non-profit",
-    "industry":   "Industry",
+    "all": "All Partners",
+    "academic": "Academic",
+    "nonprofit": "Non-profit",
+    "industry": "Industry",
     "government": "Government",
-    "search":     "Search partners, institutions…"
+    "search": "Search partners, institutions…"
   },
   "card": {
-    "since":            "Partner since {{year}}",
-    "website":          "Visit website",
-    "cooperation":      "Collaboration areas",
-    "contact":          "Contact",
-    "view_profile":     "View profile"
+    "since": "Partner since {{year}}",
+    "website": "Visit website",
+    "cooperation": "Collaboration areas",
+    "contact": "Contact",
+    "view_profile": "View profile"
   },
   "type_label": {
-    "academic":   "Academic",
-    "nonprofit":  "Non-profit",
-    "industry":   "Industry",
+    "academic": "Academic",
+    "nonprofit": "Non-profit",
+    "industry": "Industry",
     "government": "Government"
   },
   "empty": {
     "no_match": {
-      "title":    "No partners found",
+      "title": "No partners found",
       "subtitle": "Try adjusting the type filter or search keyword."
     },
     "no_data": {
-      "title":    "No partners listed yet",
+      "title": "No partners listed yet",
       "subtitle": "Collaboration agreements will appear here once formalised."
     }
   },
   "cta": {
-    "title":    "Want to Collaborate with Us?",
+    "title": "Want to Collaborate with Us?",
     "subtitle": "We welcome partnerships with research institutions, data providers, governments, and organisations committed to evidence-based SDG progress.",
-    "button":   "Propose Collaboration",
-    "guide":    "Partnership Guide"
+    "button": "Propose Collaboration",
+    "guide": "Partnership Guide"
   },
   "loading": "Loading partners…",
-  "retry":   "Try again",
-  "error":   "Failed to load partners. Please try again."
+  "retry": "Try again",
+  "error": "Failed to load partners. Please try again.",
+  "action": {
+    "reset": "Reset"
+  }
 }

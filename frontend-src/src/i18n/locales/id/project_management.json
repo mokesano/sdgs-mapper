@@ -20,7 +20,9 @@
     "completed": "Selesai"
   },
   "filter": {
-    "search_placeholder": "Cari proyek…"
+    "search_placeholder": "Cari proyek…",
+    "filters": "Penyaring",
+    "export": "Ekspor"
   },
   "card": {
     "progress": "Kemajuan",

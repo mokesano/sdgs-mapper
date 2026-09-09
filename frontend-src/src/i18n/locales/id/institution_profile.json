@@ -1,93 +1,93 @@
 {
   "loading": "Memuat institusi…",
   "breadcrumb": {
-    "home":         "Beranda",
+    "home": "Beranda",
     "institutions": "Institusi",
-    "current":      "Profil Institusi"
+    "current": "Profil Institusi"
   },
   "not_found": {
-    "title":     "Institusi Tidak Ditemukan",
-    "subtitle":  "Institusi dengan ID tersebut belum tersedia di basis data.",
-    "back":      "Kembali ke daftar institusi"
+    "title": "Institusi Tidak Ditemukan",
+    "subtitle": "Institusi dengan ID tersebut belum tersedia di basis data.",
+    "back": "Kembali ke daftar institusi"
   },
   "header": {
-    "no_description":  "Deskripsi institusi belum tersedia.",
+    "no_description": "Deskripsi institusi belum tersedia.",
     "fields": {
-      "website":     "Website",
-      "location":    "Lokasi",
+      "website": "Website",
+      "location": "Lokasi",
       "established": "Didirikan: {{value}}",
-      "type":        "Tipe Institusi: {{value}}",
-      "rector":      "Rektor: {{value}}",
-      "faculties":   "Jumlah Fakultas: {{value}}",
-      "students":    "Jumlah Mahasiswa: {{value}}",
-      "lecturers":   "Jumlah Dosen: {{value}}"
+      "type": "Tipe Institusi: {{value}}",
+      "rector": "Rektor: {{value}}",
+      "faculties": "Jumlah Fakultas: {{value}}",
+      "students": "Jumlah Mahasiswa: {{value}}",
+      "lecturers": "Jumlah Dosen: {{value}}"
     },
     "social": {
-      "globe":     "Kunjungi website",
-      "linkedin":  "Kunjungi LinkedIn",
-      "youtube":   "Kunjungi YouTube",
+      "globe": "Kunjungi website",
+      "linkedin": "Kunjungi LinkedIn",
+      "youtube": "Kunjungi YouTube",
       "instagram": "Kunjungi Instagram"
     }
   },
   "stats": {
-    "publications":   "Total Publikasi",
-    "researchers":    "Peneliti",
-    "journals":       "Jurnal Terafiliasi",
+    "publications": "Total Publikasi",
+    "researchers": "Peneliti",
+    "journals": "Jurnal Terafiliasi",
     "collaborations": "Kolaborasi Institusi",
-    "citations":      "Sitasi",
-    "sdgs":           "SDGs Terlibat",
-    "hindex":         "h-index",
-    "i10":            "i10-index"
+    "citations": "Sitasi",
+    "sdgs": "SDGs Terlibat",
+    "hindex": "h-index",
+    "i10": "i10-index"
   },
   "tabs": {
-    "ringkasan":  "Ringkasan",
-    "publikasi":  "Publikasi",
-    "peneliti":   "Peneliti",
-    "sdgs":       "SDGs",
+    "ringkasan": "Ringkasan",
+    "publikasi": "Publikasi",
+    "peneliti": "Peneliti",
+    "sdgs": "SDGs",
     "kolaborasi": "Kolaborasi",
-    "jurnal":     "Jurnal",
-    "berita":     "Berita",
-    "informasi":  "Informasi"
+    "jurnal": "Jurnal",
+    "berita": "Berita",
+    "informasi": "Informasi"
   },
   "ringkasan": {
     "publication_trend": "Tren Publikasi per Tahun",
-    "sdg_distribution":  "Distribusi Publikasi per SDGs",
-    "research_topics":   "Topik Penelitian Utama",
-    "citation_trend":    "Tren Sitasi",
+    "sdg_distribution": "Distribusi Publikasi per SDGs",
+    "research_topics": "Topik Penelitian Utama",
+    "citation_trend": "Tren Sitasi",
     "collaboration_map": "Peta Kolaborasi Institusi",
-    "map_legend_high":   "Kontribusi Tinggi",
-    "map_legend_low":    "Kontribusi Rendah",
-    "map_placeholder":   "Peta kolaborasi dunia",
+    "map_legend_high": "Kontribusi Tinggi",
+    "map_legend_low": "Kontribusi Rendah",
+    "map_placeholder": "Peta kolaborasi dunia",
     "top_collaborators": "Top Kolaborator",
     "publications_unit": "publikasi",
-    "view_all_collab":   "Lihat semua kolaborator",
-    "journals_title":    "Jurnal yang Diterbitkan",
-    "articles_unit":     "artikel",
+    "view_all_collab": "Lihat semua kolaborator",
+    "journals_title": "Jurnal yang Diterbitkan",
+    "articles_unit": "artikel",
     "view_all_journals": "Lihat semua jurnal",
-    "news_title":        "Berita & Kegiatan Terbaru",
-    "view_all_news":     "Lihat semua berita",
-    "all_years":         "Semua Tahun",
-    "last_5_years":      "5 Tahun Terakhir",
+    "news_title": "Berita & Kegiatan Terbaru",
+    "view_all_news": "Lihat semua berita",
+    "all_years": "Semua Tahun",
+    "last_5_years": "5 Tahun Terakhir",
     "empty": {
-      "trend":         "Data tren publikasi belum tersedia",
-      "sdg":           "Distribusi SDG belum tersedia",
-      "citation":      "Data tren sitasi belum tersedia",
-      "topics":        "Topik penelitian belum diekstrak",
+      "trend": "Data tren publikasi belum tersedia",
+      "sdg": "Distribusi SDG belum tersedia",
+      "citation": "Data tren sitasi belum tersedia",
+      "topics": "Topik penelitian belum diekstrak",
       "collaborators": "Data kolaborator belum tersedia",
-      "journals":      "Data jurnal terafiliasi belum tersedia",
-      "news":          "Belum ada berita terbaru"
+      "journals": "Data jurnal terafiliasi belum tersedia",
+      "news": "Belum ada berita terbaru"
     }
   },
   "publikasi": {
-    "title":    "Publikasi Teratas",
-    "empty":    "Belum ada publikasi yang terindeks untuk institusi ini",
-    "year":     "Tahun",
-    "citations":"Sitasi"
+    "title": "Publikasi Teratas",
+    "empty": "Belum ada publikasi yang terindeks untuk institusi ini",
+    "year": "Tahun",
+    "citations": "Sitasi"
   },
   "peneliti": {
-    "title":     "Peneliti Teratas",
-    "empty":     "Belum ada peneliti yang terindeks untuk institusi ini",
-    "hindex":    "h-index",
+    "title": "Peneliti Teratas",
+    "empty": "Belum ada peneliti yang terindeks untuk institusi ini",
+    "hindex": "h-index",
     "citations": "Sitasi"
   },
   "sdgs_tab": {
@@ -107,13 +107,20 @@
     "empty": "Belum ada berita yang dipublikasikan"
   },
   "informasi_tab": {
-    "title":   "Informasi Lengkap Institusi",
+    "title": "Informasi Lengkap Institusi",
     "no_data": "Detail tambahan belum tersedia."
   },
   "cta": {
-    "title":       "Jelajahi riset dan kolaborasi {{name}} di Sciecola",
-    "subtitle":    "Temukan publikasi, peneliti, dan dampak riset untuk masa depan berkelanjutan.",
+    "title": "Jelajahi riset dan kolaborasi {{name}} di Sciecola",
+    "subtitle": "Temukan publikasi, peneliti, dan dampak riset untuk masa depan berkelanjutan.",
     "placeholder": "Cari publikasi atau peneliti dari institusi ini…",
-    "button":      "Cari Sekarang"
+    "button": "Cari Sekarang"
+  },
+  "action": {
+    "read_more": "Selengkapnya →"
+  },
+  "aria": {
+    "breadcrumb": "remah roti",
+    "tabs": "tab profil"
   }
 }

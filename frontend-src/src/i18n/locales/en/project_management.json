@@ -20,7 +20,9 @@
     "completed": "Completed"
   },
   "filter": {
-    "search_placeholder": "Search projects…"
+    "search_placeholder": "Search projects…",
+    "filters": "Filters",
+    "export": "Export"
   },
   "card": {
     "progress": "Progress",

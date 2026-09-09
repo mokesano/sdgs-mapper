@@ -203,7 +203,7 @@ const Admin = () => {
       case 'impact-config':
         return (
           <div className="space-y-6">
-            <SectionHeader title="Konfigurasi Wizdam Impact Score" description="Atur bobot komposit untuk perhitungan skor dampak riset. Total harus 100%." action={<button onClick={saveWisWeights} disabled={loading} className="px-4 py-2 bg-indigo-600 text-white rounded-lg text-[15px] font-medium hover:bg-indigo-700 disabled:opacity-60 transition-colors flex items-center gap-2">{loading ? <svg className="animate-spin w-4 h-4" fill="none" viewBox="0 0 24 24"><circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle><path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path></svg> : <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" /></svg>}Simpan Perubahan</button>} />
+            <SectionHeader title={t('wis.title')} description={t('wis.description')} action={<button onClick={saveWisWeights} disabled={loading} className="px-4 py-2 bg-indigo-600 text-white rounded-lg text-[15px] font-medium hover:bg-indigo-700 disabled:opacity-60 transition-colors flex items-center gap-2">{loading ? <svg className="animate-spin w-4 h-4" fill="none" viewBox="0 0 24 24"><circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle><path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path></svg> : <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" /></svg>}{t('action.save')}</button>} />
             <div className="bg-white rounded-xl border border-gray-200 shadow-sm p-6">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 {Object.entries(wisWeights).map(([key, value]) => (
@@ -215,7 +215,7 @@ const Admin = () => {
                 ))}
               </div>
               <div className="mt-6 p-4 bg-indigo-50 rounded-lg border border-indigo-200">
-                <p className="text-[15px] text-indigo-800"><strong>Formula:</strong> WIS = (Academic × {Math.round(wisWeights.academic * 100)}%) + (Social × {Math.round(wisWeights.social * 100)}%) + (Economic × {Math.round(wisWeights.economic * 100)}%) + (SDG × {Math.round(wisWeights.sdg * 100)}%)</p>
+                <p className="text-[15px] text-indigo-800"><strong>{t('wis.formula')}</strong> WIS = (Academic × {Math.round(wisWeights.academic * 100)}%) + (Social × {Math.round(wisWeights.social * 100)}%) + (Economic × {Math.round(wisWeights.economic * 100)}%) + (SDG × {Math.round(wisWeights.sdg * 100)}%)</p>
                 <p className="text-sm text-indigo-600 mt-1">{t('wis.total_prefix')} {(Object.values(wisWeights).reduce((a, b) => a + b, 0) * 100).toFixed(1)}%{Math.abs(Object.values(wisWeights).reduce((a, b) => a + b, 0) - 1.0) > 0.01 && <span className="text-red-600 ml-2">{t('wis.must_be_100')}</span>}</p>
               </div>
             </div>
@@ -230,9 +230,9 @@ const Admin = () => {
               <h3 className="font-bold text-gray-900 mb-4">{t('api_security.external_keys')}</h3>
               <div className="space-y-4">
                 {[
-                  { key: 'cloudflareTurnstile', label: 'Cloudflare Turnstile Site Key', placeholder: '0x4AAAAAA...', helper: t('api_security.helpers.cloudflareTurnstile') },
-                  { key: 'recaptchaV3', label: 'Google reCAPTCHA v3 Site Key', placeholder: '6Lc...', helper: t('api_security.helpers.recaptchaV3') },
-                  { key: 'sangiaApi', label: 'Sangia API Secret Key', placeholder: 'sk_live_...', helper: t('api_security.helpers.sangiaApi') },
+                  { key: 'cloudflareTurnstile', label: t('api_security.labels.cloudflareTurnstile'), placeholder: '0x4AAAAAA...', helper: t('api_security.helpers.cloudflareTurnstile') },
+                  { key: 'recaptchaV3', label: t('api_security.labels.recaptchaV3'), placeholder: '6Lc...', helper: t('api_security.helpers.recaptchaV3') },
+                  { key: 'sangiaApi', label: t('api_security.labels.sangiaApi'), placeholder: 'sk_live_...', helper: t('api_security.helpers.sangiaApi') },
                 ].map((field) => (
                   <div key={field.key}>
                     <label className="block text-[15px] font-medium text-gray-700 mb-1">{field.label}</label>
@@ -356,7 +356,7 @@ const Admin = () => {
                 <div>
                   <label className="block text-[15px] font-medium text-gray-700 mb-2">{t('ui.chart_type')}</label>
                   <select value={uiSettings.chartType} onChange={(e) => setUiSettings(prev => ({ ...prev, chartType: e.target.value }))} className="w-full px-4 py-2.5 bg-gray-50 border border-gray-200 rounded-lg text-[15px] focus:ring-2 focus:ring-indigo-500">
-                    <option value="area">Area Chart</option><option value="line">Line Chart</option><option value="bar">Bar Chart</option><option value="radar">Radar Chart</option>
+                    <option value="area">{t('appearance.chart.area')}</option><option value="line">{t('appearance.chart.line')}</option><option value="bar">{t('appearance.chart.bar')}</option><option value="radar">{t('appearance.chart.radar')}</option>
                   </select>
                 </div>
               </div>
@@ -428,8 +428,8 @@ const Admin = () => {
         return (
           <div className="space-y-6">
             <SectionHeader
-              title="Crawl Queue"
-              description="Kelola antrian pengambilan data ORCID dan DOI dari API eksternal."
+              title={t('crawl.title')}
+              description={t('crawl.description')}
               action={
                 <button
                   onClick={async () => {
@@ -458,10 +458,10 @@ const Admin = () => {
             {crawlStatus && (
               <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
                 {[
-                  { label: 'Total', value: crawlStatus.total ?? '—', color: 'bg-gray-50 text-gray-700' },
-                  { label: 'Pending', value: crawlStatus.pending ?? '—', color: 'bg-amber-50 text-amber-700' },
-                  { label: 'Selesai', value: crawlStatus.done ?? '—', color: 'bg-green-50 text-green-700' },
-                  { label: 'Gagal', value: crawlStatus.failed ?? '—', color: 'bg-red-50 text-red-700' },
+                  { label: t('crawl.stat.total'), value: crawlStatus.total ?? '—', color: 'bg-gray-50 text-gray-700' },
+                  { label: t('crawl.stat.pending'), value: crawlStatus.pending ?? '—', color: 'bg-amber-50 text-amber-700' },
+                  { label: t('crawl.stat.done'), value: crawlStatus.done ?? '—', color: 'bg-green-50 text-green-700' },
+                  { label: t('crawl.stat.failed'), value: crawlStatus.failed ?? '—', color: 'bg-red-50 text-red-700' },
                 ].map((s, i) => (
                   <div key={i} className={`p-4 rounded-xl border ${s.color} border-current/20`}>
                     <p className="text-2xl font-bold">{s.value}</p>
@@ -471,13 +471,13 @@ const Admin = () => {
               </div>
             )}
             <div className="bg-white rounded-xl border border-gray-200 shadow-sm p-6 space-y-4">
-              <h3 className="font-bold text-gray-900">Tambah ke Antrian</h3>
+              <h3 className="font-bold text-gray-900">{t('crawl.add')}</h3>
               <div className="flex gap-3">
                 <input
                   type="text"
                   value={crawlInput}
                   onChange={e => setCrawlInput(e.target.value)}
-                  placeholder="ORCID (0000-0000-0000-0000) atau DOI (10.xxx/...)"
+                  placeholder={t('crawl.placeholder')}
                   className="flex-1 px-4 py-2.5 bg-gray-50 border border-gray-200 rounded-lg text-[15px] focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 font-mono"
                 />
                 <button
@@ -523,16 +523,16 @@ const Admin = () => {
                 className="w-full py-2.5 bg-green-600 text-white rounded-lg text-[15px] font-medium hover:bg-green-700 disabled:opacity-60 transition-colors flex items-center justify-center gap-2"
               >
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" /><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
-                Proses Antrian Sekarang
+                {t('crawl.process')}
               </button>
             </div>
             {crawlQueue.length > 0 && (
               <div className="bg-white rounded-xl border border-gray-200 shadow-sm overflow-hidden">
-                <div className="px-6 py-4 border-b border-gray-100"><h3 className="font-bold text-gray-900">Item dalam Antrian</h3></div>
+                <div className="px-6 py-4 border-b border-gray-100"><h3 className="font-bold text-gray-900">{t('crawl.queue_items')}</h3></div>
                 <div className="overflow-x-auto">
                   <table className="w-full text-[15px]">
                     <thead className="bg-gray-50 text-gray-600">
-                      <tr><th className="px-4 py-3 text-left font-medium">Identifier</th><th className="px-4 py-3 text-left font-medium">Tipe</th><th className="px-4 py-3 text-left font-medium">Status</th><th className="px-4 py-3 text-left font-medium">Ditambahkan</th></tr>
+                      <tr><th className="px-4 py-3 text-left font-medium">{t('crawl.identifier')}</th><th className="px-4 py-3 text-left font-medium">{t('crawl.type')}</th><th className="px-4 py-3 text-left font-medium">{t('crawl.status')}</th><th className="px-4 py-3 text-left font-medium">{t('crawl.added')}</th></tr>
                     </thead>
                     <tbody className="divide-y divide-gray-100">
                       {crawlQueue.map((item, idx) => (
@@ -550,7 +550,7 @@ const Admin = () => {
             )}
             {crawlLog.length > 0 && (
               <div className="bg-white rounded-xl border border-gray-200 shadow-sm p-6">
-                <h3 className="font-bold text-gray-900 mb-3">Log Aktivitas</h3>
+                <h3 className="font-bold text-gray-900 mb-3">{t('crawl.activity_log')}</h3>
                 <div className="space-y-2 max-h-48 overflow-y-auto font-mono text-sm">
                   {crawlLog.map((entry, idx) => (
                     <div key={idx} className={`flex gap-3 ${entry.type === 'error' ? 'text-red-600' : entry.type === 'success' ? 'text-green-600' : 'text-gray-600'}`}>
@@ -568,7 +568,7 @@ const Admin = () => {
         return (
           <div className="space-y-6">
             <SectionHeader
-              title="Cache & Migrasi Database"
+              title={t('cache.section')}
               description="Migrasikan cache file legacy ke database dan kelola status cache aktif."
               action={
                 <button
@@ -595,9 +595,9 @@ const Admin = () => {
             {cacheStatus && (
               <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
                 {[
-                  { label: 'File Cache Legacy', value: cacheStatus.file_cache_count ?? '—', color: 'bg-amber-50 text-amber-700' },
-                  { label: 'Sudah Migrasi (DB)', value: cacheStatus.db_cache_count ?? '—', color: 'bg-green-50 text-green-700' },
-                  { label: 'DB Tersedia', value: cacheStatus.db_available ? 'Ya' : 'Tidak', color: cacheStatus.db_available ? 'bg-green-50 text-green-700' : 'bg-red-50 text-red-700' },
+                  { label: t('cache.stat.legacy'), value: cacheStatus.file_cache_count ?? '—', color: 'bg-amber-50 text-amber-700' },
+                  { label: t('cache.stat.migrated'), value: cacheStatus.db_cache_count ?? '—', color: 'bg-green-50 text-green-700' },
+                  { label: t('cache.stat.db_ready'), value: cacheStatus.db_available ? t('cache.stat.yes') : t('cache.stat.no'), color: cacheStatus.db_available ? 'bg-green-50 text-green-700' : 'bg-red-50 text-red-700' },
                 ].map((s, i) => (
                   <div key={i} className={`p-4 rounded-xl border ${s.color} border-current/20`}>
                     <p className="text-2xl font-bold">{s.value}</p>
@@ -607,8 +607,8 @@ const Admin = () => {
               </div>
             )}
             <div className="bg-white rounded-xl border border-gray-200 shadow-sm p-6 space-y-4">
-              <h3 className="font-bold text-gray-900">Aksi Migrasi</h3>
-              <p className="text-[15px] text-gray-600">Migrasikan semua cache file legacy ke tabel <code className="bg-gray-100 px-1.5 py-0.5 rounded text-sm font-mono">api_cache</code> di database. Proses ini tidak menghapus file asli.</p>
+              <h3 className="font-bold text-gray-900">{t('cache.migration_actions')}</h3>
+              <p className="text-[15px] text-gray-600">{t('cache.migrate_desc_full')} <code className="bg-gray-100 px-1.5 py-0.5 rounded text-sm font-mono">api_cache</code> di database. Proses ini tidak menghapus file asli.</p>
               <div className="flex flex-wrap gap-3">
                 <button
                   onClick={async () => {
@@ -628,7 +628,7 @@ const Admin = () => {
                   className="px-5 py-2.5 bg-indigo-600 text-white rounded-lg text-[15px] font-medium hover:bg-indigo-700 disabled:opacity-60 transition-colors flex items-center gap-2"
                 >
                   <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12" /></svg>
-                  Jalankan Migrasi
+                  {t('cache.run')}
                 </button>
                 <button
                   onClick={() => confirmAction('clearCache', null)}
@@ -636,13 +636,13 @@ const Admin = () => {
                   className="px-5 py-2.5 bg-red-600 text-white rounded-lg text-[15px] font-medium hover:bg-red-700 disabled:opacity-60 transition-colors flex items-center gap-2"
                 >
                   <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" /></svg>
-                  Bersihkan Cache File
+                  {t('cache.clear')}
                 </button>
               </div>
             </div>
             {cacheLog.length > 0 && (
               <div className="bg-white rounded-xl border border-gray-200 shadow-sm p-6">
-                <h3 className="font-bold text-gray-900 mb-3">Log Migrasi</h3>
+                <h3 className="font-bold text-gray-900 mb-3">{t('cache.log')}</h3>
                 <div className="space-y-2 max-h-48 overflow-y-auto font-mono text-sm">
                   {cacheLog.map((entry, idx) => (
                     <div key={idx} className={`flex gap-3 ${entry.type === 'error' ? 'text-red-600' : entry.type === 'success' ? 'text-green-600' : 'text-gray-600'}`}>
@@ -668,7 +668,7 @@ const Admin = () => {
       suspendUser: { title: 'Tangguhkan Akun?', message: 'Pengguna tidak dapat login hingga ditinjau.', confirmText: 'Ya, Tangguhkan', confirmClass: 'bg-amber-600' },
       deleteUser: { title: 'Hapus Akun Permanen?', message: 'SEMUA data akan dihapus permanen. TIDAK DAPAT DIBATALKAN.', confirmText: 'Ya, Hapus', confirmClass: 'bg-red-700' },
       promoteToCoAdmin: { title: 'Promosikan ke Co-Admin?', message: 'Pengguna akan memiliki akses administratif terbatas.', confirmText: 'Ya, Promosikan', confirmClass: 'bg-indigo-600' },
-      clearCache: { title: 'Bersihkan Cache File?', message: 'Semua file cache legacy akan dihapus. Pastikan migrasi ke DB sudah selesai.', confirmText: 'Ya, Bersihkan', confirmClass: 'bg-red-600' },
+      clearCache: { title: t('cache.confirm_clear_title'), message: t('cache.confirm_clear_msg'), confirmText: t('cache.confirm_clear_ok'), confirmClass: 'bg-red-600' },
     }[confirmModal.action] || { title: 'Konfirmasi', message: 'Lanjutkan?', confirmText: 'Ya', confirmClass: 'bg-indigo-600' };
     return (
       <div className="fixed inset-0 bg-black/50 backdrop-blur-sm z-50 flex items-center justify-center p-4">
@@ -677,7 +677,7 @@ const Admin = () => {
           <div className="p-6">
             <p className="text-[15px] text-gray-600 mb-6">{modal.message}</p>
             <div className="flex gap-3">
-              <button onClick={() => setConfirmModal({ show: false, action: null, target: null })} disabled={loading} className="flex-1 px-4 py-2.5 border border-gray-300 text-gray-700 rounded-lg font-medium hover:bg-gray-50 transition-colors disabled:opacity-50">Batal</button>
+              <button onClick={() => setConfirmModal({ show: false, action: null, target: null })} disabled={loading} className="flex-1 px-4 py-2.5 border border-gray-300 text-gray-700 rounded-lg font-medium hover:bg-gray-50 transition-colors disabled:opacity-50">{t('action.cancel')}</button>
               <button onClick={executeAction} disabled={loading} className={`flex-1 px-4 py-2.5 text-white rounded-lg font-medium transition-colors disabled:opacity-60 flex items-center justify-center gap-2 ${modal.confirmClass}`}>{loading ? <svg className="animate-spin w-4 h-4" fill="none" viewBox="0 0 24 24"><circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle><path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path></svg> : modal.confirmText}</button>
             </div>
           </div>
@@ -692,11 +692,11 @@ const Admin = () => {
     <main className="pt-[68px] pb-12 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
       {/* Breadcrumb */}
       <nav className="flex items-center gap-2 text-[15px] text-gray-600 mb-6">
-        <Link to="/" className="hover:text-indigo-600 transition-colors">Beranda</Link>
+        <Link to="/" className="hover:text-indigo-600 transition-colors">{t('nav.home')}</Link>
         <span className="text-gray-400">
           <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" /></svg>
         </span>
-        <span className="text-gray-900 font-medium">Admin Panel</span>
+        <span className="text-gray-900 font-medium">{t('nav.panel')}</span>
       </nav>
 
       <div className="grid grid-cols-1 lg:grid-cols-4 gap-6">
@@ -710,8 +710,8 @@ const Admin = () => {
                 </svg>
               </div>
               <div>
-                <p className="font-semibold text-gray-900">Admin Panel</p>
-                <p className="text-sm text-red-600 font-medium">Super User</p>
+                <p className="font-semibold text-gray-900">{t('nav.panel')}</p>
+                <p className="text-sm text-red-600 font-medium">{t('nav.super_user')}</p>
               </div>
             </div>
             
@@ -739,19 +739,19 @@ const Admin = () => {
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z" />
                 </svg>
-                Manajemen Tim
+                {t('nav.teams')}
               </Link>
               <Link to="/admin/landing-content" className="flex items-center gap-3 px-3 py-2 rounded-lg text-gray-700 hover:bg-indigo-50 hover:text-indigo-700 font-medium text-[15px]">
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 10h16M4 14h16M4 18h16" />
                 </svg>
-                Konten Landing
+                {t('nav.landing')}
               </Link>
               <Link to="/" className="flex items-center gap-3 px-3 py-2 rounded-lg text-gray-700 hover:bg-gray-50 font-medium text-[15px]">
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
                 </svg>
-                Kembali ke Aplikasi
+                {t('nav.back_to_app')}
               </Link>
             </div>
           </div>

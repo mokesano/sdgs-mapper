@@ -1,111 +1,187 @@
 {
   "tabs": {
-    "dashboard":          "Dashboard",
-    "impact-config":      "WIS Configuration",
-    "api-security":       "API & Security",
-    "user-management":    "Users",
+    "dashboard": "Dashboard",
+    "impact-config": "WIS Configuration",
+    "api-security": "API & Security",
+    "user-management": "Users",
     "content-moderation": "Content",
-    "ui-customization":   "Appearance",
-    "system":             "System",
-    "crawl-queue":        "Crawl Queue",
-    "cache-migration":    "Cache & DB",
-    "audit":              "Audit Log"
+    "ui-customization": "Appearance",
+    "system": "System",
+    "crawl-queue": "Crawl Queue",
+    "cache-migration": "Cache & DB",
+    "audit": "Audit Log"
   },
   "dashboard": {
-    "title":       "Admin Dashboard",
+    "title": "Admin Dashboard",
     "description": "Overview of WIZDAM system activity and metrics",
     "stats": {
-      "users":    "Total Users",
+      "users": "Total Users",
       "api_keys": "Active API Keys",
       "requests": "Requests/Day",
-      "uptime":   "Uptime"
+      "uptime": "Uptime"
     },
     "recent_activity": "Recent Activity"
   },
   "wis": {
     "total_prefix": "Total:",
-    "must_be_100":  "Must equal 100%"
+    "must_be_100": "Must equal 100%",
+    "formula": "Formula:",
+    "title": "Wizdam Impact Score Configuration",
+    "description": "Set the composite weights used to calculate the research impact score. They must total 100%."
   },
   "api_security": {
-    "title":        "API & Security",
-    "description":  "Configure external API keys and platform security policies.",
-    "external_keys":"External API Keys",
-    "user_keys":    "User API Key Management",
+    "title": "API & Security",
+    "description": "Configure external API keys and platform security policies.",
+    "external_keys": "External API Keys",
+    "user_keys": "User API Key Management",
     "helpers": {
       "cloudflareTurnstile": "Used for bot protection on the registration & login forms",
-      "recaptchaV3":         "Invisible human verification for sensitive actions",
-      "sangiaApi":           "Secret key for Sangia Engine backend communication"
+      "recaptchaV3": "Invisible human verification for sensitive actions",
+      "sangiaApi": "Secret key for Sangia Engine backend communication"
     },
     "table": {
-      "user":    "User",
+      "user": "User",
       "api_key": "API Key",
       "created": "Created",
-      "status":  "Status",
+      "status": "Status",
       "actions": "Actions"
     },
-    "revoke": "Revoke"
+    "revoke": "Revoke",
+    "labels": {
+      "cloudflareTurnstile": "Cloudflare Turnstile Site Key",
+      "recaptchaV3": "Google reCAPTCHA v3 Site Key",
+      "sangiaApi": "Sangia API Secret Key"
+    }
   },
   "users": {
-    "title":       "User Management",
+    "title": "User Management",
     "description": "Manage researcher accounts, roles, and access status.",
     "table": {
       "name_email": "Name & Email",
-      "role":       "Role",
-      "status":     "Status",
-      "joined":     "Joined",
-      "actions":    "Actions"
+      "role": "Role",
+      "status": "Status",
+      "joined": "Joined",
+      "actions": "Actions"
     },
     "actions": {
-      "promote":   "Make Co-Admin",
-      "suspend":   "Suspend",
-      "disable":   "Disable",
-      "activate":  "Activate",
-      "delete":    "Delete"
+      "promote": "Make Co-Admin",
+      "suspend": "Suspend",
+      "disable": "Disable",
+      "activate": "Activate",
+      "delete": "Delete"
     }
   },
   "content": {
-    "title":       "Content Moderation",
+    "title": "Content Moderation",
     "description": "Control main-page visibility for each content module.",
-    "saving":      "Saving…",
-    "save":        "Save Settings",
+    "saving": "Saving…",
+    "save": "Save Settings",
     "toggles": {
-      "showJournalsMain":     { "label": "Show Journals Main Page",     "desc": "When disabled, /journals redirects to the dashboard" },
-      "showInstitutionsMain": { "label": "Show Institutions Main Page", "desc": "Controls public access to the partner institution list" },
-      "showResearchersMain":  { "label": "Show Researchers Main Page",  "desc": "Hides the researcher directory from the public" }
+      "showJournalsMain": {
+        "label": "Show Journals Main Page",
+        "desc": "When disabled, /journals redirects to the dashboard"
+      },
+      "showInstitutionsMain": {
+        "label": "Show Institutions Main Page",
+        "desc": "Controls public access to the partner institution list"
+      },
+      "showResearchersMain": {
+        "label": "Show Researchers Main Page",
+        "desc": "Hides the researcher directory from the public"
+      }
     }
   },
   "ui": {
-    "title":        "Appearance Customization",
-    "description":  "Adjust the app's theme, typography, and visualizations.",
-    "applying":     "Applying…",
-    "apply":        "Apply Changes",
-    "color_theme":  "Color Theme",
-    "primary":      "Primary Color",
-    "secondary":    "Secondary Color",
-    "font":         "Primary Font",
-    "chart_type":   "Default Chart Type"
+    "title": "Appearance Customization",
+    "description": "Adjust the app's theme, typography, and visualizations.",
+    "applying": "Applying…",
+    "apply": "Apply Changes",
+    "color_theme": "Color Theme",
+    "primary": "Primary Color",
+    "secondary": "Secondary Color",
+    "font": "Primary Font",
+    "chart_type": "Default Chart Type"
   },
   "system": {
-    "title":       "System Settings",
+    "title": "System Settings",
     "description": "Global configuration for platform behavior and policy.",
-    "saving":      "Saving…",
-    "save":        "Save Settings",
-    "maintenance":       "Maintenance Mode",
-    "maintenance_desc":  "Enable to show the maintenance page to all non-admin users",
-    "registration":      "Allow New Registrations",
+    "saving": "Saving…",
+    "save": "Save Settings",
+    "maintenance": "Maintenance Mode",
+    "maintenance_desc": "Enable to show the maintenance page to all non-admin users",
+    "registration": "Allow New Registrations",
     "registration_desc": "Disable for invite-only mode",
-    "email_verify":      "Require Email Verification",
+    "email_verify": "Require Email Verification",
     "email_verify_desc": "Users must verify their email before full access"
   },
   "audit": {
-    "title":       "Audit Log",
+    "title": "Audit Log",
     "description": "Complete history of administrative actions and system changes.",
     "table": {
-      "time":   "Time",
-      "admin":  "Admin",
+      "time": "Time",
+      "admin": "Admin",
       "action": "Action",
       "target": "Target",
       "status": "Status"
     }
+  },
+  "appearance": {
+    "chart": {
+      "area": "Area Chart",
+      "line": "Line Chart",
+      "bar": "Bar Chart",
+      "radar": "Radar Chart"
+    }
+  },
+  "crawl": {
+    "add": "Add to Queue",
+    "add_short": "Add",
+    "process": "Process the Queue Now",
+    "queue_items": "Items in Queue",
+    "identifier": "Identifier",
+    "status": "Status",
+    "added": "Added",
+    "activity_log": "Activity Log",
+    "placeholder": "ORCID (0000-0000-0000-0000) or DOI (10.xxx/…)",
+    "stat": {
+      "total": "Total",
+      "pending": "Pending",
+      "done": "Done",
+      "failed": "Failed"
+    },
+    "type": "Type",
+    "title": "Crawl Queue",
+    "description": "Manage the queue that fetches ORCID and DOI data from external APIs."
+  },
+  "cache": {
+    "section": "Cache & Database Migration",
+    "migration_actions": "Migration Actions",
+    "migrate_desc": "Migrate every legacy file cache into the table",
+    "run": "Run Migration",
+    "clear": "Clear File Cache",
+    "log": "Migration Log",
+    "stat": {
+      "legacy": "Legacy File Cache",
+      "migrated": "Migrated (DB)",
+      "db_ready": "DB Available",
+      "yes": "Yes",
+      "no": "No"
+    },
+    "confirm_clear_title": "Clear the file cache?",
+    "confirm_clear_msg": "Every legacy cache file will be deleted. Make sure the migration to the database has finished.",
+    "confirm_clear_ok": "Yes, clear it",
+    "migrate_desc_full": "Migrate every legacy cache file into the table"
+  },
+  "nav": {
+    "home": "Home",
+    "panel": "Admin Panel",
+    "super_user": "Super User",
+    "teams": "Team Management",
+    "landing": "Landing Content",
+    "back_to_app": "Back to the App"
+  },
+  "action": {
+    "cancel": "Cancel",
+    "save": "Save Changes"
   }
 }

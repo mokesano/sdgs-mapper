@@ -421,11 +421,11 @@ const CollaborationHub = () => {
                     <div className="flex gap-2 mt-4">
                       <button className="flex-1 bg-indigo-600 text-white py-2 rounded-lg hover:bg-indigo-700 transition-colors text-[15px] font-medium flex items-center justify-center gap-2">
                         <Mail className="w-4 h-4" />
-                        Contact
+                        {t('card.contact')}
                       </button>
                       <button className="flex-1 bg-gray-100 text-gray-700 py-2 rounded-lg hover:bg-gray-200 transition-colors text-[15px] font-medium flex items-center justify-center gap-2">
                         <ExternalLink className="w-4 h-4" />
-                        Profile
+                        {t('card.profile')}
                       </button>
                     </div>
                   </div>
@@ -488,7 +488,7 @@ const CollaborationHub = () => {
                     </div>
                     
                     <button className="bg-indigo-600 text-white px-6 py-2 rounded-lg hover:bg-indigo-700 transition-colors font-medium">
-                      Connect
+                      {t('card.connect')}
                     </button>
                   </div>
                 </div>

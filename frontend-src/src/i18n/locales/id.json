@@ -114,5 +114,12 @@
     "privacy": "Privasi",
     "contact": "Kontak",
     "copyright": "Hak cipta"
+  },
+  "error": {
+    "pageNotFound": "Halaman Tidak Ditemukan",
+    "backToHome": "Kembali ke Beranda",
+    "getHelp": "Bantuan",
+    "searchSuggestion": "Cari yang Anda butuhkan:",
+    "pageNotFoundDescription": "Maaf, halaman yang Anda cari tidak dapat ditemukan. Mungkin halaman telah dipindahkan atau dihapus."
   }
 }

@@ -287,7 +287,7 @@ const Monitoring = () => {
           <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
             <div>
               <h1 className="text-2xl font-bold text-gray-900">{t('title')}</h1>
-              <p className="text-[15px] text-gray-600 mt-1">Real-time monitoring aktivitas dan trafik aplikasi</p>
+              <p className="text-[15px] text-gray-600 mt-1">{t('header.subtitle')}</p>
             </div>
             <div className="flex items-center gap-3">
               <select 
@@ -304,7 +304,7 @@ const Monitoring = () => {
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
                 </svg>
-                Refresh
+                {t('action.refresh')}
               </button>
             </div>
           </div>
@@ -403,7 +403,7 @@ const Monitoring = () => {
         
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
           <div className="bg-white rounded-xl border border-gray-200 shadow-sm p-6">
-            <h3 className="font-bold text-gray-900 mb-4">By Traffic Source</h3>
+            <h3 className="font-bold text-gray-900 mb-4">{t('panel.by_source')}</h3>
             <div className="space-y-4">
               <div>
                 <h4 className="text-[15px] font-semibold text-gray-700 mb-2">{t('sections.sources')}</h4>
@@ -424,7 +424,7 @@ const Monitoring = () => {
               </div>
 
               <div className="pt-4 border-t border-gray-100">
-                <h4 className="text-[15px] font-semibold text-gray-700 mb-2">UTM Campaigns</h4>
+                <h4 className="text-[15px] font-semibold text-gray-700 mb-2">{t('panel.campaigns')}</h4>
                 <div className="space-y-2">
                   {trafficSources.utm.map((utm, idx) => (
                     <div key={idx} className="flex justify-between items-center text-[15px]">
@@ -438,7 +438,7 @@ const Monitoring = () => {
           </div>
 
           <div className="bg-white rounded-xl border border-gray-200 shadow-sm p-6">
-            <h3 className="font-bold text-gray-900 mb-4">By Pages</h3>
+            <h3 className="font-bold text-gray-900 mb-4">{t('panel.by_pages')}</h3>
             <div className="space-y-4">
               <div>
                 <h4 className="text-[15px] font-semibold text-gray-700 mb-2">{t('sections.top_pages')}</h4>
@@ -523,10 +523,10 @@ const Monitoring = () => {
             </div>
             <div className="flex gap-2">
               <button className="px-3 py-1.5 text-[15px] text-gray-600 hover:bg-gray-100 rounded-lg transition-colors">
-                Export CSV
+                {t('action.export')}
               </button>
               <button className="px-3 py-1.5 text-[15px] bg-indigo-600 text-white hover:bg-indigo-700 rounded-lg transition-colors">
-                View All
+                {t('action.view_all')}
               </button>
             </div>
           </div>

@@ -1,50 +1,50 @@
 {
   "create_post": "Create Post",
   "nav": {
-    "feed":          "Feed",
-    "mentions":      "Mentions",
-    "messages":      "Messages",
-    "saved":         "Saved",
+    "feed": "Feed",
+    "mentions": "Mentions",
+    "messages": "Messages",
+    "saved": "Saved",
     "notifications": "Notifications"
   },
   "sections": {
-    "groups":     "Groups & Communities",
-    "topics":     "Popular Topics",
-    "connections":"Connections",
+    "groups": "Groups & Communities",
+    "topics": "Popular Topics",
+    "connections": "Connections",
     "activities": "Recent Activity",
-    "invitations":"Invitations",
-    "events":     "Upcoming Events",
-    "active":     "Who's Active"
+    "invitations": "Invitations",
+    "events": "Upcoming Events",
+    "active": "Who's Active"
   },
   "see_all": {
-    "groups":      "See all groups",
-    "topics":      "See all topics",
+    "groups": "See all groups",
+    "topics": "See all topics",
     "connections": "See all connections",
-    "activities":  "See all activity",
+    "activities": "See all activity",
     "invitations": "See all invitations",
-    "events":      "See all events",
-    "users":       "See all users"
+    "events": "See all events",
+    "users": "See all users"
   },
-  "members":     "{{count}} members",
-  "posts":       "{{count}} posts",
+  "members": "{{count}} members",
+  "posts": "{{count}} posts",
   "composer": {
     "placeholder": "Share something with your community…",
-    "article":     "Article",
-    "image":       "Image",
-    "poll":        "Poll",
-    "video":       "Video",
-    "event":       "Event",
-    "submit":      "Post"
+    "article": "Article",
+    "image": "Image",
+    "poll": "Poll",
+    "video": "Video",
+    "event": "Event",
+    "submit": "Post"
   },
   "tabs": {
-    "semua":     "All",
+    "semua": "All",
     "mengikuti": "Following",
-    "grup":      "Groups",
-    "mentions":  "Mentions"
+    "grup": "Groups",
+    "mentions": "Mentions"
   },
   "sort": {
-    "recent":   "Recent",
-    "popular":  "Popular",
+    "recent": "Recent",
+    "popular": "Popular",
     "relevant": "Relevant"
   },
   "load_more": "Load More",
@@ -52,5 +52,8 @@
     "reject": "Reject",
     "accept": "Accept"
   },
-  "event_register": "Register"
+  "event_register": "Register",
+  "aria": {
+    "user": "User"
+  }
 }

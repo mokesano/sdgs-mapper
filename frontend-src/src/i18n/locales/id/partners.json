@@ -1,54 +1,60 @@
 {
-  "breadcrumb": { "home": "Beranda", "current": "Mitra Kami" },
+  "breadcrumb": {
+    "home": "Beranda",
+    "current": "Mitra Kami"
+  },
   "header": {
-    "title":    "Mitra Riset & Kolaborator",
+    "title": "Mitra Riset & Kolaborator",
     "subtitle": "Institusi, penyedia data, dan organisasi yang berkolaborasi dalam riset, infrastruktur data, dan kebijakan untuk pencapaian SDGs."
   },
   "stats": {
-    "total":      "Total Mitra",
-    "academic":   "Akademik",
-    "nonprofit":  "Nirlaba",
-    "industry":   "Industri",
+    "total": "Total Mitra",
+    "academic": "Akademik",
+    "nonprofit": "Nirlaba",
+    "industry": "Industri",
     "government": "Pemerintah"
   },
   "filter": {
-    "all":        "Semua Mitra",
-    "academic":   "Akademik",
-    "nonprofit":  "Nirlaba",
-    "industry":   "Industri",
+    "all": "Semua Mitra",
+    "academic": "Akademik",
+    "nonprofit": "Nirlaba",
+    "industry": "Industri",
     "government": "Pemerintah",
-    "search":     "Cari mitra, institusi…"
+    "search": "Cari mitra, institusi…"
   },
   "card": {
-    "since":        "Mitra sejak {{year}}",
-    "website":      "Kunjungi website",
-    "cooperation":  "Area kolaborasi",
-    "contact":      "Hubungi",
+    "since": "Mitra sejak {{year}}",
+    "website": "Kunjungi website",
+    "cooperation": "Area kolaborasi",
+    "contact": "Hubungi",
     "view_profile": "Lihat profil"
   },
   "type_label": {
-    "academic":   "Akademik",
-    "nonprofit":  "Nirlaba",
-    "industry":   "Industri",
+    "academic": "Akademik",
+    "nonprofit": "Nirlaba",
+    "industry": "Industri",
     "government": "Pemerintah"
   },
   "empty": {
     "no_match": {
-      "title":    "Tidak ada mitra ditemukan",
+      "title": "Tidak ada mitra ditemukan",
       "subtitle": "Coba ubah filter tipe atau kata kunci pencarian."
     },
     "no_data": {
-      "title":    "Belum ada mitra terdaftar",
+      "title": "Belum ada mitra terdaftar",
       "subtitle": "Perjanjian kolaborasi akan muncul di sini setelah diformalkan."
     }
   },
   "cta": {
-    "title":    "Ingin Berkolaborasi dengan Kami?",
+    "title": "Ingin Berkolaborasi dengan Kami?",
     "subtitle": "Kami terbuka untuk kolaborasi dengan institusi riset, penyedia data, pemerintah, dan organisasi yang berkomitmen pada pencapaian SDGs berbasis bukti.",
-    "button":   "Ajukan Kolaborasi",
-    "guide":    "Panduan Kemitraan"
+    "button": "Ajukan Kolaborasi",
+    "guide": "Panduan Kemitraan"
   },
   "loading": "Memuat data mitra…",
-  "retry":   "Coba lagi",
-  "error":   "Gagal memuat data mitra. Silakan coba lagi."
+  "retry": "Coba lagi",
+  "error": "Gagal memuat data mitra. Silakan coba lagi.",
+  "action": {
+    "reset": "Atur Ulang"
+  }
 }

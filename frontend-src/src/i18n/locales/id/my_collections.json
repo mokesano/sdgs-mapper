@@ -1,37 +1,37 @@
 {
   "breadcrumb": {
-    "home":      "Beranda",
+    "home": "Beranda",
     "dashboard": "Dashboard",
-    "current":   "Koleksi Saya"
+    "current": "Koleksi Saya"
   },
   "header": {
-    "title":    "Koleksi Saya",
+    "title": "Koleksi Saya",
     "subtitle": "Kelola grup riset, artikel, dan referensi yang telah Anda simpan.",
-    "new":      "Koleksi Baru"
+    "new": "Koleksi Baru"
   },
   "auth_required": {
-    "title":    "ORCID Belum Terhubung",
+    "title": "ORCID Belum Terhubung",
     "subtitle": "Hubungkan ORCID Anda untuk mengelola koleksi.",
-    "button":   "Hubungkan ORCID"
+    "button": "Hubungkan ORCID"
   },
   "loading": "Memuat koleksi…",
   "stats": {
-    "total":   "Total Koleksi",
-    "items":   "Total Item",
-    "public":  "Publik",
+    "total": "Total Koleksi",
+    "items": "Total Item",
+    "public": "Publik",
     "private": "Privat"
   },
   "filters": {
     "search_placeholder": "Cari koleksi, deskripsi, atau tag…",
     "privacy": {
-      "all":     "Semua Akses",
-      "public":  "Publik",
+      "all": "Semua Akses",
+      "public": "Publik",
       "private": "Privat"
     },
     "sort": {
       "updated": "Terakhir Diupdate",
-      "name":    "Nama A-Z",
-      "items":   "Jumlah Item"
+      "name": "Nama A-Z",
+      "items": "Jumlah Item"
     },
     "view": {
       "card_aria": "Tampilan kartu",
@@ -40,53 +40,56 @@
   },
   "card": {
     "preview_empty": "Koleksi kosong",
-    "items_unit":    "{{count}} item",
-    "open":          "Buka Koleksi",
+    "items_unit": "{{count}} item",
+    "open": "Buka Koleksi",
     "badge": {
-      "public":  "Publik",
+      "public": "Publik",
       "private": "Privat"
     },
     "actions": {
-      "share":  "Bagikan",
-      "edit":   "Edit",
+      "share": "Bagikan",
+      "edit": "Edit",
       "delete": "Hapus"
     },
     "time": {
-      "today":     "Hari ini",
+      "today": "Hari ini",
       "yesterday": "Kemarin",
-      "days_ago":  "{{count}} hari lalu"
+      "days_ago": "{{count}} hari lalu"
     }
   },
   "empty": {
     "no_match": {
-      "title":    "Tidak ada koleksi yang cocok",
+      "title": "Tidak ada koleksi yang cocok",
       "subtitle": "Filter atau pencarian Anda tidak menghasilkan koleksi apa pun. Coba longgarkan filter atau gunakan kata kunci lain.",
-      "reset":    "Reset Filter"
+      "reset": "Reset Filter"
     },
     "no_data": {
-      "title":    "Anda belum punya koleksi",
+      "title": "Anda belum punya koleksi",
       "subtitle": "Mulai kelompokkan artikel, peneliti, atau jurnal favorit Anda ke dalam koleksi yang terorganisir.",
-      "button":   "Buat Koleksi Pertama"
+      "button": "Buat Koleksi Pertama"
     }
   },
   "modal": {
-    "title":            "Buat Koleksi Baru",
-    "name_label":       "Nama Koleksi",
-    "name_required":    "Wajib diisi",
+    "title": "Buat Koleksi Baru",
+    "name_label": "Nama Koleksi",
+    "name_required": "Wajib diisi",
     "name_placeholder": "Contoh: Riset SDG 13 & 11",
-    "desc_label":       "Deskripsi",
+    "desc_label": "Deskripsi",
     "desc_placeholder": "Jelaskan tujuan koleksi ini…",
-    "tags_label":       "Tag (pisahkan dengan koma)",
+    "tags_label": "Tag (pisahkan dengan koma)",
     "tags_placeholder": "Climate, Urban, SDG 11",
-    "privacy_label":    "Privasi",
-    "privacy_private":  "Privat",
-    "privacy_public":   "Publik",
-    "cancel":           "Batal",
-    "submit":           "Buat Koleksi"
+    "privacy_label": "Privasi",
+    "privacy_private": "Privat",
+    "privacy_public": "Publik",
+    "cancel": "Batal",
+    "submit": "Buat Koleksi"
   },
   "toast": {
     "created": "Koleksi berhasil dibuat!",
     "deleted": "Koleksi berhasil dihapus",
-    "error":   "Aksi gagal: {{message}}"
+    "error": "Aksi gagal: {{message}}"
+  },
+  "aria": {
+    "breadcrumb": "remah roti"
   }
 }

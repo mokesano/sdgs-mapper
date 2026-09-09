@@ -68,7 +68,8 @@
     "edit": "Edit {{entity}}",
     "save": "Save",
     "saving": "Saving…",
-    "cancel": "Cancel"
+    "cancel": "Cancel",
+    "select": "Select"
   },
   "status": {
     "created": "{{entity}} created successfully",

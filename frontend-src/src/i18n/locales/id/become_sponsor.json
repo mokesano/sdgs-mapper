@@ -1,21 +1,21 @@
 {
   "breadcrumb": {
-    "home":     "Beranda",
+    "home": "Beranda",
     "sponsors": "Sponsor",
-    "current":  "Jadi Sponsor"
+    "current": "Jadi Sponsor"
   },
   "header": {
-    "title":    "Jadilah Mitra Strategis",
+    "title": "Jadilah Mitra Strategis",
     "subtitle": "Dukung percepatan dampak riset terhadap SDGs global. Bergabunglah dengan ekosistem inovasi yang menghubungkan peneliti, institusi, dan pembuat kebijakan."
   },
   "stats": {
-    "active_sponsors":  "Sponsor Aktif",
+    "active_sponsors": "Sponsor Aktif",
     "researcher_reach": "Peneliti Terjangkau",
-    "countries":        "Negara",
-    "publications":     "Publikasi Terindeks"
+    "countries": "Negara",
+    "publications": "Publikasi Terindeks"
   },
   "benefits": {
-    "title":       "Mengapa Menjadi Sponsor?",
+    "title": "Mengapa Menjadi Sponsor?",
     "global": {
       "title": "Visibilitas Global",
       "description": "Logo dan profil sponsor ditampilkan di platform yang diakses peneliti dari 150+ negara."
@@ -30,14 +30,14 @@
     }
   },
   "tiers": {
-    "title":        "Pilihan Tier Sponsorship",
-    "subtitle":     "Pilih tingkat kemitraan yang sesuai dengan visi organisasi Anda. Semua tier mencakup akses ke platform dan laporan impact triwulanan.",
+    "title": "Pilihan Tier Sponsorship",
+    "subtitle": "Pilih tingkat kemitraan yang sesuai dengan visi organisasi Anda. Semua tier mencakup akses ke platform dan laporan impact triwulanan.",
     "price_custom": "Custom",
-    "select":       "Pilih {{tier}}",
-    "selected":     "Terpilih",
+    "select": "Pilih {{tier}}",
+    "selected": "Terpilih",
     "active_count": "{{count}} sponsor aktif",
-    "loading":      "Memuat tier…",
-    "empty":        "Definisi tier belum tersedia."
+    "loading": "Memuat tier…",
+    "empty": "Definisi tier belum tersedia."
   },
   "tier_features": {
     "platinum": [
@@ -70,65 +70,65 @@
     ]
   },
   "form": {
-    "step_org":     "Informasi Organisasi",
-    "step_review":  "Review & Kirim",
+    "step_org": "Informasi Organisasi",
+    "step_review": "Review & Kirim",
     "selected_tier": "{{tier}} Sponsor",
-    "change_tier":  "Ganti tier",
-    "section_org":  "Informasi Organisasi",
+    "change_tier": "Ganti tier",
+    "section_org": "Informasi Organisasi",
     "section_review": "Review & Konfirmasi",
-    "summary_title":   "Ringkasan Proposal",
-    "summary_org":     "Organisasi",
-    "summary_type":    "Jenis",
+    "summary_title": "Ringkasan Proposal",
+    "summary_org": "Organisasi",
+    "summary_type": "Jenis",
     "summary_contact": "Kontak",
-    "summary_tier":    "Tier Dipilih",
+    "summary_tier": "Tier Dipilih",
     "field": {
-      "organization_name":  "Nama Organisasi *",
-      "organization_type":  "Jenis Organisasi *",
-      "contact_name":       "Nama Kontak *",
-      "email":              "Email Kerja *",
-      "phone":              "Nomor Telepon",
-      "website":            "Website Organisasi",
-      "country":            "Negara",
-      "message":            "Ceritakan minat kemitraan Anda *",
-      "newsletter":         "Saya ingin menerima newsletter bulanan tentang update platform dan insights riset SDGs",
-      "privacy":            "Saya menyetujui <1>Kebijakan Privasi</1> dan <3>Syarat & Ketentuan</3> sponsorship *"
+      "organization_name": "Nama Organisasi *",
+      "organization_type": "Jenis Organisasi *",
+      "contact_name": "Nama Kontak *",
+      "email": "Email Kerja *",
+      "phone": "Nomor Telepon",
+      "website": "Website Organisasi",
+      "country": "Negara",
+      "message": "Ceritakan minat kemitraan Anda *",
+      "newsletter": "Saya ingin menerima newsletter bulanan tentang update platform dan insights riset SDGs",
+      "privacy": "Saya menyetujui <1>Kebijakan Privasi</1> dan <3>Syarat & Ketentuan</3> sponsorship *"
     },
     "placeholder": {
-      "organization_name":  "Contoh: PT Telkom Indonesia",
-      "contact_name":       "Nama lengkap penanggung jawab",
-      "email":              "nama@organisasi.id",
-      "phone":              "+62 812 3456 7890",
-      "website":            "https://organisasi.id",
-      "message":            "Jelaskan tujuan kemitraan, target SDGs, dan ekspektasi kolaborasi…"
+      "organization_name": "Contoh: PT Telkom Indonesia",
+      "contact_name": "Nama lengkap penanggung jawab",
+      "email": "nama@organisasi.id",
+      "phone": "+62 812 3456 7890",
+      "website": "https://organisasi.id",
+      "message": "Jelaskan tujuan kemitraan, target SDGs, dan ekspektasi kolaborasi…"
     },
     "org_type": {
-      "placeholder":    "Pilih jenis organisasi",
-      "government":     "Pemerintah / Lembaga Publik",
-      "academic":       "Universitas / Institusi Riset",
-      "corporate":      "Perusahaan / Korporasi",
-      "ngo":            "NGO / Organisasi Nirlaba",
-      "international":  "Organisasi Internasional",
-      "other":          "Lainnya"
+      "placeholder": "Pilih jenis organisasi",
+      "government": "Pemerintah / Lembaga Publik",
+      "academic": "Universitas / Institusi Riset",
+      "corporate": "Perusahaan / Korporasi",
+      "ngo": "NGO / Organisasi Nirlaba",
+      "international": "Organisasi Internasional",
+      "other": "Lainnya"
     },
     "country": {
-      "placeholder":  "Pilih negara"
+      "placeholder": "Pilih negara"
     },
-    "char_count":   "{{count}} / 500 karakter",
-    "back":         "← Kembali",
-    "next":         "Lanjutkan →",
-    "submit":       "Kirim Proposal",
-    "submitting":   "Mengirim…",
+    "char_count": "{{count}} / 500 karakter",
+    "back": "← Kembali",
+    "next": "Lanjutkan →",
+    "submit": "Kirim Proposal",
+    "submitting": "Mengirim…",
     "errors": {
-      "required":   "Field ini wajib diisi",
-      "email":      "Format email tidak valid",
-      "message":    "Pesan minimal 20 karakter",
-      "tier":       "Silakan pilih tier sponsorship",
-      "privacy":    "Anda harus menyetujui Kebijakan Privasi",
-      "server":     "Gagal mengirim. Silakan coba lagi."
+      "required": "Field ini wajib diisi",
+      "email": "Format email tidak valid",
+      "message": "Pesan minimal 20 karakter",
+      "tier": "Silakan pilih tier sponsorship",
+      "privacy": "Anda harus menyetujui Kebijakan Privasi",
+      "server": "Gagal mengirim. Silakan coba lagi."
     }
   },
   "success": {
-    "title":    "Proposal Terkirim!",
+    "title": "Proposal Terkirim!",
     "subtitle": "Terima kasih telah mengajukan proposal. Tim kami akan meninjau aplikasi Anda dan menghubungi dalam 5–7 hari kerja.",
     "view_sponsors": "Lihat Daftar Sponsor",
     "submit_another": "Ajukan Proposal Lain"
@@ -163,8 +163,12 @@
     ]
   },
   "testimonials": {
-    "title":   "Kata Mereka Tentang Kemitraan",
+    "title": "Kata Mereka Tentang Kemitraan",
     "loading": "Memuat testimoni…",
-    "empty":   "Belum ada testimoni sponsor yang tersedia."
+    "empty": "Belum ada testimoni sponsor yang tersedia."
+  },
+  "legal": {
+    "privacy": "Kebijakan Privasi",
+    "terms": "Syarat & Ketentuan"
   }
 }

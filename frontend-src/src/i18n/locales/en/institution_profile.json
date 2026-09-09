@@ -1,93 +1,93 @@
 {
   "loading": "Loading institution…",
   "breadcrumb": {
-    "home":         "Home",
+    "home": "Home",
     "institutions": "Institutions",
-    "current":      "Institution Profile"
+    "current": "Institution Profile"
   },
   "not_found": {
-    "title":     "Institution Not Found",
-    "subtitle":  "The institution with that ID is not available in the database.",
-    "back":      "Back to institution list"
+    "title": "Institution Not Found",
+    "subtitle": "The institution with that ID is not available in the database.",
+    "back": "Back to institution list"
   },
   "header": {
-    "no_description":  "Institution description not available.",
+    "no_description": "Institution description not available.",
     "fields": {
-      "website":     "Website",
-      "location":    "Location",
+      "website": "Website",
+      "location": "Location",
       "established": "Established: {{value}}",
-      "type":        "Institution type: {{value}}",
-      "rector":      "Rector: {{value}}",
-      "faculties":   "Faculties: {{value}}",
-      "students":    "Students: {{value}}",
-      "lecturers":   "Lecturers: {{value}}"
+      "type": "Institution type: {{value}}",
+      "rector": "Rector: {{value}}",
+      "faculties": "Faculties: {{value}}",
+      "students": "Students: {{value}}",
+      "lecturers": "Lecturers: {{value}}"
     },
     "social": {
-      "globe":     "Visit website",
-      "linkedin":  "Visit LinkedIn",
-      "youtube":   "Visit YouTube",
+      "globe": "Visit website",
+      "linkedin": "Visit LinkedIn",
+      "youtube": "Visit YouTube",
       "instagram": "Visit Instagram"
     }
   },
   "stats": {
-    "publications":   "Total Publications",
-    "researchers":    "Researchers",
-    "journals":       "Affiliated Journals",
+    "publications": "Total Publications",
+    "researchers": "Researchers",
+    "journals": "Affiliated Journals",
     "collaborations": "Institutional Collaborations",
-    "citations":      "Citations",
-    "sdgs":           "SDGs Involved",
-    "hindex":         "h-index",
-    "i10":            "i10-index"
+    "citations": "Citations",
+    "sdgs": "SDGs Involved",
+    "hindex": "h-index",
+    "i10": "i10-index"
   },
   "tabs": {
-    "ringkasan":  "Overview",
-    "publikasi":  "Publications",
-    "peneliti":   "Researchers",
-    "sdgs":       "SDGs",
+    "ringkasan": "Overview",
+    "publikasi": "Publications",
+    "peneliti": "Researchers",
+    "sdgs": "SDGs",
     "kolaborasi": "Collaboration",
-    "jurnal":     "Journals",
-    "berita":     "News",
-    "informasi":  "Information"
+    "jurnal": "Journals",
+    "berita": "News",
+    "informasi": "Information"
   },
   "ringkasan": {
     "publication_trend": "Publication Trend by Year",
-    "sdg_distribution":  "Publication Distribution by SDGs",
-    "research_topics":   "Top Research Topics",
-    "citation_trend":    "Citation Trend",
+    "sdg_distribution": "Publication Distribution by SDGs",
+    "research_topics": "Top Research Topics",
+    "citation_trend": "Citation Trend",
     "collaboration_map": "Institution Collaboration Map",
-    "map_legend_high":   "High Contribution",
-    "map_legend_low":    "Low Contribution",
-    "map_placeholder":   "World collaboration map",
+    "map_legend_high": "High Contribution",
+    "map_legend_low": "Low Contribution",
+    "map_placeholder": "World collaboration map",
     "top_collaborators": "Top Collaborators",
     "publications_unit": "publications",
-    "view_all_collab":   "View all collaborators",
-    "journals_title":    "Published Journals",
-    "articles_unit":     "articles",
+    "view_all_collab": "View all collaborators",
+    "journals_title": "Published Journals",
+    "articles_unit": "articles",
     "view_all_journals": "View all journals",
-    "news_title":        "Latest News & Activities",
-    "view_all_news":     "View all news",
-    "all_years":         "All Years",
-    "last_5_years":      "Last 5 Years",
+    "news_title": "Latest News & Activities",
+    "view_all_news": "View all news",
+    "all_years": "All Years",
+    "last_5_years": "Last 5 Years",
     "empty": {
-      "trend":         "No publication trend data yet",
-      "sdg":           "No SDG distribution yet",
-      "citation":      "No citation trend data yet",
-      "topics":        "Research topics not yet extracted",
+      "trend": "No publication trend data yet",
+      "sdg": "No SDG distribution yet",
+      "citation": "No citation trend data yet",
+      "topics": "Research topics not yet extracted",
       "collaborators": "No collaborator data yet",
-      "journals":      "No affiliated journal data yet",
-      "news":          "No recent news yet"
+      "journals": "No affiliated journal data yet",
+      "news": "No recent news yet"
     }
   },
   "publikasi": {
-    "title":    "Top Publications",
-    "empty":    "No publications indexed for this institution yet",
-    "year":     "Year",
-    "citations":"Citations"
+    "title": "Top Publications",
+    "empty": "No publications indexed for this institution yet",
+    "year": "Year",
+    "citations": "Citations"
   },
   "peneliti": {
-    "title":     "Top Researchers",
-    "empty":     "No researchers indexed for this institution yet",
-    "hindex":    "h-index",
+    "title": "Top Researchers",
+    "empty": "No researchers indexed for this institution yet",
+    "hindex": "h-index",
     "citations": "Citations"
   },
   "sdgs_tab": {
@@ -107,13 +107,20 @@
     "empty": "No news published yet"
   },
   "informasi_tab": {
-    "title":   "Full Institution Information",
+    "title": "Full Institution Information",
     "no_data": "Additional details not yet available."
   },
   "cta": {
-    "title":       "Explore {{name}} research and collaborations on Sciecola",
-    "subtitle":    "Discover publications, researchers, and research impact for a sustainable future.",
+    "title": "Explore {{name}} research and collaborations on Sciecola",
+    "subtitle": "Discover publications, researchers, and research impact for a sustainable future.",
     "placeholder": "Search publications or researchers from this institution…",
-    "button":      "Search Now"
+    "button": "Search Now"
+  },
+  "action": {
+    "read_more": "Read more →"
+  },
+  "aria": {
+    "breadcrumb": "breadcrumb",
+    "tabs": "profile tabs"
   }
 }

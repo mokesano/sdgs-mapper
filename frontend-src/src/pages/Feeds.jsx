@@ -226,7 +226,7 @@ const Feeds = () => {
             {/* Composer */}
             <div className="bg-white rounded-xl border border-gray-200 shadow-sm p-4">
               <div className="flex gap-3">
-                <img src="https://i.pravatar.cc/150?img=11" alt="User" className="w-10 h-10 rounded-full object-cover" />
+                <img src="https://i.pravatar.cc/150?img=11" alt={t('aria.user')} className="w-10 h-10 rounded-full object-cover" />
                 <div className="flex-grow">
                   <textarea
                     value={postContent}

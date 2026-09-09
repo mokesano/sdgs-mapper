@@ -296,11 +296,11 @@ const ProjectManagement = () => {
                 </div>
                 <button className="flex items-center gap-2 px-4 py-2 bg-gray-100 text-gray-700 rounded-lg hover:bg-gray-200 transition-all">
                   <Filter className="w-4 h-4" />
-                  Filters
+                  {t('filter.filters')}
                 </button>
                 <button className="flex items-center gap-2 px-4 py-2 bg-gray-100 text-gray-700 rounded-lg hover:bg-gray-200 transition-all">
                   <Download className="w-4 h-4" />
-                  Export
+                  {t('filter.export')}
                 </button>
               </div>
             </div>

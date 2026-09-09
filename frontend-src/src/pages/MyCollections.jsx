@@ -157,7 +157,7 @@ const MyCollections = () => {
   return (
     <main className="pt-[68px] pb-12 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
       {/* Breadcrumb */}
-      <nav className="flex items-center gap-2 text-[15px] text-gray-600 mb-6" aria-label="Breadcrumb">
+      <nav className="flex items-center gap-2 text-[15px] text-gray-600 mb-6" aria-label={t('aria.breadcrumb')}>
         <Link to="/" className="hover:text-indigo-600 transition-colors">{t('breadcrumb.home')}</Link>
         <svg className="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"/></svg>
         <Link to="/dashboard" className="hover:text-indigo-600 transition-colors">{t('breadcrumb.dashboard')}</Link>

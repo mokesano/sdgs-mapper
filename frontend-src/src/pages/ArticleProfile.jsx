@@ -422,11 +422,11 @@ const ArticleProfile = () => {
                   { label: 'doi',       value: a.doi },
                   { label: 'eissn',     value: journal.eissn },
                   { label: 'pissn',     value: journal.pissn },
-                  { label: 'volume',    value: journal.volume },
-                  { label: 'issue',     value: journal.issue },
-                  { label: 'pages',     value: journal.pages },
-                  { label: 'published', value: a.publishedDate },
-                  { label: 'type',      value: a.articleType },
+                  { label: t('meta.volume'),    value: journal.volume },
+                  { label: t('meta.issue'),     value: journal.issue },
+                  { label: t('meta.pages'),     value: journal.pages },
+                  { label: t('meta.published'), value: a.publishedDate },
+                  { label: t('meta.type'),      value: a.articleType },
                 ].filter((f) => f.value).map((f) => (
                   <div key={f.label} className="flex justify-between">
                     <span className="text-gray-600">{t(`fields.${f.label}`)}</span>
@@ -749,13 +749,13 @@ const ArticleProfile = () => {
                 { label: 'doi',       value: a.doi },
                 { label: 'eissn',     value: journal.eissn },
                 { label: 'pissn',     value: journal.pissn },
-                { label: 'volume',    value: journal.volume },
-                { label: 'issue',     value: journal.issue },
-                { label: 'pages',     value: journal.pages },
-                { label: 'type',      value: a.articleType },
-                { label: 'language',  value: a.language },
-                { label: 'published', value: a.publishedDate },
-                { label: 'publisher', value: a.publisher },
+                { label: t('meta.volume'),    value: journal.volume },
+                { label: t('meta.issue'),     value: journal.issue },
+                { label: t('meta.pages'),     value: journal.pages },
+                { label: t('meta.type'),      value: a.articleType },
+                { label: t('meta.language'),  value: a.language },
+                { label: t('meta.published'), value: a.publishedDate },
+                { label: t('meta.publisher'), value: a.publisher },
               ].filter((f) => f.value).map((f) => (
                 <div key={f.label} className="flex gap-4 py-2 border-b border-gray-50 last:border-0">
                   <dt className="w-28 shrink-0 text-gray-500">{t(`fields.${f.label}`)}</dt>

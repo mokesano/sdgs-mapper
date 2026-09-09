@@ -1,98 +1,101 @@
 {
   "loading": {
-    "title":    "Memuat profil peneliti…",
+    "title": "Memuat profil peneliti…",
     "subtitle": "Mengambil data ORCID dan menghitung metrik dampak"
   },
   "error": {
-    "title":   "Profil Tidak Ditemukan",
+    "title": "Profil Tidak Ditemukan",
     "message": "ORCID {{orcid}} tidak ditemukan atau tidak dapat diakses.",
-    "retry":   "Coba Lagi",
-    "back":    "Kembali ke Daftar"
+    "retry": "Coba Lagi",
+    "back": "Kembali ke Daftar"
   },
   "profile": {
     "view_orcid": "Lihat di ORCID",
-    "share":      "Bagikan Profil"
+    "share": "Bagikan Profil"
   },
   "tabs": {
-    "ringkasan":  "Ringkasan",
-    "publikasi":  "Publikasi",
+    "ringkasan": "Ringkasan",
+    "publikasi": "Publikasi",
     "kolaborasi": "Kolaborasi",
-    "dampak":     "Dampak",
-    "tentang":    "Tentang"
+    "dampak": "Dampak",
+    "tentang": "Tentang"
   },
   "stats": {
-    "total_articles":  "Total Artikel",
+    "total_articles": "Total Artikel",
     "total_citations": "Total Sitasi",
-    "h_index":         "h-index",
-    "i10_index":       "i10-index",
-    "sdgs_involved":   "SDGs Terlibat",
-    "years_active":    "Tahun Aktif",
-    "collaborators":   "Kolaborator",
-    "country":         "Negara",
-    "total_views":     "Total Views"
+    "h_index": "h-index",
+    "i10_index": "i10-index",
+    "sdgs_involved": "SDGs Terlibat",
+    "years_active": "Tahun Aktif",
+    "collaborators": "Kolaborator",
+    "country": "Negara",
+    "total_views": "Total Views"
   },
   "ringkasan": {
-    "publication_trend":   "Tren Publikasi per Tahun",
-    "sdg_distribution":    "Distribusi Artikel per SDGs",
+    "publication_trend": "Tren Publikasi per Tahun",
+    "sdg_distribution": "Distribusi Artikel per SDGs",
     "recent_publications": "Artikel Terbaru",
-    "collaborators":       "Kolaborasi Penulis",
-    "view_all":            "Lihat semua publikasi",
-    "no_trend":            "Data tren tidak tersedia",
-    "sdg_unclassified":    "SDG belum diklasifikasikan",
-    "sdg_run_analysis":    "Jalankan analisis SDG untuk melihat distribusi",
-    "no_publications":     "Tidak ada publikasi ditemukan",
-    "no_collaborators":    "Tidak ada data kolaborator",
-    "sdg_not_analyzed":    "SDG belum dianalisis",
+    "collaborators": "Kolaborasi Penulis",
+    "view_all": "Lihat semua publikasi",
+    "no_trend": "Data tren tidak tersedia",
+    "sdg_unclassified": "SDG belum diklasifikasikan",
+    "sdg_run_analysis": "Jalankan analisis SDG untuk melihat distribusi",
+    "no_publications": "Tidak ada publikasi ditemukan",
+    "no_collaborators": "Tidak ada data kolaborator",
+    "sdg_not_analyzed": "SDG belum dianalisis",
     "collaborations_unit": "kolaborasi"
   },
   "publikasi": {
-    "title":           "Semua Publikasi",
-    "empty":           "Tidak ada publikasi ditemukan",
-    "sdg_not_analyzed":"SDG belum dianalisis"
+    "title": "Semua Publikasi",
+    "empty": "Tidak ada publikasi ditemukan",
+    "sdg_not_analyzed": "SDG belum dianalisis"
   },
   "kolaborasi": {
-    "title":               "Kolaborator",
-    "affiliations":        "Afiliasi Institusi",
-    "map_title":           "Peta Kolaborasi",
-    "map_placeholder":     "World Collaboration Map",
-    "active_collaborators":"{{count}} kolaborator aktif",
-    "empty":               "Tidak ada data kolaborator",
+    "title": "Kolaborator",
+    "affiliations": "Afiliasi Institusi",
+    "map_title": "Peta Kolaborasi",
+    "map_placeholder": "World Collaboration Map",
+    "active_collaborators": "{{count}} kolaborator aktif",
+    "empty": "Tidak ada data kolaborator",
     "collaborations_unit": "kolaborasi",
-    "active":              "Aktif"
+    "active": "Aktif"
   },
   "dampak": {
-    "h_index_label":        "h-Index",
-    "h_index_desc":         "Produktivitas dan dampak sitasi",
-    "i10_label":            "i10-Index",
-    "i10_desc":             "Publikasi dengan 10+ sitasi",
-    "citations_label":      "Total Sitasi",
-    "citations_desc":       "Akumulasi sitasi sepanjang karier",
-    "citation_trend":       "Tren Sitasi per Tahun",
-    "publication_trend":    "Tren Publikasi per Tahun",
-    "no_citation_trend":    "Data tren sitasi tidak tersedia",
-    "citation_trend_note":  "Membutuhkan integrasi Wizdam Impact API",
-    "no_data":              "Data tidak tersedia",
-    "impact_summary":       "Ringkasan Dampak Penelitian",
-    "total_articles":       "Total Artikel",
-    "sdgs_involved":        "SDGs Terlibat",
-    "total_collaborators":  "Total Kolaborator",
-    "years_active":         "Tahun Aktif"
+    "h_index_label": "h-Index",
+    "h_index_desc": "Produktivitas dan dampak sitasi",
+    "i10_label": "i10-Index",
+    "i10_desc": "Publikasi dengan 10+ sitasi",
+    "citations_label": "Total Sitasi",
+    "citations_desc": "Akumulasi sitasi sepanjang karier",
+    "citation_trend": "Tren Sitasi per Tahun",
+    "publication_trend": "Tren Publikasi per Tahun",
+    "no_citation_trend": "Data tren sitasi tidak tersedia",
+    "citation_trend_note": "Membutuhkan integrasi Wizdam Impact API",
+    "no_data": "Data tidak tersedia",
+    "impact_summary": "Ringkasan Dampak Penelitian",
+    "total_articles": "Total Artikel",
+    "sdgs_involved": "SDGs Terlibat",
+    "total_collaborators": "Total Kolaborator",
+    "years_active": "Tahun Aktif"
   },
   "tentang": {
-    "biography":         "Biografi",
-    "research_interests":"Minat Penelitian",
-    "keywords":          "Kata Kunci Penelitian",
-    "academic_info":     "Informasi Akademik",
-    "department":        "Departemen",
-    "institution":       "Institusi",
-    "years_active":      "Tahun Aktif",
-    "sdg_focus":         "Fokus SDGs"
+    "biography": "Biografi",
+    "research_interests": "Minat Penelitian",
+    "keywords": "Kata Kunci Penelitian",
+    "academic_info": "Informasi Akademik",
+    "department": "Departemen",
+    "institution": "Institusi",
+    "years_active": "Tahun Aktif",
+    "sdg_focus": "Fokus SDGs"
   },
   "cta": {
-    "title":       "Analisis artikel Anda di Sciecola",
-    "subtitle":    "Masukkan DOI atau ORCID untuk melihat analisis dan klasifikasi SDGs secara instan.",
+    "title": "Analisis artikel Anda di Sciecola",
+    "subtitle": "Masukkan DOI atau ORCID untuk melihat analisis dan klasifikasi SDGs secara instan.",
     "placeholder": "Masukkan DOI atau ORCID",
-    "button":      "Analisis"
+    "button": "Analisis"
   },
-  "bio_fallback": "Biografi tidak tersedia di ORCID untuk peneliti ini."
+  "bio_fallback": "Biografi tidak tersedia di ORCID untuk peneliti ini.",
+  "action": {
+    "try_orcid": "Coba dengan ORCID"
+  }
 }

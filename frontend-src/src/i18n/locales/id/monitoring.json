@@ -1,42 +1,55 @@
 {
   "title": "Activity Monitoring",
   "range": {
-    "1h":  "1 Jam Terakhir",
+    "1h": "1 Jam Terakhir",
     "24h": "24 Jam Terakhir",
-    "7d":  "7 Hari Terakhir",
+    "7d": "7 Hari Terakhir",
     "30d": "30 Hari Terakhir"
   },
-  "loading":       "Memuat data monitoring…",
-  "error_prefix":  "Gagal memuat data:",
-  "error_suffix":  "Menampilkan data cache.",
+  "loading": "Memuat data monitoring…",
+  "error_prefix": "Gagal memuat data:",
+  "error_suffix": "Menampilkan data cache.",
   "geo": {
-    "title":    "Geographic Distribution",
+    "title": "Geographic Distribution",
     "subtitle": "Distribusi pengunjung berdasarkan lokasi geografis"
   },
   "stats": {
     "page_views": "Total Page Views",
-    "visitors":   "Unique Visitors",
-    "session":    "Avg. Session",
-    "bounce":     "Bounce Rate"
+    "visitors": "Unique Visitors",
+    "session": "Avg. Session",
+    "bounce": "Bounce Rate"
   },
   "sections": {
-    "sources":     "Sources",
-    "top_pages":   "Top Pages",
+    "sources": "Sources",
+    "top_pages": "Top Pages",
     "entry_pages": "Entry Pages",
-    "browsers":    "Browsers",
-    "platforms":   "Platforms",
-    "os":          "Operating Systems"
+    "browsers": "Browsers",
+    "platforms": "Platforms",
+    "os": "Operating Systems"
   },
   "activity": {
-    "title":    "Page View Activity",
+    "title": "Page View Activity",
     "subtitle": "Detail aktivitas pengunjung secara real-time"
   },
   "table": {
     "timestamp": "Timestamp",
-    "page":      "Page",
-    "source":    "Source",
-    "location":  "Location",
-    "device":    "Device",
-    "duration":  "Duration"
+    "page": "Page",
+    "source": "Source",
+    "location": "Location",
+    "device": "Device",
+    "duration": "Duration"
+  },
+  "header": {
+    "subtitle": "Pemantauan aktivitas dan trafik aplikasi secara langsung"
+  },
+  "action": {
+    "refresh": "Muat Ulang",
+    "export": "Ekspor CSV",
+    "view_all": "Lihat Semua"
+  },
+  "panel": {
+    "by_source": "Menurut Sumber Trafik",
+    "campaigns": "Kampanye UTM",
+    "by_pages": "Menurut Halaman"
   }
 }

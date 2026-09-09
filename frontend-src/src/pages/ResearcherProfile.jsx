@@ -124,7 +124,7 @@ const ResearcherProfile = ({ sourceType = 'orcid' }) => {
             {t('error.back')}
           </Link>
           <Link to="/" className="px-6 py-3 bg-indigo-600 text-white rounded-xl font-semibold hover:bg-indigo-700">
-            Coba dengan ORCID
+            {t('action.try_orcid')}
           </Link>
         </div>
       </main>

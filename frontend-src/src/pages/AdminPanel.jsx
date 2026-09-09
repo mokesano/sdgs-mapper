@@ -251,7 +251,7 @@ const AdminPanel = () => {
                         required={field.required}
                         className="w-full px-4 py-2 border border-gray-200 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent outline-none"
                       >
-                        <option value="">Select {field.label}</option>
+                        <option value="">{t('action.select')} {field.label}</option>
                         {field.options.map(opt => (
                           <option key={opt} value={opt}>
                             {opt.charAt(0).toUpperCase() + opt.slice(1)}

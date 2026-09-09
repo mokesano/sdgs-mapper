@@ -32,15 +32,32 @@
     "subtitle": "Perkuat dampak riset Anda lewat kemitraan yang tepat sasaran."
   },
   "features": [
-    { "title": "Pencocokan Berbasis AI", "description": "Kolaborator dicarikan berdasarkan minat riset, fokus SDG, dan keahlian yang saling melengkapi." },
-    { "title": "Kesesuaian SDG", "description": "Terhubung dengan peneliti yang menggarap Tujuan Pembangunan Berkelanjutan yang sama." },
-    { "title": "Penemuan Proyek", "description": "Telusuri proyek yang sedang berjalan dan temukan celah tempat keahlian Anda dibutuhkan." },
-    { "title": "Jaringan Tepercaya", "description": "Bangun reputasi lewat kolaborasi terverifikasi dan rekomendasi sesama peneliti." }
+    {
+      "title": "Pencocokan Berbasis AI",
+      "description": "Kolaborator dicarikan berdasarkan minat riset, fokus SDG, dan keahlian yang saling melengkapi."
+    },
+    {
+      "title": "Kesesuaian SDG",
+      "description": "Terhubung dengan peneliti yang menggarap Tujuan Pembangunan Berkelanjutan yang sama."
+    },
+    {
+      "title": "Penemuan Proyek",
+      "description": "Telusuri proyek yang sedang berjalan dan temukan celah tempat keahlian Anda dibutuhkan."
+    },
+    {
+      "title": "Jaringan Tepercaya",
+      "description": "Bangun reputasi lewat kolaborasi terverifikasi dan rekomendasi sesama peneliti."
+    }
   ],
   "cta": {
     "title": "Siap memperluas jaringan riset Anda?",
     "subtitle": "Bergabung dengan ribuan peneliti yang sudah berkolaborasi lewat Sciecola.",
     "primary": "Buat Profil Anda",
     "secondary": "Pelajari Lebih Lanjut"
+  },
+  "card": {
+    "contact": "Hubungi",
+    "profile": "Profil",
+    "connect": "Terhubung"
   }
 }

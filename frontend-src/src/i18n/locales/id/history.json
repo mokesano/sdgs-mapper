@@ -1,36 +1,43 @@
 {
-  "breadcrumb": { "home": "Beranda", "about": "Tentang Kami", "current": "Sejarah" },
+  "breadcrumb": {
+    "home": "Beranda",
+    "about": "Tentang Kami",
+    "current": "Sejarah"
+  },
   "header": {
-    "title":    "Perjalanan Platform Kami",
+    "title": "Perjalanan Platform Kami",
     "subtitle": "Dari ide sederhana hingga menjadi platform analitik riset terdepan untuk pencapaian SDGs."
   },
   "type_label": {
-    "milestone":   "Tonggak",
-    "feature":     "Fitur",
+    "milestone": "Tonggak",
+    "feature": "Fitur",
     "partnership": "Kemitraan",
-    "award":       "Penghargaan",
-    "research":    "Riset"
+    "award": "Penghargaan",
+    "research": "Riset"
   },
   "filter": {
-    "all":         "Semua Peristiwa",
-    "featured":    "Unggulan Saja"
+    "all": "Semua Peristiwa",
+    "featured": "Unggulan Saja"
   },
   "summary": {
-    "title":       "Platform Hari Ini",
-    "loading":     "Memuat statistik terkini…",
-    "empty":       "Statistik platform belum tersedia."
+    "title": "Platform Hari Ini",
+    "loading": "Memuat statistik terkini…",
+    "empty": "Statistik platform belum tersedia."
   },
   "empty": {
-    "title":       "Belum ada peristiwa",
-    "subtitle":    "Tonggak penting dan pembaruan platform akan muncul di sini seiring perjalanan."
+    "title": "Belum ada peristiwa",
+    "subtitle": "Tonggak penting dan pembaruan platform akan muncul di sini seiring perjalanan."
   },
   "cta": {
-    "title":       "Ingin Menjadi Bagian dari Perjalanan Kami?",
-    "subtitle":    "Bergabunglah sebagai mitra atau sponsor untuk mendukung percepatan dampak riset terhadap SDGs.",
-    "sponsor":     "Jadi Sponsor",
-    "contact":     "Hubungi Kami"
+    "title": "Ingin Menjadi Bagian dari Perjalanan Kami?",
+    "subtitle": "Bergabunglah sebagai mitra atau sponsor untuk mendukung percepatan dampak riset terhadap SDGs.",
+    "sponsor": "Jadi Sponsor",
+    "contact": "Hubungi Kami"
   },
   "loading": "Memuat timeline…",
-  "retry":   "Coba lagi",
-  "error":   "Gagal memuat timeline. Silakan coba lagi."
+  "retry": "Coba lagi",
+  "error": "Gagal memuat timeline. Silakan coba lagi.",
+  "action": {
+    "learn_more": "Selengkapnya"
+  }
 }

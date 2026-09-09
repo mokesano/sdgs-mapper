@@ -68,7 +68,8 @@
     "edit": "Ubah {{entity}}",
     "save": "Simpan",
     "saving": "Menyimpan…",
-    "cancel": "Batal"
+    "cancel": "Batal",
+    "select": "Pilih"
   },
   "status": {
     "created": "{{entity}} berhasil dibuat",

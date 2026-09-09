@@ -32,15 +32,32 @@
     "subtitle": "Strengthen your research impact through partnerships that fit."
   },
   "features": [
-    { "title": "AI-Powered Matching", "description": "Collaborators are found from research interests, SDG focus and complementary expertise." },
-    { "title": "SDG Alignment", "description": "Connect with researchers working on the same Sustainable Development Goals." },
-    { "title": "Project Discovery", "description": "Browse ongoing projects and find where your expertise is needed." },
-    { "title": "Trust Network", "description": "Build a reputation through verified collaborations and peer recommendations." }
+    {
+      "title": "AI-Powered Matching",
+      "description": "Collaborators are found from research interests, SDG focus and complementary expertise."
+    },
+    {
+      "title": "SDG Alignment",
+      "description": "Connect with researchers working on the same Sustainable Development Goals."
+    },
+    {
+      "title": "Project Discovery",
+      "description": "Browse ongoing projects and find where your expertise is needed."
+    },
+    {
+      "title": "Trust Network",
+      "description": "Build a reputation through verified collaborations and peer recommendations."
+    }
   ],
   "cta": {
     "title": "Ready to widen your research network?",
     "subtitle": "Join thousands of researchers already collaborating through Sciecola.",
     "primary": "Create Your Profile",
     "secondary": "Learn More"
+  },
+  "card": {
+    "contact": "Contact",
+    "profile": "Profile",
+    "connect": "Connect"
   }
 }

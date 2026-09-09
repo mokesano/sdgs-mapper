@@ -1,78 +1,78 @@
 {
   "loading": "Memuat artikel…",
   "not_found": {
-    "title":   "Artikel Tidak Ditemukan",
+    "title": "Artikel Tidak Ditemukan",
     "message": "Artikel dengan DOI {{doi}} tidak tersedia di basis data.",
-    "retry":   "Coba Lagi",
-    "home":    "Ke Beranda"
+    "retry": "Coba Lagi",
+    "home": "Ke Beranda"
   },
   "header": {
     "badge_classified": "Artikel Terklasifikasi",
-    "open_access":      "Open Access",
-    "no_authors":       "Informasi penulis tidak tersedia",
-    "more_authors":     "+ Lihat semua penulis",
+    "open_access": "Open Access",
+    "no_authors": "Informasi penulis tidak tersedia",
+    "more_authors": "+ Lihat semua penulis",
     "actions": {
       "download": "Unduh PDF",
-      "cite":     "Kutip",
-      "share":    "Bagikan"
+      "cite": "Kutip",
+      "share": "Bagikan"
     },
     "meta": {
-      "type":       "Jenis Artikel",
-      "language":   "Bahasa",
-      "published":  "Diterbitkan",
-      "publisher":  "Penerbit"
+      "type": "Jenis Artikel",
+      "language": "Bahasa",
+      "published": "Diterbitkan",
+      "publisher": "Penerbit"
     }
   },
   "stats": {
-    "citations":      "Sitasi",
-    "h_index":        "h-Index",
-    "views":          "Views",
-    "downloads":      "Downloads",
-    "altmetric":      "Altmetric Score",
-    "impact":         "Impact Score"
+    "citations": "Sitasi",
+    "h_index": "h-Index",
+    "views": "Views",
+    "downloads": "Downloads",
+    "altmetric": "Altmetric Score",
+    "impact": "Impact Score"
   },
   "primary_actions": {
-    "analyze":   "Analisis Artikel",
-    "collection":"Tambahkan ke Koleksi"
+    "analyze": "Analisis Artikel",
+    "collection": "Tambahkan ke Koleksi"
   },
   "tabs": {
-    "ringkasan":    "Ringkasan",
+    "ringkasan": "Ringkasan",
     "teks-kutipan": "Teks & Kutipan",
-    "sdgs":         "SDGs",
-    "metrik":       "Metrik",
-    "kolaborasi":   "Kolaborasi",
-    "versi":        "Versi",
-    "informasi":    "Informasi"
+    "sdgs": "SDGs",
+    "metrik": "Metrik",
+    "kolaborasi": "Kolaborasi",
+    "versi": "Versi",
+    "informasi": "Informasi"
   },
   "ringkasan": {
-    "abstract":         "Abstrak",
-    "no_abstract":      "Abstrak tidak tersedia",
-    "keywords":         "Kata Kunci",
-    "sdg_title":        "Klasifikasi SDGs",
-    "sdg_details":      "Lihat detail",
-    "no_sdg":           "Klasifikasi SDG belum tersedia",
-    "journal_title":    "Jurnal & Penerbit",
-    "issn":             "ISSN: {{value}}",
-    "publisher_label":  "Penerbit: {{value}}",
-    "quartile":         "Quartile: {{value}}",
-    "view_journal":     "Lihat Profil Jurnal",
-    "article_info":     "Informasi Artikel",
-    "preprint":         "Preprint",
-    "view_all":         "Lihat semua",
-    "no_preprint":      "Tidak ada preprint tersedia",
-    "view_all_preprint":"Lihat Semua Preprint"
+    "abstract": "Abstrak",
+    "no_abstract": "Abstrak tidak tersedia",
+    "keywords": "Kata Kunci",
+    "sdg_title": "Klasifikasi SDGs",
+    "sdg_details": "Lihat detail",
+    "no_sdg": "Klasifikasi SDG belum tersedia",
+    "journal_title": "Jurnal & Penerbit",
+    "issn": "ISSN: {{value}}",
+    "publisher_label": "Penerbit: {{value}}",
+    "quartile": "Quartile: {{value}}",
+    "view_journal": "Lihat Profil Jurnal",
+    "article_info": "Informasi Artikel",
+    "preprint": "Preprint",
+    "view_all": "Lihat semua",
+    "no_preprint": "Tidak ada preprint tersedia",
+    "view_all_preprint": "Lihat Semua Preprint"
   },
   "fields": {
-    "doi":       "DOI",
-    "eissn":     "EISSN",
-    "pissn":     "PISSN",
-    "volume":    "Volume",
-    "issue":     "Issue",
-    "pages":     "Halaman",
+    "doi": "DOI",
+    "eissn": "EISSN",
+    "pissn": "PISSN",
+    "volume": "Volume",
+    "issue": "Issue",
+    "pages": "Halaman",
     "published": "Diterbitkan",
-    "type":      "Tipe Artikel",
-    "license":   "Lisensi",
-    "language":  "Bahasa",
+    "type": "Tipe Artikel",
+    "license": "Lisensi",
+    "language": "Bahasa",
     "publisher": "Penerbit"
   },
   "teks_kutipan": {
@@ -80,52 +80,61 @@
     "top_citations": "Kutipan Teratas",
     "total_citations": "{{count}} total sitasi",
     "citations_label": "{{count}} Sitasi",
-    "citation_trend":  "Tren Sitasi per Tahun",
-    "no_top_citations":"Belum ada data kutipan yang menyitir artikel ini"
+    "citation_trend": "Tren Sitasi per Tahun",
+    "no_top_citations": "Belum ada data kutipan yang menyitir artikel ini"
   },
   "sdgs_tab": {
-    "title":     "Klasifikasi SDGs",
-    "details":   "Detail Kontribusi SDG",
-    "about_title":  "Tentang Klasifikasi Ini",
-    "about_text":   "Klasifikasi SDG dilakukan menggunakan model AI Wizdam yang menganalisis judul, abstrak, dan kata kunci artikel. Skor mencerminkan relevansi konten terhadap masing-masing tujuan pembangunan berkelanjutan PBB.",
-    "no_sdg":    "Klasifikasi SDG belum tersedia untuk artikel ini"
+    "title": "Klasifikasi SDGs",
+    "details": "Detail Kontribusi SDG",
+    "about_title": "Tentang Klasifikasi Ini",
+    "about_text": "Klasifikasi SDG dilakukan menggunakan model AI Wizdam yang menganalisis judul, abstrak, dan kata kunci artikel. Skor mencerminkan relevansi konten terhadap masing-masing tujuan pembangunan berkelanjutan PBB.",
+    "no_sdg": "Klasifikasi SDG belum tersedia untuk artikel ini"
   },
   "kolaborasi": {
-    "authors":         "Penulis & Afiliasi",
-    "related":         "Artikel Terkait",
-    "no_authors":      "Belum ada data penulis",
-    "no_related":      "Belum ada artikel terkait"
+    "authors": "Penulis & Afiliasi",
+    "related": "Artikel Terkait",
+    "no_authors": "Belum ada data penulis",
+    "no_related": "Belum ada artikel terkait"
   },
   "metrik": {
-    "total_views":      "Total Views",
-    "total_downloads":  "Total Downloads",
-    "total_citations":  "Total Sitasi",
-    "altmetric":        "Altmetric Score",
+    "total_views": "Total Views",
+    "total_downloads": "Total Downloads",
+    "total_citations": "Total Sitasi",
+    "altmetric": "Altmetric Score",
     "performance_year": "Performa Metrik per Tahun",
-    "all_years":        "Semua Tahun",
-    "last_5_years":     "5 Tahun Terakhir",
-    "views_trend":      "Tren Views per Tahun",
-    "no_metrics":       "Data metrik tahunan belum tersedia"
+    "all_years": "Semua Tahun",
+    "last_5_years": "5 Tahun Terakhir",
+    "views_trend": "Tren Views per Tahun",
+    "no_metrics": "Data metrik tahunan belum tersedia"
   },
   "versi": {
-    "title":     "Tautan Preprint",
-    "no_title":  "Tidak ada preprint",
+    "title": "Tautan Preprint",
+    "no_title": "Tidak ada preprint",
     "no_subtitle": "Artikel ini tidak memiliki preprint yang terdaftar di server preprint utama (ArXiv, BioRxiv, MedRxiv, SSRN, OSF).",
-    "preprint":  "Preprint",
-    "source":    "Sumber: {{source}} · {{date}}"
+    "preprint": "Preprint",
+    "source": "Sumber: {{source}} · {{date}}"
   },
   "informasi": {
-    "article_info":  "Informasi Artikel",
-    "journal":       "Jurnal & Penerbit",
-    "copyright":     "Hak Cipta & Lisensi",
+    "article_info": "Informasi Artikel",
+    "journal": "Jurnal & Penerbit",
+    "copyright": "Hak Cipta & Lisensi",
     "copyright_label": "Hak Cipta",
-    "license_label":   "Lisensi",
+    "license_label": "Lisensi",
     "copyright_value": "© {{year}} Penulis"
   },
   "cta": {
-    "title":       "Ingin menganalisis artikel ini lebih dalam?",
-    "subtitle":    "Masukkan DOI atau ORCID untuk mendapatkan analisis dan klasifikasi SDGs secara instan.",
+    "title": "Ingin menganalisis artikel ini lebih dalam?",
+    "subtitle": "Masukkan DOI atau ORCID untuk mendapatkan analisis dan klasifikasi SDGs secara instan.",
     "placeholder": "Masukkan DOI atau ORCID",
-    "button":      "Analisis Sekarang"
+    "button": "Analisis Sekarang"
+  },
+  "meta": {
+    "volume": "volume",
+    "issue": "nomor",
+    "pages": "halaman",
+    "published": "terbit",
+    "type": "jenis",
+    "language": "bahasa",
+    "publisher": "penerbit"
   }
 }
