@@ -1,11 +1,27 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router';
+import { useTranslation } from 'react-i18next';
 import { FolderOpen, Users, Calendar, CheckCircle, Clock, AlertCircle, Plus,
   Search, Filter, MoreVertical, Edit2, Trash2, Share2, Download, MessageSquare,
   FileText, BarChart3, Settings, Eye, Star, Zap, Target, TrendingUp, Award
 } from 'lucide-react';
 
 const ProjectManagement = () => {
+  const { t } = useTranslation('project_management');
+
+  /* Ikon dan warna tetap di kode; judul dan keterangannya dari locale. */
+  const quickText = t('quick.items', { returnObjects: true });
+  const quickActions = [
+    { icon: Plus,      color: 'from-blue-500 to-indigo-600' },
+    { icon: Users,     color: 'from-green-500 to-emerald-600' },
+    { icon: BarChart3, color: 'from-purple-500 to-pink-600' },
+    { icon: Target,    color: 'from-orange-500 to-red-600' },
+  ].map((card, i) => ({
+    ...card,
+    title: Array.isArray(quickText) ? quickText[i]?.title ?? '' : '',
+    desc:  Array.isArray(quickText) ? quickText[i]?.desc  ?? '' : '',
+  }));
+
   const navigate = useNavigate();
   const [activeTab, setActiveTab] = useState('all');
   const [searchTerm, setSearchTerm] = useState('');
@@ -194,11 +210,11 @@ const ProjectManagement = () => {
             <div>
               <div className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full mb-4">
                 <FolderOpen className="w-5 h-5" />
-                <span className="text-[15px] font-medium">Research Collaboration Platform</span>
+                <span className="text-[15px] font-medium">{t('hero.badge')}</span>
               </div>
-              <h1 className="text-4xl md:text-5xl font-bold mb-4">Project Management</h1>
+              <h1 className="text-4xl md:text-5xl font-bold mb-4">{t('hero.title')}</h1>
               <p className="text-xl text-white/90 max-w-2xl">
-                Manage your research collaborations, track progress, and accelerate impact
+                {t('hero.subtitle')}
               </p>
             </div>
             <button 
@@ -206,7 +222,7 @@ const ProjectManagement = () => {
               className="bg-white text-indigo-600 px-6 py-3 rounded-xl font-semibold hover:bg-white/90 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 flex items-center gap-2"
             >
               <Plus className="w-5 h-5" />
-              New Project
+              {t('hero.new_project')}
             </button>
           </div>
         </div>
@@ -217,12 +233,12 @@ const ProjectManagement = () => {
         <div className="container px-8 max-w-7xl mx-auto relative z-10">
           <div className="bg-white rounded-2xl shadow-xl p-6 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
             {[
-              { label: 'Total Projects', value: stats.total, icon: FolderOpen, color: 'from-blue-500 to-indigo-600' },
-              { label: 'Active', value: stats.active, icon: Zap, color: 'from-green-500 to-emerald-600' },
-              { label: 'Planning', value: stats.planning, icon: Clock, color: 'from-orange-500 to-red-600' },
-              { label: 'Completed', value: stats.completed, icon: CheckCircle, color: 'from-purple-500 to-pink-600' },
-              { label: 'Total Budget', value: `$${(stats.totalBudget / 1000000).toFixed(1)}M`, icon: BarChart3, color: 'from-cyan-500 to-blue-600' },
-              { label: 'Publications', value: stats.totalPublications, icon: FileText, color: 'from-yellow-500 to-orange-600' }
+              { label: t('stats.total'), value: stats.total, icon: FolderOpen, color: 'from-blue-500 to-indigo-600' },
+              { label: t('stats.active'), value: stats.active, icon: Zap, color: 'from-green-500 to-emerald-600' },
+              { label: t('stats.planning'), value: stats.planning, icon: Clock, color: 'from-orange-500 to-red-600' },
+              { label: t('stats.completed'), value: stats.completed, icon: CheckCircle, color: 'from-purple-500 to-pink-600' },
+              { label: t('stats.budget'), value: `$${(stats.totalBudget / 1000000).toFixed(1)}M`, icon: BarChart3, color: 'from-cyan-500 to-blue-600' },
+              { label: t('stats.publications'), value: stats.totalPublications, icon: FileText, color: 'from-yellow-500 to-orange-600' }
             ].map((stat, index) => (
               <div key={index} className="text-center group">
                 <div className={`inline-flex items-center justify-center w-12 h-12 bg-gradient-to-br ${stat.color} rounded-xl mb-3 group-hover:scale-110 transition-transform duration-300`}>
@@ -243,10 +259,10 @@ const ProjectManagement = () => {
             <div className="flex flex-col md:flex-row gap-4 items-center justify-between">
               <div className="flex gap-2 overflow-x-auto pb-2">
                 {[
-                  { id: 'all', label: 'All Projects', count: stats.total },
-                  { id: 'active', label: 'Active', count: stats.active },
-                  { id: 'planning', label: 'Planning', count: stats.planning },
-                  { id: 'completed', label: 'Completed', count: stats.completed }
+                  { id: 'all', label: t('tabs.all'), count: stats.total },
+                  { id: 'active', label: t('tabs.active'), count: stats.active },
+                  { id: 'planning', label: t('tabs.planning'), count: stats.planning },
+                  { id: 'completed', label: t('tabs.completed'), count: stats.completed }
                 ].map(tab => (
                   <button
                     key={tab.id}
@@ -272,7 +288,7 @@ const ProjectManagement = () => {
                   <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-5 h-5" />
                   <input
                     type="text"
-                    placeholder="Search projects..."
+                    placeholder={t('filter.search_placeholder')}
                     className="w-full pl-10 pr-4 py-2 border border-gray-200 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent outline-none"
                     value={searchTerm}
                     onChange={(e) => setSearchTerm(e.target.value)}
@@ -358,7 +374,7 @@ const ProjectManagement = () => {
                   {/* Progress Bar */}
                   <div className="mb-4">
                     <div className="flex justify-between text-[15px] mb-2">
-                      <span className="text-gray-600">Progress</span>
+                      <span className="text-gray-600">{t('card.progress')}</span>
                       <span className="font-semibold text-indigo-600">{project.progress}%</span>
                     </div>
                     <div className="w-full bg-gray-200 rounded-full h-2">
@@ -376,7 +392,7 @@ const ProjectManagement = () => {
                         <div
                           key={idx}
                           className="w-8 h-8 rounded-full border-2 border-white bg-indigo-400 flex items-center justify-center text-white text-sm font-bold"
-                          title="Team member"
+                          title={t('card.team_member')}
                         >
                           {String.fromCharCode(65 + idx)}
                         </div>
@@ -385,13 +401,13 @@ const ProjectManagement = () => {
                     
                     <div className="flex items-center gap-6">
                       <div className="text-right">
-                        <div className="text-[15px] text-gray-500">Budget Used</div>
+                        <div className="text-[15px] text-gray-500">{t('card.budget_used')}</div>
                         <div className="font-semibold text-gray-900">
                           ${(project.spent / 1000).toFixed(0)}K / ${(project.budget / 1000).toFixed(0)}K
                         </div>
                       </div>
                       <div className="text-right">
-                        <div className="text-[15px] text-gray-500">Institution</div>
+                        <div className="text-[15px] text-gray-500">{t('card.institution')}</div>
                         <div className="font-semibold text-gray-900">{project.institution}</div>
                       </div>
                       <div className="flex gap-2">
@@ -409,7 +425,7 @@ const ProjectManagement = () => {
                   </div>
                   
                   <div className="text-sm text-gray-400 mt-3 text-right">
-                    Updated {project.updated_at ? new Date(project.updated_at).toLocaleDateString() : 'recently'}
+                    {t('card.updated', { when: project.updated_at ? new Date(project.updated_at).toLocaleDateString() : t('card.recently') })}
                   </div>
                 </div>
               );
@@ -421,14 +437,9 @@ const ProjectManagement = () => {
       {/* Quick Actions */}
       <section className="pt-20 pb-28 bg-white">
         <div className="container px-8 max-w-7xl mx-auto relative z-10">
-          <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Quick Actions</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">{t('quick.title')}</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {[
-              { icon: Plus, title: 'Create Project', desc: 'Start a new research collaboration', color: 'from-blue-500 to-indigo-600' },
-              { icon: Users, title: 'Invite Collaborators', desc: 'Add team members to your projects', color: 'from-green-500 to-emerald-600' },
-              { icon: BarChart3, title: 'Generate Report', desc: 'Export project analytics and metrics', color: 'from-purple-500 to-pink-600' },
-              { icon: Target, title: 'Set Milestones', desc: 'Define key deliverables and deadlines', color: 'from-orange-500 to-red-600' }
-            ].map((action, index) => (
+            {quickActions.map((action, index) => (
               <button
                 key={index}
                 className="bg-gradient-to-br from-gray-50 to-white p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 group text-left border border-gray-100"

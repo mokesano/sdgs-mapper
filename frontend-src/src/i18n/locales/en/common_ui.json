@@ -1,0 +1,33 @@
+{
+  "error": {
+    "oops": "Oops!",
+    "title": "Something Went Wrong",
+    "component": "This component hit an error and could not be displayed.",
+    "detail": "Error Detail",
+    "stack": "Show component stack",
+    "retry": "Try Again",
+    "home": "Back to Home",
+    "support": "Contact Support"
+  },
+  "breadcrumb": { "label": "breadcrumb", "home": "Home" },
+  "sponsorship": {
+    "title": "Sponsorship Tiers",
+    "popular": "Most Popular",
+    "selected": "Selected",
+    "choose": "Choose This Tier",
+    "custom_prefix": "Need a custom package?",
+    "custom_link": "Contact our team",
+    "custom_suffix": "to talk it through."
+  },
+  "hero_search": {
+    "placeholder": "ORCID · Scopus ID · SINTA ID · ResearcherID · DOI",
+    "detecting": "Detecting format…",
+    "to_orcid": "Opening the ORCID profile…",
+    "to_researcherid": "Opening the ResearcherID/Publons profile…",
+    "to_article": "Opening the article profile…",
+    "unknown": "Unrecognised format. Enter an ORCID, Scopus, SINTA, ResearcherID or DOI.",
+    "scopus": "Scopus Author ID",
+    "cancel": "Cancel"
+  },
+  "map": { "less": "Less", "more": "More", "alt": "World map" }
+}

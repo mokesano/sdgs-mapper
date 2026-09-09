@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router';
+import { useTranslation } from 'react-i18next';
 import { Brain, Users, Target, Zap, Search, Filter, Sparkles, TrendingUp,
   Award, BookOpen, Building2, MapPin, Mail, ExternalLink, CheckCircle,
   Star, Lightbulb, Network, ArrowRight, Heart, MessageSquare, Share2
@@ -7,6 +8,28 @@ import { Brain, Users, Target, Zap, Search, Filter, Sparkles, TrendingUp,
 
 const ResearchMatching = () => {
   const navigate = useNavigate();
+  const { t } = useTranslation('research_matching');
+
+  /* Ikon dan warna tetap di kode karena bukan teks; judul dan keterangannya
+     diambil dari locale supaya ikut berganti bahasa. */
+  const featureText = t('features', { returnObjects: true });
+  const featureCards = [
+    { icon: Brain,  color: 'from-purple-500 to-indigo-600' },
+    { icon: Target, color: 'from-blue-500 to-cyan-600' },
+    { icon: Zap,    color: 'from-yellow-500 to-orange-600' },
+  ].map((card, i) => ({
+    ...card,
+    title:       Array.isArray(featureText) ? featureText[i]?.title ?? '' : '',
+    description: Array.isArray(featureText) ? featureText[i]?.description ?? '' : '',
+  }));
+
+  const stepText = t('how.steps', { returnObjects: true });
+  const howSteps = [Search, Brain, Target, TrendingUp].map((icon, i) => ({
+    icon,
+    step:  i + 1,
+    title: Array.isArray(stepText) ? stepText[i]?.title ?? '' : '',
+    desc:  Array.isArray(stepText) ? stepText[i]?.desc  ?? '' : '',
+  }));
   const [searchCriteria, setSearchCriteria] = useState({
     keywords: '',
     sdgGoals: [],
@@ -133,15 +156,15 @@ const ResearchMatching = () => {
           <div className="text-center max-w-4xl mx-auto">
             <div className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full mb-6">
               <Brain className="w-5 h-5" />
-              <span className="text-[15px] font-medium">AI-Powered Collaboration</span>
+              <span className="text-[15px] font-medium">{t('hero.badge')}</span>
             </div>
             
             <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
-              Research Matching
+              {t('hero.title')}
             </h1>
             
             <p className="text-xl md:text-2xl mb-8 text-white/90 max-w-4xl mx-auto">
-              Discover perfect research collaborators using advanced AI algorithms that analyze expertise, interests, and compatibility
+              {t('hero.subtitle')}
             </p>
           </div>
         </div>
@@ -152,20 +175,20 @@ const ResearchMatching = () => {
         <div className="container px-8 max-w-7xl mx-auto">
           <div className="bg-white rounded-3xl shadow-2xl p-8 mb-12">
             <div className="text-center mb-8">
-              <h2 className="text-4xl font-bold text-gray-900 mb-4">Find Your Perfect Match</h2>
+              <h2 className="text-4xl font-bold text-gray-900 mb-4">{t('form.title')}</h2>
               <p className="text-gray-600 max-w-2xl mx-auto">
-                Tell us about your research interests and we'll find researchers with complementary expertise
+                {t('form.subtitle')}
               </p>
             </div>
             
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
               <div>
-                <label className="block text-[15px] font-semibold text-gray-700 mb-2">Research Keywords</label>
+                <label className="block text-[15px] font-semibold text-gray-700 mb-2">{t('form.keywords_label')}</label>
                 <div className="relative">
                   <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-5 h-5" />
                   <input
                     type="text"
-                    placeholder="e.g., climate change, AI ethics..."
+                    placeholder={t('form.keywords_placeholder')}
                     className="w-full pl-10 pr-4 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-purple-500 focus:border-transparent outline-none"
                     value={searchCriteria.keywords}
                     onChange={(e) => setSearchCriteria({...searchCriteria, keywords: e.target.value})}
@@ -174,9 +197,9 @@ const ResearchMatching = () => {
               </div>
               
               <div>
-                <label className="block text-[15px] font-semibold text-gray-700 mb-2">SDG Focus Areas</label>
+                <label className="block text-[15px] font-semibold text-gray-700 mb-2">{t('form.sdg_label')}</label>
                 <select className="w-full px-4 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-purple-500 focus:border-transparent outline-none">
-                  <option>Select SDG goals...</option>
+                  <option>{t('form.sdg_any')}</option>
                   {[...Array(17)].map((_, i) => (
                     <option key={i} value={i + 1}>SDG {i + 1}</option>
                   ))}
@@ -184,23 +207,23 @@ const ResearchMatching = () => {
               </div>
               
               <div>
-                <label className="block text-[15px] font-semibold text-gray-700 mb-2">Institution Type</label>
+                <label className="block text-[15px] font-semibold text-gray-700 mb-2">{t('form.institution_label')}</label>
                 <select className="w-full px-4 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-purple-500 focus:border-transparent outline-none">
-                  <option>Any institution</option>
-                  <option>University</option>
-                  <option>Research Institute</option>
-                  <option>Government</option>
-                  <option>Industry</option>
+                  <option>{t('institution.any')}</option>
+                  <option>{t('institution.university')}</option>
+                  <option>{t('institution.institute')}</option>
+                  <option>{t('institution.government')}</option>
+                  <option>{t('institution.industry')}</option>
                 </select>
               </div>
               
               <div>
-                <label className="block text-[15px] font-semibold text-gray-700 mb-2">Geographic Preference</label>
+                <label className="block text-[15px] font-semibold text-gray-700 mb-2">{t('form.location_label')}</label>
                 <div className="relative">
                   <MapPin className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-5 h-5" />
                   <input
                     type="text"
-                    placeholder="e.g., Europe, North America..."
+                    placeholder={t('form.location_placeholder')}
                     className="w-full pl-10 pr-4 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-purple-500 focus:border-transparent outline-none"
                     value={searchCriteria.location}
                     onChange={(e) => setSearchCriteria({...searchCriteria, location: e.target.value})}
@@ -209,23 +232,23 @@ const ResearchMatching = () => {
               </div>
               
               <div>
-                <label className="block text-[15px] font-semibold text-gray-700 mb-2">Expertise Level</label>
+                <label className="block text-[15px] font-semibold text-gray-700 mb-2">{t('form.expertise_label')}</label>
                 <select className="w-full px-4 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-purple-500 focus:border-transparent outline-none">
-                  <option>Any level</option>
-                  <option>Leading Expert (H-index &gt; 40)</option>
-                  <option>Established Researcher (H-index 20-40)</option>
-                  <option>Emerging Researcher (H-index &lt; 20)</option>
+                  <option>{t('expertise.any')}</option>
+                  <option>{t('expertise.leading')}</option>
+                  <option>{t('expertise.established')}</option>
+                  <option>{t('expertise.emerging')}</option>
                 </select>
               </div>
               
               <div>
-                <label className="block text-[15px] font-semibold text-gray-700 mb-2">Collaboration Type</label>
+                <label className="block text-[15px] font-semibold text-gray-700 mb-2">{t('form.collab_label')}</label>
                 <select className="w-full px-4 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-purple-500 focus:border-transparent outline-none">
-                  <option>Any type</option>
-                  <option>Joint Research Project</option>
-                  <option>Co-authorship</option>
-                  <option>Grant Application</option>
-                  <option>Knowledge Exchange</option>
+                  <option>{t('collab.any')}</option>
+                  <option>{t('collab.joint')}</option>
+                  <option>{t('collab.coauthor')}</option>
+                  <option>{t('collab.grant')}</option>
+                  <option>{t('collab.exchange')}</option>
                 </select>
               </div>
             </div>
@@ -239,12 +262,12 @@ const ResearchMatching = () => {
                 {isSearching ? (
                   <>
                     <div className="w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
-                    Analyzing Profiles...
+                    {t('form.searching')}
                   </>
                 ) : (
                   <>
                     <Sparkles className="w-5 h-5" />
-                    Find Matches
+                    {t('form.submit')}
                   </>
                 )}
               </button>
@@ -254,26 +277,7 @@ const ResearchMatching = () => {
           {/* AI Matching Features */}
           {!showResults && (
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              {[
-                {
-                  icon: Brain,
-                  title: 'Deep Learning Analysis',
-                  description: 'Our AI analyzes 50+ factors including publication history, research topics, and collaboration patterns',
-                  color: 'from-purple-500 to-indigo-600'
-                },
-                {
-                  icon: Target,
-                  title: 'Compatibility Scoring',
-                  description: 'Get match scores based on research alignment, complementary skills, and successful collaboration indicators',
-                  color: 'from-blue-500 to-cyan-600'
-                },
-                {
-                  icon: Zap,
-                  title: 'Real-time Updates',
-                  description: 'Continuously learn from new publications and collaborations to improve match quality over time',
-                  color: 'from-yellow-500 to-orange-600'
-                }
-              ].map((feature, index) => (
+              {featureCards.map((feature, index) => (
                 <div key={index} className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300">
                   <div className={`inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br ${feature.color} rounded-2xl mb-6`}>
                     <feature.icon className="w-8 h-8 text-white" />
@@ -290,17 +294,17 @@ const ResearchMatching = () => {
             <div>
               <div className="flex justify-between items-center mb-8">
                 <div>
-                  <h2 className="text-4xl font-bold text-gray-900 mb-2">Top Matches Found</h2>
-                  <p className="text-gray-600">Based on your research profile and preferences</p>
+                  <h2 className="text-4xl font-bold text-gray-900 mb-2">{t('results.title')}</h2>
+                  <p className="text-gray-600">{t('results.subtitle')}</p>
                 </div>
                 <div className="flex gap-2">
                   <button className="flex items-center gap-2 px-4 py-2 bg-gray-100 text-gray-700 rounded-lg hover:bg-gray-200 transition-all">
                     <Filter className="w-4 h-4" />
-                    Refine Filters
+                    {t('results.refine')}
                   </button>
                   <button className="flex items-center gap-2 px-4 py-2 bg-gray-100 text-gray-700 rounded-lg hover:bg-gray-200 transition-all">
                     <Share2 className="w-4 h-4" />
-                    Share Results
+                    {t('results.share')}
                   </button>
                 </div>
               </div>
@@ -335,7 +339,7 @@ const ResearchMatching = () => {
                             <h3 className="text-2xl font-bold text-gray-900 group-hover:text-purple-600 transition-colors">
                               {match.name}
                             </h3>
-                            <p className="text-gray-600 mb-1">{match.title || 'Researcher'}</p>
+                            <p className="text-gray-600 mb-1">{match.title || t('card.role_fallback')}</p>
                             <div className="flex items-center gap-4 text-[15px] text-gray-500">
                               {match.institution && (
                                 <span className="flex items-center gap-1">
@@ -355,7 +359,7 @@ const ResearchMatching = () => {
                           {/* Match Score */}
                           <div className={`px-4 py-2 rounded-xl border-2 font-bold ${getMatchScoreColor(match.match_score)}`}>
                             <div className="text-2xl">{match.match_score}%</div>
-                            <div className="text-sm uppercase tracking-wide">Match</div>
+                            <div className="text-sm uppercase tracking-wide">{t('card.match')}</div>
                           </div>
                         </div>
 
@@ -376,7 +380,7 @@ const ResearchMatching = () => {
                         <div className="bg-gradient-to-r from-purple-50 to-indigo-50 rounded-xl p-4 mb-4">
                           <div className="flex items-center gap-2 mb-2">
                             <Sparkles className="w-4 h-4 text-purple-600" />
-                            <span className="font-semibold text-purple-900">Why This Match?</span>
+                            <span className="font-semibold text-purple-900">{t('card.why')}</span>
                           </div>
                           <ul className="space-y-1">
                             {(match.match_reasons || []).map((reason, idx) => (
@@ -392,15 +396,15 @@ const ResearchMatching = () => {
                         <div className="grid grid-cols-4 gap-4 mb-4">
                           <div className="text-center">
                             <div className="text-lg font-bold text-indigo-600">{match.h_index}</div>
-                            <div className="text-sm text-gray-500">H-Index</div>
+                            <div className="text-sm text-gray-500">{t('card.h_index')}</div>
                           </div>
                           <div className="text-center">
                             <div className="text-lg font-bold text-indigo-600">{match.publications}</div>
-                            <div className="text-sm text-gray-500">Publications</div>
+                            <div className="text-sm text-gray-500">{t('card.publications')}</div>
                           </div>
                           <div className="text-center">
                             <div className="text-lg font-bold text-indigo-600">{match.collaborations}</div>
-                            <div className="text-sm text-gray-500">Collaborations</div>
+                            <div className="text-sm text-gray-500">{t('card.collaborations')}</div>
                           </div>
                           <div className="text-center">
                             <div className="text-[15px] font-semibold text-green-600">{match.availability}</div>
@@ -412,16 +416,16 @@ const ResearchMatching = () => {
                         <div className="flex gap-3 pt-4 border-t border-gray-100">
                           <button className="flex-1 bg-gradient-to-r from-purple-600 to-indigo-600 text-white py-3 rounded-xl hover:from-purple-700 hover:to-indigo-700 transition-all font-medium flex items-center justify-center gap-2">
                             <Mail className="w-4 h-4" />
-                            Contact Researcher
+                            {t('card.contact')}
                           </button>
                           <button className="flex-1 bg-gray-100 text-gray-700 py-3 rounded-xl hover:bg-gray-200 transition-all font-medium flex items-center justify-center gap-2">
                             <ExternalLink className="w-4 h-4" />
-                            View Full Profile
+                            {t('card.view_profile')}
                           </button>
-                          <button className="p-3 bg-gray-100 text-gray-700 rounded-xl hover:bg-gray-200 transition-all">
+                          <button className="p-3 bg-gray-100 text-gray-700 rounded-xl hover:bg-gray-200 transition-all" title={t('card.save')} aria-label={t('card.save')}>
                             <Heart className="w-5 h-5" />
                           </button>
-                          <button className="p-3 bg-gray-100 text-gray-700 rounded-xl hover:bg-gray-200 transition-all">
+                          <button className="p-3 bg-gray-100 text-gray-700 rounded-xl hover:bg-gray-200 transition-all" title={t('card.message')} aria-label={t('card.message')}>
                             <MessageSquare className="w-5 h-5" />
                           </button>
                         </div>
@@ -440,19 +444,14 @@ const ResearchMatching = () => {
         <section className="pt-20 pb-28 bg-white">
           <div className="container px-8 max-w-7xl mx-auto relative">
             <div className="text-center mb-12">
-              <h2 className="text-4xl font-bold text-gray-900 mb-4">How AI Matching Works</h2>
+              <h2 className="text-4xl font-bold text-gray-900 mb-4">{t('how.title')}</h2>
               <p className="text-xl text-gray-600 max-w-4xl mx-auto">
-                Our advanced algorithm analyzes multiple dimensions to find your ideal research partners
+                {t('how.subtitle')}
               </p>
             </div>
             
             <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-              {[
-                { step: 1, title: 'Profile Analysis', desc: 'AI scans your research history, publications, and expertise areas', icon: Search },
-                { step: 2, title: 'Pattern Recognition', desc: 'Identifies complementary skills and research synergies', icon: Brain },
-                { step: 3, title: 'Compatibility Scoring', desc: 'Calculates match scores based on 50+ success factors', icon: Target },
-                { step: 4, title: 'Continuous Learning', desc: 'Improves recommendations based on collaboration outcomes', icon: TrendingUp }
-              ].map((item, index) => (
+              {howSteps.map((item, index) => (
                 <div key={index} className="relative">
                   <div className="bg-gradient-to-br from-purple-50 to-indigo-50 p-8 rounded-2xl text-center">
                     <div className="w-16 h-16 bg-gradient-to-br from-purple-600 to-indigo-600 rounded-2xl flex items-center justify-center mx-auto mb-4">

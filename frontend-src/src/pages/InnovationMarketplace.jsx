@@ -1,11 +1,28 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router';
+import { useTranslation } from 'react-i18next';
 import { Lightbulb, Handshake, Building2, TrendingUp, Search, Filter, ArrowRight,
   DollarSign, Users, Calendar, MapPin, Target, Zap, Award, BookOpen, Globe, MessageSquare,
   Share2, ExternalLink, Star, CheckCircle, Clock, Briefcase
 } from 'lucide-react';
 
 const InnovationMarketplace = () => {
+  const { t } = useTranslation('innovation_marketplace');
+
+  /* Ikon dan warna tetap di kode; judul dan keterangan langkahnya dari locale. */
+  const stepText = t('how.steps', { returnObjects: true });
+  const howSteps = [
+    { icon: Search,     color: 'from-emerald-500 to-teal-600' },
+    { icon: Briefcase,  color: 'from-blue-500 to-indigo-600' },
+    { icon: Handshake,  color: 'from-orange-500 to-red-500' },
+    { icon: TrendingUp, color: 'from-pink-500 to-rose-600' },
+  ].map((card, i) => ({
+    ...card,
+    step:  i + 1,
+    title: Array.isArray(stepText) ? stepText[i]?.title ?? '' : '',
+    desc:  Array.isArray(stepText) ? stepText[i]?.desc  ?? '' : '',
+  }));
+
   const navigate = useNavigate();
   const [activeCategory, setActiveCategory] = useState('all');
   const [searchTerm, setSearchTerm] = useState('');
@@ -167,23 +184,23 @@ const InnovationMarketplace = () => {
           <div className="text-center max-w-4xl mx-auto">
             <div className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full mb-6">
               <Handshake className="w-5 h-5" />
-              <span className="text-[15px] font-medium">Industry-Academia Bridge</span>
+              <span className="text-[15px] font-medium">{t('hero.badge')}</span>
             </div>
             
             <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
-              Innovation Marketplace
+              {t('hero.title')}
             </h1>
             
             <p className="text-xl md:text-2xl mb-8 text-white/90 max-w-3xl mx-auto">
-              Connect your research with industry leaders, government agencies, and foundations. Turn ideas into real-world impact.
+              {t('hero.subtitle')}
             </p>
             
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-12">
               {[
-                { label: 'Opportunities', value: stats.totalOpportunities, icon: Lightbulb },
-                { label: 'Total Funding', value: stats.totalFunding, icon: DollarSign },
-                { label: 'Partnerships', value: stats.activePartnerships, icon: Handshake },
-                { label: 'Success Rate', value: stats.successRate, icon: CheckCircle }
+                { label: t('stats.opportunities'), value: stats.totalOpportunities, icon: Lightbulb },
+                { label: t('stats.funding'), value: stats.totalFunding, icon: DollarSign },
+                { label: t('stats.partnerships'), value: stats.activePartnerships, icon: Handshake },
+                { label: t('stats.success_rate'), value: stats.successRate, icon: CheckCircle }
               ].map((stat, index) => (
                 <div key={index} className="bg-white/10 backdrop-blur-sm rounded-xl p-4">
                   <stat.icon className="w-6 h-6 mx-auto mb-2 opacity-80" />
@@ -205,7 +222,7 @@ const InnovationMarketplace = () => {
                 <Search className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400 w-5 h-5" />
                 <input
                   type="text"
-                  placeholder="Search opportunities by keyword, organization, or technology..."
+                  placeholder={t('filter.search_placeholder')}
                   className="w-full pl-12 pr-4 py-4 border border-gray-200 rounded-xl focus:ring-2 focus:ring-orange-500 focus:border-transparent outline-none text-lg"
                   value={searchTerm}
                   onChange={(e) => setSearchTerm(e.target.value)}
@@ -214,7 +231,7 @@ const InnovationMarketplace = () => {
               
               <button className="flex items-center gap-2 px-6 py-4 bg-gray-100 text-gray-700 rounded-xl hover:bg-gray-200 transition-all font-medium whitespace-nowrap">
                 <Filter className="w-5 h-5" />
-                Advanced Filters
+                {t('filter.advanced')}
               </button>
             </div>
             
@@ -243,7 +260,7 @@ const InnovationMarketplace = () => {
             
             {/* Type Filter */}
             <div className="flex gap-2 mt-6 flex-wrap">
-              <span className="text-[15px] font-semibold text-gray-700 py-2">Organization Type:</span>
+              <span className="text-[15px] font-semibold text-gray-700 py-2">{t('filter.org_type')}</span>
               {types.map(type => (
                 <button
                   key={type.id}
@@ -263,7 +280,7 @@ const InnovationMarketplace = () => {
               </div>
             ) : filteredOpportunities.length === 0 ? (
               <div className="text-center py-12 col-span-full">
-                <p className="text-gray-600">No opportunities found</p>
+                <p className="text-gray-600">{t('list.empty')}</p>
               </div>
             ) : (filteredOpportunities.map((opp) => (
               <div
@@ -357,7 +374,7 @@ const InnovationMarketplace = () => {
                   {/* Action Buttons */}
                   <div className="flex gap-3 pt-4 border-t border-gray-100">
                     <button className="flex-1 bg-gradient-to-r from-orange-500 to-yellow-500 text-white py-3 rounded-xl hover:from-orange-600 hover:to-yellow-600 transition-all font-medium flex items-center justify-center gap-2">
-                      Apply Now
+                      {t('list.apply')}
                       <ArrowRight className="w-4 h-4" />
                     </button>
                     <button className="p-3 bg-gray-100 text-gray-700 rounded-xl hover:bg-gray-200 transition-all">
@@ -385,19 +402,14 @@ const InnovationMarketplace = () => {
       <section className="py-28 bg-white">
         <div className="container px-8 max-w-7xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">How Innovation Marketplace Works</h2>
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">{t('how.title')}</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               From discovery to deployment - we streamline the path from research to real-world impact
             </p>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-            {[
-              { step: 1, title: 'Discover Opportunities', desc: 'Browse curated research partnerships from leading organizations', icon: Search, color: 'from-emerald-500 to-teal-600' },
-              { step: 2, title: 'Submit Proposal', desc: 'Apply with your research proposal and team credentials', icon: Briefcase, color: 'from-blue-500 to-indigo-600' },
-              { step: 3, title: 'Match & Collaborate', desc: 'Get matched and start your funded research project', icon: Handshake, color: 'from-orange-500 to-red-500' },
-              { step: 4, title: 'Deploy & Scale', desc: 'Transform research into deployed solutions with commercialization support', icon: TrendingUp, color: 'from-pink-500 to-rose-600' }
-            ].map((item, index) => (
+            {howSteps.map((item, index) => (
               <div key={index} className="relative">
                 <div className="bg-gradient-to-br from-gray-50 to-white p-8 rounded-2xl text-center border border-gray-100 hover:shadow-xl transition-all duration-300">
                   <div className={`w-16 h-16 bg-gradient-to-br ${item.color} rounded-2xl flex items-center justify-center mx-auto mb-4`}>
@@ -418,17 +430,17 @@ const InnovationMarketplace = () => {
       {/* CTA Section */}
       <section className="py-28 bg-gradient-to-r from-orange-600 via-yellow-600 to-amber-600 text-white">
         <div className="container px-8 max-w-7xl mx-auto text-center">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">Ready to Transform Your Research?</h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-6">{t('cta.title')}</h2>
           <p className="text-xl mb-8 text-white/90 max-w-3xl mx-auto">
-            Join hundreds of researchers who have secured funding and partnerships through Sciecola Innovation Marketplace
+            {t('cta.subtitle')}
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <button className="bg-white text-orange-600 px-8 py-4 rounded-xl font-semibold hover:bg-white/90 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 flex items-center gap-2">
-              Browse All Opportunities
+              {t('cta.primary')}
               <ArrowRight className="w-5 h-5" />
             </button>
             <button className="bg-white/20 backdrop-blur-sm text-white px-8 py-4 rounded-xl font-semibold hover:bg-white/30 transition-all duration-300 border border-white/30 flex items-center gap-2">
-              Post an Opportunity
+              {t('cta.secondary')}
             </button>
           </div>
         </div>

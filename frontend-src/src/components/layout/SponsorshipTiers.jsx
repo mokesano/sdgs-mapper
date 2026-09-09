@@ -1,7 +1,9 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import { IconStar, IconAcademic, IconBriefcase, IconUsers } from '../shared/icons';
 
 const SponsorshipTiers = ({ onSelectTier, selectedTier }) => {
+  const { t } = useTranslation('common_ui');
   // Data tiers
   const tiers = [
     {
@@ -83,7 +85,7 @@ const SponsorshipTiers = ({ onSelectTier, selectedTier }) => {
   return (
     <section className="mb-12">
       <div className="text-center mb-8">
-        <h2 className="text-2xl font-bold text-gray-900 mb-2">Pilihan Tier Sponsorship</h2>
+        <h2 className="text-2xl font-bold text-gray-900 mb-2">{t('sponsorship.title')}</h2>
         <p className="text-gray-600 max-w-2xl mx-auto">
           Pilih tingkat kemitraan yang sesuai dengan visi organisasi Anda. 
           Semua tier mencakup akses ke platform Wizdam dan laporan impact triwulanan.
@@ -105,7 +107,7 @@ const SponsorshipTiers = ({ onSelectTier, selectedTier }) => {
             {/* Most Popular Badge */}
             {tier.highlight && selectedTier !== tier.id && (
               <span className="absolute -top-3 left-1/2 -translate-x-1/2 px-3 py-1 bg-indigo-600 text-white text-sm font-bold rounded-full shadow">
-                Most Popular
+                {t('sponsorship.popular')}
               </span>
             )}
             
@@ -115,7 +117,7 @@ const SponsorshipTiers = ({ onSelectTier, selectedTier }) => {
                 <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M5 13l4 4L19 7" />
                 </svg>
-                Terpilih
+                {t('sponsorship.selected')}
               </span>
             )}
             
@@ -165,11 +167,11 @@ const SponsorshipTiers = ({ onSelectTier, selectedTier }) => {
                   <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
                   </svg>
-                  Terpilih
+                  {t('sponsorship.selected')}
                 </>
               ) : (
                 <>
-                  Pilih Tier Ini
+                  {t('sponsorship.choose')}
                   <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
                   </svg>
@@ -182,7 +184,9 @@ const SponsorshipTiers = ({ onSelectTier, selectedTier }) => {
       
       {/* Helper Text */}
       <p className="text-center text-[15px] text-gray-500 mt-6">
-        Butuh paket custom? <a href="/contact" className="text-indigo-600 hover:underline font-medium">Hubungi tim kami</a> untuk diskusi lebih lanjut.
+        {t('sponsorship.custom_prefix')}{' '}
+        <a href="/contact" className="text-indigo-600 hover:underline font-medium">{t('sponsorship.custom_link')}</a>{' '}
+        {t('sponsorship.custom_suffix')}
       </p>
     </section>
   );

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router';
+import { withTranslation } from 'react-i18next';
 
 class ErrorBoundary extends Component {
   constructor(props) {
@@ -44,6 +45,7 @@ class ErrorBoundary extends Component {
   };
 
   render() {
+    const { t } = this.props;
     if (this.state.hasError) {
       return (
         <div className="min-h-screen bg-gradient-to-br from-red-50 via-white to-orange-50 flex items-center justify-center px-4 sm:px-6 lg:px-8">
@@ -52,16 +54,16 @@ class ErrorBoundary extends Component {
             <div className="text-center mb-8">
               <div className="relative inline-block mb-6">
                 <h1 className="text-8xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-orange-600">
-                  Oops!
+                  {t('error.oops')}
                 </h1>
                 <div className="absolute inset-0 blur-2xl opacity-30 bg-gradient-to-r from-red-600 to-orange-600 rounded-full"></div>
               </div>
 
               <h2 className="text-2xl font-bold text-gray-900 mb-2">
-                Terjadi Kesalahan Tidak Terduga
+                {t('error.title')}
               </h2>
               <p className="text-gray-600">
-                Komponen ini mengalami error dan tidak dapat ditampilkan.
+                {t('error.component')}
               </p>
             </div>
 
@@ -82,7 +84,7 @@ class ErrorBoundary extends Component {
                   />
                 </svg>
                 <div>
-                  <h3 className="font-semibold text-gray-900 mb-1">Detail Error</h3>
+                  <h3 className="font-semibold text-gray-900 mb-1">{t('error.detail')}</h3>
                   {this.state.error && (
                     <p className="text-[15px] text-red-600 font-mono bg-red-50 p-2 rounded">
                       {this.state.error.toString()}
@@ -95,7 +97,7 @@ class ErrorBoundary extends Component {
               {process.env.NODE_ENV === 'development' && this.state.errorInfo && (
                 <details className="mt-4">
                   <summary className="cursor-pointer text-[15px] font-medium text-gray-700 hover:text-gray-900">
-                    Lihat Component Stack
+                    {t('error.stack')}
                   </summary>
                   <pre className="mt-2 text-sm text-gray-600 bg-gray-50 p-3 rounded overflow-auto max-h-48">
                     {this.state.errorInfo.componentStack}
@@ -123,7 +125,7 @@ class ErrorBoundary extends Component {
                     d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"
                   />
                 </svg>
-                Coba Lagi
+                {t('error.retry')}
               </button>
 
               <Link
@@ -143,7 +145,7 @@ class ErrorBoundary extends Component {
                     d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
                   />
                 </svg>
-                Kembali ke Beranda
+                {t('error.home')}
               </Link>
 
               <Link
@@ -163,7 +165,7 @@ class ErrorBoundary extends Component {
                     d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
                   />
                 </svg>
-                Hubungi Support
+                {t('error.support')}
               </Link>
             </div>
 
@@ -182,4 +184,4 @@ class ErrorBoundary extends Component {
   }
 }
 
-export default ErrorBoundary;
+export default withTranslation('common_ui')(ErrorBoundary);

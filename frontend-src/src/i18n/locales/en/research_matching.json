@@ -1,0 +1,84 @@
+{
+  "hero": {
+    "badge": "AI-powered collaboration",
+    "title": "Research Matching",
+    "subtitle": "Find the right research partners through an algorithm that weighs expertise, research interests and how well two people are likely to work together."
+  },
+  "form": {
+    "title": "Find Your Match",
+    "subtitle": "Tell us about your research interests and we will look for researchers whose expertise complements yours.",
+    "keywords_label": "Research Keywords",
+    "keywords_placeholder": "e.g. climate change, AI ethics…",
+    "sdg_label": "SDG Focus",
+    "sdg_any": "Select SDG goals…",
+    "institution_label": "Institution Type",
+    "location_label": "Geographic Preference",
+    "location_placeholder": "e.g. Europe, South-East Asia…",
+    "expertise_label": "Expertise Level",
+    "collab_label": "Collaboration Type",
+    "submit": "Find Matches",
+    "searching": "Analysing profiles…"
+  },
+  "institution": {
+    "any": "Any institution",
+    "university": "University",
+    "institute": "Research Institute",
+    "government": "Government",
+    "industry": "Industry"
+  },
+  "expertise": {
+    "any": "Any level",
+    "leading": "Leading Expert (H-index > 40)",
+    "established": "Established Researcher (H-index 20–40)",
+    "emerging": "Emerging Researcher (H-index < 20)"
+  },
+  "collab": {
+    "any": "Any type",
+    "joint": "Joint Research Project",
+    "coauthor": "Co-authorship",
+    "grant": "Grant Application",
+    "exchange": "Knowledge Exchange"
+  },
+  "features": [
+    {
+      "title": "Deep Learning Analysis",
+      "description": "More than 50 factors are weighed at once: publication history, research topics and collaboration patterns."
+    },
+    {
+      "title": "Compatibility Scoring",
+      "description": "Scores come from research alignment, complementary skills and the markers of collaborations that worked."
+    },
+    {
+      "title": "Continuous Updates",
+      "description": "New publications and collaborations keep feeding back in, so match quality improves over time."
+    }
+  ],
+  "results": {
+    "title": "Top Matches",
+    "subtitle": "Based on your research profile and preferences.",
+    "refine": "Refine Filters",
+    "share": "Share Results"
+  },
+  "card": {
+    "role_fallback": "Researcher",
+    "match": "Match",
+    "why": "Why this match?",
+    "h_index": "H-Index",
+    "publications": "Publications",
+    "collaborations": "Collaborations",
+    "contact": "Contact Researcher",
+    "view_profile": "View Full Profile",
+    "save": "Save",
+    "message": "Send a message"
+  },
+  "how": {
+    "title": "How Matching Works",
+    "subtitle": "Several dimensions are weighed together to find the research partners who fit best.",
+    "steps": [
+      { "title": "Profile Analysis", "desc": "Your research history, publications and areas of expertise are read first." },
+      { "title": "Pattern Recognition", "desc": "Complementary skills and overlapping research interests are identified." },
+      { "title": "Compatibility Scoring", "desc": "Scores are calculated from more than 50 collaboration success factors." },
+      { "title": "Continuous Learning", "desc": "Recommendations improve as real collaboration outcomes come back in." }
+    ]
+  }
+}
